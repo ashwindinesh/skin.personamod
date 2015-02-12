@@ -201,7 +201,7 @@
 		<value condition="StringCompare(Container.FolderPath,addons://repos/) | SubString(Container.FolderPath,addons://repository) | SubString(Container.FolderPath,addons://all/)">$LOCALIZE[24033]</value>
 		<value condition="Window.IsVisible(settings) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(SettingsProfile.xml) | Window.IsVisible(skinsettings)">$LOCALIZE[10004]</value>
 		<value condition="Window.IsVisible(systeminfo)">$LOCALIZE[10511]</value>
-		<value condition="Window.IsVisible(Home)">xbmc</value>
+		<value condition="Window.IsVisible(Home)">neutrino</value>
 		<value condition="StringCompare(Container.FolderPath,playlistmusic://) | StringCompare(Container.FolderPath,playlistvideo://)">$LOCALIZE[31100]</value>
 		<value condition="Window.IsActive(weather)">$LOCALIZE[8]</value>
 		<value condition="Window.IsVisible(videolibrary) + SubString(Container.FolderPath,plugin://)">$INFO[Container.FolderName]</value>
