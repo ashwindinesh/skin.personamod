@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <window type="dialog">
-	
+
 	<controls>
-		
+
 		<control type="image"> <!--top-->
 			<include>FullScreenDimensions</include>
 			<texture colordiffuse="Black95">backgrounds/white.png</texture>
-			<visible>!Window.IsVisible(fullscreeninfo) + !Window.IsVisible(seekbar)</visible>
+			<visible>!Window.IsVisible(fullscreeninfo) + Window.IsVisible(seekbar)</visible>
 		</control>
 
 		<control type="label"> <!--time-->
@@ -36,11 +36,11 @@
 		<control type="group" id="250">
 			<animation effect="slide" start="0,0" end="0,-100" time="0" condition="Window.IsVisible(fullscreeninfo)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-30" time="0" condition="Window.IsVisible(seekbar)">Conditional</animation>
-			
+
 			<control type="group">
-			
+
 				<control type="group"> <!--headers-->
-			
+
 					<control type="label" id="100"> <!--header-->
 						<centerleft>50%</centerleft>
 						<top>193</top>
@@ -49,7 +49,7 @@
 						<textcolor>PrimaryOSD</textcolor>
 						<visible>false</visible>
 					</control>
-				
+
 					<control type="label" id="140"> <!--text area-->
 						<centerleft>50%</centerleft>
 						<top>228</top>
@@ -58,7 +58,7 @@
 						<align>center</align>
 						<textcolor>PrimaryOSD</textcolor>
 					</control>
-				
+
 					<control type="label"> <!--video title-->
 						<centerleft>50%</centerleft>
 						<top>260</top>
@@ -68,11 +68,11 @@
 						<textcolor>$INFO[Skin.String(MainColour)]</textcolor>
 						<label>$INFO[Player.Filename]</label>
 					</control>
-				
+
 				</control>
-			
+
 				<control type="group">
-			
+
 					<control type="list" id="120"> <!--main subtitle list-->
 						<centerleft>50%</centerleft>
 						<top>335</top>
@@ -86,9 +86,9 @@
 						<viewtype label="535">list</viewtype>
 						<pagecontrol>121</pagecontrol>
 						<scrolltime>0</scrolltime>
-					
+
 						<itemlayout width="1000" height="65">
-						
+
 							<control type="label"> <!--language label-->
 								<left>20</left>
 								<top>0</top>
@@ -100,7 +100,7 @@
 								<font>ButtonSmallUpper</font>
 								<scroll>false</scroll>
 							</control>
-						
+
 							<control type="image"> <!--cc negative-->
 								<left>133</left>
 								<top>21</top>
@@ -109,7 +109,7 @@
 								<texture colordiffuse="TertiaryOSD">Subtitles/icon_close_caption.png</texture>
 								<visible>!ListItem.property(hearing_imp)</visible>
 							</control>
-						
+
 							<control type="image"> <!--cc positive-->
 								<left>133</left>
 								<top>21</top>
@@ -118,7 +118,7 @@
 								<texture>Subtitles/icon_close_caption.png</texture>
 								<visible>ListItem.property(hearing_imp)</visible>
 							</control>
-						
+
 							<control type="image"> <!--sync negative-->
 								<left>163</left>
 								<top>21</top>
@@ -127,7 +127,7 @@
 								<texture colordiffuse="TertiaryOSD">Subtitles/icon_sync.png</texture>
 								<visible>!ListItem.property(sync)</visible>
 							</control>
-						
+
 							<control type="image"> <!--sync positive-->
 								<left>163</left>
 								<top>21</top>
@@ -136,7 +136,7 @@
 								<texture>Subtitles/icon_sync.png</texture>
 								<visible>ListItem.property(sync)</visible>
 							</control>
-						
+
 							<control type="label"> <!--title-->
 								<left>220</left>
 								<top>0</top>
@@ -148,7 +148,7 @@
 								<info>ListItem.Label2</info>
 								<scroll>false</scroll>
 							</control>
-						
+
 							<control type="image"> <!--rating-->
 								<left>890</left>
 								<top>22</top>
@@ -157,11 +157,11 @@
 								<texture>dialogs/rating$INFO[ListItem.ActualIcon].png</texture>
 								<colordiffuse>$INFO[Skin.String(MainColour)]</colordiffuse>
 							</control>
-						
+
 						</itemlayout>
-					
+
 						<focusedlayout width="1000" height="65">
-			
+
 							<control type="image"> <!--bg-->
 								<top>0</top>
 								<top>0</top>
@@ -170,7 +170,7 @@
 								<texture colordiffuse="TertiaryOSD">backgrounds/white.png</texture>
 								<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(120)">Conditional</animation>
 							</control>
-						
+
 							<control type="label"> <!--language label-->
 								<left>20</left>
 								<top>0</top>
@@ -182,7 +182,7 @@
 								<font>ButtonSmallUpper</font>
 								<scroll>false</scroll>
 							</control>
-						
+
 							<control type="image"> <!--cc negative-->
 								<left>133</left>
 								<top>21</top>
@@ -191,7 +191,7 @@
 								<texture colordiffuse="TertiaryOSD">Subtitles/icon_close_caption.png</texture>
 								<visible>!ListItem.property(hearing_imp)</visible>
 							</control>
-						
+
 							<control type="image"> <!--cc positive-->
 								<left>133</left>
 								<top>21</top>
@@ -200,7 +200,7 @@
 								<texture>Subtitles/icon_close_caption.png</texture>
 								<visible>ListItem.property(hearing_imp)</visible>
 							</control>
-						
+
 							<control type="image"> <!--sync negative-->
 								<left>163</left>
 								<top>21</top>
@@ -209,7 +209,7 @@
 								<texture colordiffuse="TertiaryOSD">Subtitles/icon_sync.png</texture>
 								<visible>!ListItem.property(sync)</visible>
 							</control>
-						
+
 							<control type="image"> <!--sync positive-->
 								<left>163</left>
 								<top>21</top>
@@ -218,7 +218,7 @@
 								<texture>Subtitles/icon_sync.png</texture>
 								<visible>ListItem.property(sync)</visible>
 							</control>
-						
+
 							<control type="label"> <!--title-->
 								<left>220</left>
 								<top>0</top>
@@ -230,7 +230,7 @@
 								<info>ListItem.Label2</info>
 								<scroll>false</scroll>
 							</control>
-						
+
 							<control type="image"> <!--rating-->
 								<left>890</left>
 								<top>22</top>
@@ -239,13 +239,13 @@
 								<texture>dialogs/rating$INFO[ListItem.ActualIcon].png</texture>
 								<colordiffuse>$INFO[Skin.String(MainColour)]</colordiffuse>
 							</control>
-						
+
 						</focusedlayout>
-					
+
 					</control>
-			
+
 					<control type="group"> <!--scrollbar-->
-					
+
 						<control type="image"> <!--scrollbar arrow up-->
 							<left>430</left>
 							<top>335</top>
@@ -263,7 +263,7 @@
 							<texturesliderbackground colordiffuse="TertiaryOSD">backgrounds/white.png</texturesliderbackground>
 							<texturesliderbar colordiffuse="SecondaryOSD">backgrounds/white.png</texturesliderbar>
 						</control>
-					
+
 						<control type="image"> <!--scrollbar arrow down-->
 							<left>430</left>
 							<top>778</top>
@@ -272,11 +272,11 @@
 							<texture colordiffuse="SecondaryOSD" flipy="true">controls/scrollarrow.png</texture>
 							<visible>Control.IsVisible(121)</visible>
 						</control>
-						
+
 					</control>
-				
+
 					<control type="group" id="130">
-				
+
 						<control type="grouplist">
 							<left>20</left>
 							<top>660</top>
@@ -286,13 +286,13 @@
 							<orientation>horizontal</orientation>
 							<itemgap>5</itemgap>
 							<visible>true</visible>
-						
+
 							<control type="image">
 								<width>40</width>
 								<height>40</height>
 								<texture>DefaultIconInfo.png</texture>
 							</control>
-						
+
 							<control type="label">
 								<description>notification</description>
 								<width min="10" max="260">auto</width>
@@ -303,15 +303,15 @@
 								<aligny>center</aligny>
 								<wrapmultiline>true</wrapmultiline>
 							</control>
-						
+
 						</control>
-					
+
 					</control>
-				
+
 				</control>
-			
+
 				<control type="group"> <!--subtitle provider list-->
-				
+
 					<control type="wraplist" id="150">
 						<left>460</left>
 						<top>193</top>
@@ -324,9 +324,9 @@
 						<orientation>horizontal</orientation>
 						<viewtype label="535">list</viewtype>
 						<scrolltime>0</scrolltime>
-					
+
 						<itemlayout width="900" height="55">
-						
+
 							<control type="label"> <!--title-->
 								<left>500</left>
 								<top>0</top>
@@ -339,11 +339,11 @@
 								<info>ListItem.Label</info>
 								<scroll>false</scroll>
 							</control>
-						
+
 						</itemlayout>
-					
+
 						<focusedlayout width="900" height="55">
-						
+
 							<control type="label"> <!--title-->
 								<left>500</left>
 								<top>0</top>
@@ -356,18 +356,18 @@
 								<info>ListItem.Label</info>
 								<scroll>false</scroll>
 							</control>
-						
+
 						</focusedlayout>
-					
+
 					</control>
-				
+
 				</control>
-		
+
 				<control type="group"> <!--left/right arrows focused-->
 					<top>-47</top>
 					<visible>Control.HasFocus(150)</visible>
 					<animation effect="fade" start="100" end="30" time="200" condition="ControlGroup(5).HasFocus">Conditional</animation>
-					
+
 					<control type="image" id="901"> <!--left arrow-->
 						<left>700</left>
 						<top>254</top>
@@ -376,7 +376,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">symbols/previous-32.png</texture>
 						<animation effect="zoom" start="90" end="110" center="auto" time="400" pulse="true" condition="!ControlGroup(5).HasFocus">Conditional</animation>
 					</control>
-						
+
 					<control type="image" id="901"> <!--left arrow-->
 						<right>700</right>
 						<top>254</top>
@@ -385,14 +385,14 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]" flipx="true">symbols/previous-32.png</texture>
 						<animation effect="zoom" start="90" end="110" center="auto" time="400" pulse="true" condition="!ControlGroup(5).HasFocus">Conditional</animation>
 					</control>
-					
+
 				</control>
-			
+
 				<control type="group"> <!--left/right arrows unfocused-->
 					<top>-47</top>
 					<visible>!Control.HasFocus(150)</visible>
 					<animation effect="fade" start="100" end="30" time="0" condition="true">Conditional</animation>
-					
+
 					<control type="image" id="901"> <!--left arrow-->
 						<left>700</left>
 						<top>254</top>
@@ -400,7 +400,7 @@
 						<height>28</height>
 						<texture colordiffuse="PrimaryT">symbols/previous-32.png</texture>
 					</control>
-						
+
 					<control type="image" id="901"> <!--left arrow-->
 						<right>700</right>
 						<top>254</top>
@@ -408,13 +408,13 @@
 						<height>28</height>
 						<texture colordiffuse="PrimaryT" flipx="true">symbols/previous-32.png</texture>
 					</control>
-					
+
 				</control>
-			
+
 			</control>
-			
+
 		</control>
-		
+
 	</controls>
-	
+
 </window>

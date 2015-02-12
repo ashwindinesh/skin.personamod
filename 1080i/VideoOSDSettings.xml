@@ -6,7 +6,7 @@
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>
-		
+
 		<control type="image"> <!--top-->
 			<include>FullScreenDimensions</include>
 			<texture colordiffuse="Black95">backgrounds/white.png</texture>
@@ -36,7 +36,7 @@
 			<align>right</align>
 		</control>
 
-		
+
 		<control type="group">
 			<visible>!Window.IsVisible(filebrowser)</visible>
 			<animation effect="slide" start="0,0" end="0,-120" time="0" condition="Window.IsVisible(fullscreeninfo)">Conditional</animation>
@@ -102,7 +102,7 @@
 				<textureslidernib colordiffuse="TertiaryOSD">backgrounds/white.png</textureslidernib>
 				<textureslidernibfocus colordiffuse="PrimaryOSD">backgrounds/white.png</textureslidernibfocus>
 			</control>
-	
+
 			<control type="image"> <!--scrollbar arrow up-->
 				<left>430</left>
 				<top>325</top>
@@ -120,7 +120,7 @@
 				<texturesliderbackground colordiffuse="TertiaryOSD">backgrounds/white.png</texturesliderbackground>
 				<texturesliderbar colordiffuse="SecondaryOSD">backgrounds/white.png</texturesliderbar>
 			</control>
-		
+
 			<control type="image"> <!--scrollbar arrow down-->
 				<left>430</left>
 				<top>768</top>
@@ -129,7 +129,7 @@
 				<texture colordiffuse="SecondaryOSD" flipy="true">controls/scrollarrow.png</texture>
 				<visible>Control.IsVisible(60)</visible>
 			</control>
-			
+
 		</control>
 
 	</controls>

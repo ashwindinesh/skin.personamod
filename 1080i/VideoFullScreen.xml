@@ -8,12 +8,6 @@
 	<controls>
 
 		<control type="group" id="0">
-		
-			<control type="image"> <!--top-->
-				<include>FullScreenDimensions</include>
-				<texture colordiffuse="Black95">backgrounds/white.png</texture>
-				<visible>!Window.IsVisible(fullscreeninfo) + !Window.IsVisible(seekbar) + !Window.IsVisible(videoosd)</visible>
-			</control>
 
 			<control type="label" id="10">
 				<left>75</left>
@@ -38,9 +32,9 @@
 				<font>ButtonBold</font>
 				<label>-</label>
 			</control>
-  
+
 		</control>
-  
+
 	</controls>
-  
+
 </window>

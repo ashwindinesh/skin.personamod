@@ -11,13 +11,7 @@
 			<visible>![Window.IsActive(DialogSelect.xml) | Window.IsActive(SliderDialog) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
 			<left>0</left>
 			<top>0</top>
-					
-			<control type="image"> <!--bg-->
-				<include>FullScreenDimensions</include>
-				<texture colordiffuse="Black95">backgrounds/white.png</texture>
-				<visible>!Window.IsVisible(fullscreeninfo) + !Window.IsVisible(seekbar)</visible>
-			</control>
-				
+
 			<control type="group">
 				<visible>!Window.IsVisible(fullscreeninfo) + !Window.IsVisible(seekbar)</visible>
 
@@ -43,9 +37,9 @@
 					<textcolor>PrimaryT</textcolor>
 					<align>right</align>
 				</control>
-				
+
 			</control>
-				
+
 			<control type="group">
 				<top>885</top>
 				<visible>!Window.IsVisible(fullscreeninfo) + !Window.IsVisible(seekbar)</visible>
@@ -79,13 +73,13 @@
 					<font>PlotBold</font>
 					<textcolor>PrimaryOSD</textcolor>
 				</control>
-			
+
 			</control>
-		
+
 			<control type="group"> <!--progress-->
 				<top>950</top>
 				<visible>!Window.IsVisible(fullscreeninfo) + !Window.IsVisible(seekbar)</visible>
-		
+
 				<control type="progress" description="Buffer Bar">
 					<centerleft>50%</centerleft>
 					<width>1125</width>
@@ -94,7 +88,7 @@
 					<info>Player.CacheLevel</info>
 					<visible>Player.IsInternetStream</visible>
 				</control>
-  
+
 				<control type="progress" description="Progress Bar">
 					<centerleft>50%</centerleft>
 					<width>1125</width>
@@ -103,13 +97,13 @@
 					<info>Player.Progress</info>
 					<visible>true</visible>
 				</control>
-			
+
 			</control>
-			
+
 			<control type="group">
 				<centerleft>50%</centerleft>
 				<width>1125</width>
-	  
+
 				<control type="grouplist" id="100"> <!--buttons-->
 					<left>0</left>
 					<top>110r</top>
@@ -159,9 +153,9 @@
 						<label>$LOCALIZE[209]</label>
 						<onclick>PlayerControl(Next)</onclick>
 					</control>
-	  
+
 				</control>
-  
+
 				<control type="grouplist"> <!--button bg-->
 					<left>0</left>
 					<top>110r</top>
@@ -169,93 +163,93 @@
 					<itemgap>5</itemgap>
 					<width>505</width>
 					<defaultcontrol always="true">602</defaultcontrol>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/previous.png</texture>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/rewind.png</texture>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/pause.png</texture>
 						<visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding</visible>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/play.png</texture>
 						<visible>Player.Paused | Player.Forwarding | Player.Rewinding</visible>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/stop.png</texture>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/ff.png</texture>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/next.png</texture>
 					</control>
-					
+
 				</control>
-	  
+
 				<control type="grouplist">
 					<left>705</left>
 					<top>110r</top>
 					<orientation>horizontal</orientation>
 					<itemgap>5</itemgap>
 					<width>420</width>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/dvd.png</texture>
 						<animation effect="fade" start="100" end="30" time="0" condition="!VideoPlayer.HasMenu">Conditional</animation>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/subtitles.png</texture>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/videosettings.png</texture>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/audiosettings.png</texture>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/bookmark.png</texture>
 					</control>
-					
+
 				</control>
-	  
+
 				<control type="grouplist" id="101">
 					<left>705</left>
 					<top>110r</top>
@@ -299,13 +293,13 @@
 						<label>$LOCALIZE[298]</label>
 						<onclick>ActivateWindow(VideoBookmarks)</onclick>
 					</control>
-	  
+
 				</control>
-			
+
 			</control>
-  
+
 		</control>
 
 	</controls>
-  
+
 </window>
