@@ -15,7 +15,7 @@
 				<left>25</left>
 				<bottom>30</bottom>
 				<height>70</height>
-			
+
 				<control type="image"> <!--thumb-->
 					<left>50</left>
 					<width>70</width>
@@ -23,7 +23,7 @@
 					<aspectratio>scale</aspectratio>
 					<texture>$VAR[PlayerControlThumb]</texture>
 				</control>
-				
+
 				<control type="grouplist"> <!--labels-->
 					<left>130</left>
 					<centertop>50%</centertop>
@@ -63,7 +63,7 @@
 						<textcolor>PrimaryT</textcolor>
 						<align>left</align>
 					</control>
-					
+
 				</control>
 
 			</control>

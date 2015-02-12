@@ -6,9 +6,9 @@
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>
-		
-		<control type="group">		
-			
+
+		<control type="group">
+
 			<control type="image"> <!--bg-->
 				<left>0</left>
 				<top>37</top>
@@ -16,7 +16,7 @@
 				<height>68</height>
 				<texture colordiffuse="Black95">backgrounds/white.png</texture>
 				<visible>![Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsVisible(fullscreeninfo) | Window.IsVisible(videoosd) | Window.IsVisible(seekbar) | Window.IsVisible(volumebar)]</visible>
-			</control>	
+			</control>
 
 			<control type="group">
 				<top>29</top>
@@ -49,7 +49,7 @@
 				</control>
 
 			</control>
-			
+
 		</control>
 
 	</controls>

@@ -7,13 +7,13 @@
 
 	<controls>
 
-		<include>GlobalBackground</include>	
-		
+		<include>GlobalBackground</include>
+
 		<control type="label">
 			<label>$LOCALIZE[31077]</label>
 			<include>BreadcrumbLabelLeft</include>
 		</control>
-		
+
 		<control type="group"> <!--content-->
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
@@ -126,7 +126,7 @@
 				</content>
 
 			</control>
-		
+
 		</control>
 
 	</controls>

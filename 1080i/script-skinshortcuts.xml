@@ -4,22 +4,22 @@
 
 	<allowoverlay>no</allowoverlay>
 	<defaultcontrol always="true">100</defaultcontrol>
-	
+
 	<controls>
-	
+
 		<control type="group"> <!--base background-->
-			
+
 			<control type="image">
 				<texture>backgrounds/white.png</texture>
 				<visible>Skin.HasSetting(global.slideshow)</visible>
 			</control>
-		
+
 			<control type="image"> <!--global background-->
 				<include>FullscreenDimensions</include>
 				<texture>$INFO[Skin.String(background)]</texture>
 				<visible>Skin.HasSetting(global.background)</visible>
 			</control>
-				
+
 			<control type="multiimage"> <!--global slideshow-->
 				<include>FullscreenDimensions</include>
 				<timeperimage>60000</timeperimage>
@@ -28,20 +28,20 @@
 				<imagepath background="true">$INFO[Skin.String(global.slideshow)]</imagepath>
 				<visible>Skin.HasSetting(global.slideshow)</visible>
 			</control>
-		
+
 			<control type="image">
 				<texture colordiffuse="HomeBG">backgrounds/diffuse.png</texture>
 			</control>
-			
+
 		</control>
-		
+
 		<control type="group">
 			<top>-115</top>
 			<include>FadeandZoom</include>
 			<visible>!Window.IsActive(ShutdownMenu) + !Window.IsActive(contextmenu) + !Window.IsActive(filebrowser) + !Window.IsActive(virtualkeyboard) + !Window.IsVisible(selectdialog)</visible>
 
 			<control type="group" id="200">
-		
+
 				<control type="label"> <!--header-->
 					<left>75</left>
 					<top>240</top>
@@ -62,9 +62,9 @@
 					<preloaditems>2</preloaditems>
 					<pagecontrol>260</pagecontrol>
 					<scrolltime>0</scrolltime>
-					
+
 					<itemlayout width="600" height="65">
-		
+
 						<control type="label"> <!--label-->
 							<left>20</left>
 							<width>460</width>
@@ -81,11 +81,11 @@
 							<font>ButtonBoldSmall</font>
 							<scroll>false</scroll>
 						</control>
-						
+
 					</itemlayout>
-					
+
 					<focusedlayout width="500" height="65">
-		
+
 						<control type="image"> <!--focus bg-->
 							<left>0</left>
 							<top>0</top>
@@ -94,7 +94,7 @@
 							<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							<animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(211)">Conditional</animation>
 						</control>
-		
+
 						<control type="label"> <!--label-->
 							<left>20</left>
 							<width>460</width>
@@ -111,14 +111,14 @@
 							<font>ButtonBoldSmall</font>
 							<scroll>false</scroll>
 						</control>
-						
+
 					</focusedlayout>
-					
+
 				</control>
-				
+
 				<control type="group">
 					<left>0</left>
-		
+
 					<control type="image"> <!--scrollbar arrow up-->
 						<left>45</left>
 						<top>315</top>
@@ -136,7 +136,7 @@
 						<onright>211</onright>
 						<showonepage>false</showonepage>
 					</control>
-				
+
 					<control type="image"> <!--scrollbar arrow down-->
 						<left>45</left>
 						<top>1018</top>
@@ -145,9 +145,9 @@
 						<texture colordiffuse="PrimaryM" flipy="true">controls/scrollarrow.png</texture>
 						<visible>Control.IsVisible(260)</visible>
 					</control>
-					
+
 				</control>
-				
+
 			</control>
 
 			<control type="grouplist" id="300">
@@ -162,13 +162,13 @@
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<scrolltime>0</scrolltime>
-				
+
 				<control type="button" id="301"> <!--new shortcut-->
 					<include>OptionButtonBigger</include>
 					<onclick>noop</onclick>
 					<label>$ADDON[script.skinshortcuts 32000]</label>
 				</control>
-				
+
 				<control type="button" id="302"> <!--delete shortcut-->
 					<include>OptionButtonBigger</include>
 					<onclick>noop</onclick>
@@ -180,7 +180,7 @@
 					<onclick>noop</onclick>
 					<label>$ADDON[script.skinshortcuts 32002]</label>
 				</control>
-				
+
 				<control type="button" id="304"> <!--move down-->
 					<include>OptionButtonBigger</include>
 					<onclick>noop</onclick>
@@ -192,13 +192,13 @@
 					<onclick>noop</onclick>
 					<label>$ADDON[script.skinshortcuts 32025]</label>
 				</control>
-				
+
 				<control type="button" id="306"> <!--edit thumbnail-->
 					<include>OptionButtonBigger</include>
 					<onclick>noop</onclick>
 					<label>$ADDON[script.skinshortcuts 32026]</label>
 				</control>
-				
+
 				<control type="button" id="307"> <!--edit action-->
 					<include>OptionButtonBigger</include>
 					<onclick>noop</onclick>
@@ -216,7 +216,7 @@
 					<onclick>noop</onclick>
 					<label>$ADDON[script.skinshortcuts 32072]</label>
 				</control>
-				
+
 			</control>
 
 			<control type="group" id="100">
@@ -229,11 +229,11 @@
 					<width>600</width>
 					<font>MenuTitle</font>
 				</control>
-				
+
 				<control type="group">
 					<left>810</left>
 					<top>40</top>
-				
+
 					<control type="button" id="102">
 						<left>420</left>
 						<top>200</top>
@@ -246,7 +246,7 @@
 						<onright>103</onright>
 						<ondown>111</ondown>
 					</control>
-					
+
 					<control type="button" id="103">
 						<left>450</left>
 						<top>200</top>
@@ -258,7 +258,7 @@
 						<onleft>102</onleft>
 						<ondown>111</ondown>
 					</control>
-					
+
 				</control>
 
 				<control type="list" id="111"> <!--List of available plugins -->
@@ -274,9 +274,9 @@
 					<viewtype label="535">list</viewtype>
 					<preloaditems>2</preloaditems>
 					<scrolltime>0</scrolltime>
-					
+
 					<itemlayout width="600" height="65">
-		
+
 						<control type="label"> <!--label-->
 							<left>20</left>
 							<width>460</width>
@@ -293,11 +293,11 @@
 							<font>ButtonBoldSmall</font>
 							<scroll>false</scroll>
 						</control>
-						
+
 					</itemlayout>
-					
+
 					<focusedlayout width="500" height="65">
-		
+
 						<control type="image"> <!--focus bg-->
 							<left>0</left>
 							<top>0</top>
@@ -306,7 +306,7 @@
 							<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							<visible>Control.HasFocus(111)</visible>
 						</control>
-		
+
 						<control type="label"> <!--label-->
 							<left>20</left>
 							<width>460</width>
@@ -323,13 +323,13 @@
 							<font>ButtonBoldSmall</font>
 							<scroll>false</scroll>
 						</control>
-						
+
 					</focusedlayout>
-					
+
 				</control>
-				
+
 				<control type="group">
-		
+
 					<control type="image"> <!--scrollbar arrow up-->
 						<right>-30</right>
 						<top>315</top>
@@ -347,7 +347,7 @@
 						<onright>111</onright>
 						<showonepage>false</showonepage>
 					</control>
-				
+
 					<control type="image"> <!--scrollbar arrow down-->
 						<right>-30</right>
 						<top>1018</top>
@@ -356,13 +356,13 @@
 						<texture colordiffuse="PrimaryM" flipy="true">controls/scrollarrow.png</texture>
 						<visible>Control.IsVisible(160)</visible>
 					</control>
-					
+
 				</control>
-				
+
 			</control>
-			
+
 		</control>
-		
+
 	</controls>
-	
+
 </window>

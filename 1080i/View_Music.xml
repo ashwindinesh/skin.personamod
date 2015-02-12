@@ -3,11 +3,11 @@
 <includes>
 
 	<include name="View_50_List_Music">
-		
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
-		
+
 			<control type="list" id="50">
 				<left>75</left>
 				<top>250</top>
@@ -86,14 +86,14 @@
 						<label>$INFO[ListItem.Label2]</label>
 						<visible>Container.Content(Songs)</visible>
 					</control>
-					
+
 				</focusedlayout>
-				
+
 			</control>
-			
+
 			<control type="group"> <!--poster/info-->
 				<visible>Control.IsVisible(50)</visible>
-				
+
 				<control type="image"> <!--poster-->
 					<right>75</right>
 					<top>250</top>
@@ -105,7 +105,7 @@
 					<visible>!StringCompare(Container.FolderPath,musicdb://)</visible>
 					<visible>![Container.Content(Artists) + Skin.HasSetting(ListArtistInfo)] + ![Container.Content(Albums) + Skin.HasSetting(ListAlbumInfo)]</visible>
 				</control>
-				
+
 				<control type="group"> <!--artist/album info-->
 					<top>250</top>
 					<height>680</height>
@@ -119,7 +119,7 @@
 						<height>670</height>
 						<texture colordiffuse="TertiaryMT">backgrounds/white.png</texture>
 					</control>
-				
+
 					<control type="image"> <!--thumb-->
 						<right>75</right>
 						<top>0</top>
@@ -130,7 +130,7 @@
 						<include>PosterMenuFade</include>
 						<visible>IsEmpty(ListItem.Thumb)</visible>
 					</control>
-				
+
 					<control type="image"> <!--thumb-->
 						<right>75</right>
 						<top>0</top>
@@ -140,7 +140,7 @@
 						<aspectratio aligny="center">scale</aspectratio>
 						<include>PosterMenuFade</include>
 					</control>
-					
+
 					<control type="textbox"> <!--artist/album info-->
 						<right>90</right>
 						<top>443</top>
@@ -151,8 +151,8 @@
 						<textcolor>PrimaryT</textcolor>
 						<label fallback="19055">$VAR[ListMusicInfo]</label>
 						<autoscroll delay="6000" time="2000" repeat="10000"/>
-					</control> 
-					
+					</control>
+
 					<control type="image"> <!--background base-->
 						<right>75</right>
 						<top>665</top>
@@ -160,9 +160,9 @@
 						<height>5</height>
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 					</control>
-					
+
 				</control>
-					
+
 				<control type="group">
 					<visible>Control.IsVisible(50)</visible>
 
@@ -175,21 +175,21 @@
 						<showonepage>false</showonepage>
 						<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 					</control>
-					
+
 				</control>
-				
+
 			</control>
-		
+
 		</control>
 
 	</include>
-	
+
 	<include name="View_51_Poster_Music">
-	
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
-		
+
 			<control type="list" id="51">
 				<left>75</left>
 				<top>325</top>
@@ -208,7 +208,7 @@
 				<visible>Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)</visible>
 
 				<itemlayout height="700" width="445">
-				
+
 					<control type="group">
 						<top>63</top>
 
@@ -239,7 +239,7 @@
 							<aspectratio>scale</aspectratio>
 							<texture background="true">$INFO[ListItem.Thumb]</texture>
 						</control>
-						
+
 						<control type="image"> <!--label bg-->
 							<left>0</left>
 							<top>430</top>
@@ -257,13 +257,13 @@
 							<textcolor>PrimaryT</textcolor>
 							<scroll>false</scroll>
 						</control>
-						
+
 					</control>
 
 				</itemlayout>
 
 				<focusedlayout height="700" width="445">
-				
+
 					<control type="group">
 						<top>63</top>
 
@@ -293,7 +293,7 @@
 							<aspectratio>scale</aspectratio>
 							<texture background="true">$INFO[ListItem.Thumb]</texture>
 						</control>
-						
+
 						<control type="image"> <!--label bg-->
 							<left>0</left>
 							<top>430</top>
@@ -313,8 +313,8 @@
 							<selectedcolor>white</selectedcolor>
 							<autoscroll delay="2000" time="1750" repeat="3000"/>
 						</control>
-						
-							
+
+
 						<control type="label"> <!--base info-->
 							<left>15</left>
 							<top>500</top>
@@ -325,13 +325,13 @@
 							<selectedcolor>white</selectedcolor>
 							<label>$VAR[MusicPosterLabel]</label>
 						</control>
-						
+
 					</control>
 
 				</focusedlayout>
-				
+
 			</control>
-			
+
 			<control type="group">
 				<visible>Control.IsVisible(51)</visible>
 
@@ -346,19 +346,19 @@
 					<showonepage>false</showonepage>
 					<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 				</control>
-				
+
 			</control>
-		
+
 		</control>
-	
+
 	</include>
-	
+
 	<include name="View_52_Landscape_Music">
-	
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
-		
+
 			<control type="list" id="52">
 				<left>75</left>
 				<top>235</top>
@@ -413,7 +413,7 @@
 						<textcolor>PrimaryT</textcolor>
 						<autoscroll>false</autoscroll>
 					</control>
-					
+
 					<control type="textbox"> <!--plot-->
 						<left>15</left>
 						<top>503</top>
@@ -425,8 +425,8 @@
 						<label fallback="31075">$VAR[MusicInfo]</label>
 						<autoscroll>false</autoscroll>
 						<visible>!StringCompare(ListItem.Label,* All Albums)</visible>
-					</control> 
-							
+					</control>
+
 					<control type="label"> <!--base info-->
 						<left>15</left>
 						<top>648</top>
@@ -436,7 +436,7 @@
 						<selectedcolor>PrimaryT</selectedcolor>
 						<label>$VAR[MusicPosterLabel]</label>
 					</control>
-					
+
 				</itemlayout>
 
 				<focusedlayout height="800" width="515">
@@ -476,7 +476,7 @@
 						<textcolor>white</textcolor>
 						<autoscroll>false</autoscroll>
 					</control>
-					
+
 					<control type="textbox"> <!--plot-->
 						<left>15</left>
 						<top>503</top>
@@ -488,8 +488,8 @@
 						<label fallback="31075">$VAR[MusicInfo]</label>
 						<autoscroll>false</autoscroll>
 						<visible>!StringCompare(ListItem.Label,* All Albums)</visible>
-					</control> 
-					
+					</control>
+
 					<control type="label"> <!--base info-->
 						<left>72</left>
 						<top>648</top>
@@ -500,7 +500,7 @@
 						<label>$INFO[ListItem.Premiered, • ,]$INFO[ListItem.Duration, • , [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]]</label>
 						<visible>Container.Content(Episodes)</visible>
 					</control>
-					
+
 					<control type="label"> <!--base info-->
 						<left>15</left>
 						<top>648</top>
@@ -510,11 +510,11 @@
 						<selectedcolor>PrimaryT</selectedcolor>
 						<label>$VAR[MusicPosterLabel]</label>
 					</control>
-					
+
 				</focusedlayout>
-				
+
 			</control>
-			
+
 			<control type="group">
 				<visible>Control.IsVisible(52)</visible>
 
@@ -529,11 +529,11 @@
 					<showonepage>false</showonepage>
 					<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 				</control>
-				
+
 			</control>
-			
+
 		</control>
-	
+
 	</include>
 
 </includes>

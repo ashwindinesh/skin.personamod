@@ -5,7 +5,7 @@
 	<defaultcontrol always="true">20</defaultcontrol>
 
 	<controls>
-		
+
 		<include>DialogBG</include>
 
 		<control type="group">
@@ -104,7 +104,7 @@
 				</focusedlayout>
 
 			</control>
-		
+
 			<control type="image"> <!--scrollbar arrow up-->
 				<left>430</left>
 				<top>315</top>
@@ -120,7 +120,7 @@
 				<height>485</height>
 				<showonepage>false</showonepage>
 			</control>
-		
+
 			<control type="image"> <!--scrollbar arrow down-->
 				<left>430</left>
 				<top>823</top>

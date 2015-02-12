@@ -2,7 +2,7 @@
 <includes>
 
 	<include name="View_50_List_Addons">
-		
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
@@ -69,15 +69,15 @@
 						<include>ListLabel3F</include>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
-					
+
 				</focusedlayout>
 
 			</control>
-			
+
 			<control type="group"> <!--poster/info-->
 				<visible>Control.IsVisible(50)</visible>
 				<animation effect="slide" start="0,0" end="0,-20" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
-				
+
 				<control type="image"> <!--poster-->
 					<right>75</right>
 					<top>250</top>
@@ -87,9 +87,9 @@
 					<aspectratio aligny="center">keep</aspectratio>
 					<include>PosterMenuFade</include>
 				</control>
-			
+
 			</control>
-				
+
 			<control type="group">
 				<visible>Control.IsVisible(50)</visible>
 
@@ -102,15 +102,15 @@
 					<showonepage>false</showonepage>
 					<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 				</control>
-				
+
 			</control>
-		
+
 		</control>
 
 	</include>
 
 	<include name="View_501_List_Advanced_Launcher">
-		
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
@@ -177,14 +177,14 @@
 						<include>ListLabel3F</include>
 						<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Genre,, • ]$INFO[ListItem.Studio]</label>
 					</control>
-					
+
 				</focusedlayout>
 
 			</control>
-			
+
 			<control type="group"> <!--thumb/info-->
 				<visible>Control.IsVisible(501)</visible>
-				
+
 				<control type="image"> <!--poster-->
 					<right>75</right>
 					<top>250</top>
@@ -195,7 +195,7 @@
 					<include>PosterMenuFade</include>
 					<visible>!Skin.HasSetting(ListGamePlot)</visible>
 				</control>
-				
+
 				<control type="group"> <!--artist/album info-->
 					<top>250</top>
 					<height>680</height>
@@ -208,7 +208,7 @@
 						<height>670</height>
 						<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 					</control>
-				
+
 					<control type="image"> <!--thumb-->
 						<right>75</right>
 						<top>0</top>
@@ -217,7 +217,7 @@
 						<texture colordiffuse="SecondaryMT">backgrounds/white.png</texture>
 						<include>PosterMenuFade</include>
 					</control>
-				
+
 					<control type="image"> <!--thumb-->
 						<right>75</right>
 						<top>0</top>
@@ -228,7 +228,7 @@
 						<include>PosterMenuFade</include>
 						<visible>IsEmpty(ListItem.Thumb)</visible>
 					</control>
-				
+
 					<control type="image"> <!--thumb-->
 						<right>75</right>
 						<top>0</top>
@@ -238,7 +238,7 @@
 						<aspectratio aligny="center">scale</aspectratio>
 						<include>PosterMenuFade</include>
 					</control>
-					
+
 					<control type="textbox"> <!--game plot-->
 						<right>90</right>
 						<top>443</top>
@@ -249,8 +249,8 @@
 						<textcolor>PrimaryT</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll delay="6000" time="2000" repeat="10000"/>
-					</control> 
-					
+					</control>
+
 					<control type="image"> <!--background base-->
 						<right>75</right>
 						<top>665</top>
@@ -258,11 +258,11 @@
 						<height>5</height>
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 					</control>
-					
+
 				</control>
-				
+
 			</control>
-				
+
 			<control type="group">
 				<visible>Control.IsVisible(501)</visible>
 
@@ -275,19 +275,19 @@
 					<showonepage>false</showonepage>
 					<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 				</control>
-				
+
 			</control>
-		
+
 		</control>
 
 	</include>
-	
+
 	<include name="View_502_Poster_Advanced_Launcher">
-	
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
-		
+
 			<control type="list" id="502">
 				<left>75</left>
 				<top>325</top>
@@ -306,7 +306,7 @@
 				<visible>SubString(Container.FolderPath,plugin.program.advanced.launcher)</visible>
 
 				<itemlayout height="700" width="345">
-				
+
 					<control type="group">
 						<top>225</top>
 
@@ -318,7 +318,7 @@
 							<aspectratio aligny="bottom">keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Thumb]</texture>
 						</control>
-						
+
 						<control type="image"> <!--label bg-->
 							<left>0</left>
 							<top>268</top>
@@ -337,8 +337,8 @@
 							<textcolor>PrimaryT</textcolor>
 							<selectedcolor>$INFO[Skin.String(MainColour)]</selectedcolor>
 							<scroll>false</scroll>
-						</control>								
-							
+						</control>
+
 						<control type="label"> <!--base info-->
 							<left>15</left>
 							<top>338</top>
@@ -350,13 +350,13 @@
 							<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Genre,, • ]$INFO[ListItem.Studio]</label>
 							<scroll>false</scroll>
 						</control>
-						
+
 					</control>
 
 				</itemlayout>
 
 				<focusedlayout height="700" width="345">
-				
+
 					<control type="group">
 						<top>225</top>
 
@@ -368,7 +368,7 @@
 							<aspectratio aligny="bottom">keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Thumb]</texture>
 						</control>
-						
+
 						<control type="image"> <!--label bg-->
 							<left>0</left>
 							<top>268</top>
@@ -387,8 +387,8 @@
 							<textcolor>white</textcolor>
 							<selectedcolor>white</selectedcolor>
 							<autoscroll delay="2000" time="1750" repeat="3000"/>
-						</control>								
-							
+						</control>
+
 						<control type="label"> <!--base info-->
 							<left>15</left>
 							<top>338</top>
@@ -399,13 +399,13 @@
 							<selectedcolor>white</selectedcolor>
 							<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Genre,, • ]$INFO[ListItem.Studio]</label>
 						</control>
-						
+
 					</control>
 
 				</focusedlayout>
-				
+
 			</control>
-			
+
 			<control type="group">
 				<visible>Control.IsVisible(502)</visible>
 
@@ -420,19 +420,19 @@
 					<showonepage>false</showonepage>
 					<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 				</control>
-				
+
 			</control>
-		
+
 		</control>
-	
+
 	</include>
-	
+
 	<include name="View_503_Slideshow_Advanced_Launcher">
-	
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
-		
+
 			<control type="wraplist" id="503">
 				<left>210</left>
 				<top>220</top>
@@ -458,7 +458,7 @@
 						<height>730</height>
 						<aspectratio>scale</aspectratio>
 						<texture>special://skin/backgrounds/games.jpg</texture>
-					</control>	
+					</control>
 
 					<control type="image"> <!--fanart-->
 						<left>0</left>
@@ -467,7 +467,7 @@
 						<height>730</height>
 						<aspectratio>scale</aspectratio>
 						<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-					</control>	
+					</control>
 
 				</itemlayout>
 
@@ -480,7 +480,7 @@
 						<height>730</height>
 						<aspectratio>scale</aspectratio>
 						<texture>special://skin/backgrounds/games.jpg</texture>
-					</control>	
+					</control>
 
 					<control type="image"> <!--fanart-->
 						<left>0</left>
@@ -489,12 +489,12 @@
 						<height>730</height>
 						<aspectratio>scale</aspectratio>
 						<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-					</control>	
+					</control>
 
 				</focusedlayout>
-				
+
 			</control>
-			
+
 			<control type="group"> <!--info-->
 				<left>210</left>
 				<top>250</top>
@@ -531,18 +531,18 @@
 					<height>10</height>
 					<texture colordiffuse="SecondaryM">backgrounds/white.png</texture>
 				</control>
-					
+
 				<control type="image"> <!--label bg-->
 					<left>0</left>
 					<top>630</top>
 					<width>1500</width>
 					<height>70</height>
 					<texture colordiffuse="Black95">backgrounds/white.png</texture>
-					
+
 					<animation type="Conditional" condition="System.IdleTime(2)" reversible="true" loop="false">
 						<effect type="zoom" end="0,450,1500,250" time="250" />
 					</animation>
-					
+
 				</control>
 
 				<control type="label"> <!--label-->
@@ -555,13 +555,13 @@
 					<textcolor>white</textcolor>
 					<selectedcolor>white</selectedcolor>
 					<scroll>false</scroll>
-	
+
 					<animation type="Conditional" condition="System.IdleTime(2)" reversible="true" loop="false">
 						<effect type="slide" start="0,0" end="0,-180" time="250" />
 					</animation>
-		
-				</control>							
-							
+
+				</control>
+
 				<control type="label"> <!--base info-->
 					<left>15</left>
 					<top>500</top>
@@ -573,13 +573,13 @@
 					<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Genre,, • ]$INFO[ListItem.Studio]</label>
 					<scroll>false</scroll>
 					<visible>System.IdleTime(2)</visible>
-	
+
 					<animation type="Visible">
 						<effect type="fade" start="0" end="100" time="250" delay="250" />
 					</animation>
-					
+
 				</control>
-					
+
 				<control type="textbox"> <!--game plot-->
 					<left>15</left>
 					<top>545</top>
@@ -591,15 +591,15 @@
 					<label>$INFO[ListItem.Plot]</label>
 					<autoscroll delay="10000" time="4000" repeat="18000"/>
 					<visible>System.IdleTime(2)</visible>
-	
+
 					<animation type="Visible">
 						<effect type="fade" start="0" end="100" time="250" delay="250" />
 					</animation>
-					
-				</control> 
-					
+
+				</control>
+
 			</control>
-			
+
 			<control type="group">
 				<visible>Control.IsVisible(503)</visible>
 
@@ -615,19 +615,19 @@
 					<orientation>horizontal</orientation>
 					<showonepage>false</showonepage>
 				</control>
-				
+
 			</control>
-		
+
 		</control>
-	
+
 	</include>
-	
+
 	<include name="View_504_Landscape_Advanced_Launcher">
-	
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
-		
+
 			<control type="list" id="504">
 				<left>75</left>
 				<top>235</top>
@@ -644,7 +644,7 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="quadratic" easing="out">0</scrolltime>
 				<visible>SubString(Container.FolderPath,plugin.program.advanced.launcher)</visible>
-				
+
 				<itemlayout height="800" width="515">
 
 					<control type="image"> <!--background-->
@@ -682,7 +682,7 @@
 						<textcolor>PrimaryT</textcolor>
 						<autoscroll>false</autoscroll>
 					</control>
-					
+
 					<control type="textbox"> <!--plot-->
 						<left>15</left>
 						<top>428</top>
@@ -693,8 +693,8 @@
 						<textcolor>PrimaryT</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll>false</autoscroll>
-					</control> 
-					
+					</control>
+
 					<control type="label"> <!--base info-->
 						<left>15</left>
 						<top>648</top>
@@ -704,11 +704,11 @@
 						<selectedcolor>PrimaryT</selectedcolor>
 						<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Genre,, • ]$INFO[ListItem.Studio]</label>
 					</control>
-					
+
 				</itemlayout>
 
 				<focusedlayout height="800" width="515">
-				
+
 					<control type="image"> <!--background-->
 						<left>0</left>
 						<top>0</top>
@@ -745,7 +745,7 @@
 						<selectedcolor>white</selectedcolor>
 						<autoscroll delay="3000" time="2500" repeat="3000"/>
 					</control>
-					
+
 					<control type="textbox"> <!--plot-->
 						<left>15</left>
 						<top>428</top>
@@ -756,8 +756,8 @@
 						<textcolor>PrimaryT</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll delay="10000" time="2500" repeat="10000"/>
-					</control> 
-					
+					</control>
+
 					<control type="label"> <!--base info-->
 						<left>15</left>
 						<top>648</top>
@@ -767,11 +767,11 @@
 						<selectedcolor>PrimaryT</selectedcolor>
 						<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Genre,, • ]$INFO[ListItem.Studio]</label>
 					</control>
-					
+
 				</focusedlayout>
-				
+
 			</control>
-			
+
 			<control type="group">
 				<visible>Control.IsVisible(504)</visible>
 
@@ -786,11 +786,11 @@
 					<showonepage>false</showonepage>
 					<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 				</control>
-				
+
 			</control>
-			
+
 		</control>
-	
+
 	</include>
 
 </includes>

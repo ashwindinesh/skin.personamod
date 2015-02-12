@@ -4,7 +4,7 @@
 	<defaultcontrol always="true">61</defaultcontrol>
 
 	<controls>
-		
+
 		<include>DialogBG</include>
 
 		<control type="group">
@@ -29,7 +29,7 @@
 				<autoscroll>false</autoscroll>
 				<pagecontrol>61</pagecontrol>
 			</control>
-		
+
 			<control type="image"> <!--scrollbar arrow up-->
 				<left>370</left>
 				<top>190</top>
@@ -47,7 +47,7 @@
 				<onright>9000</onright>
 				<showonepage>false</showonepage>
 			</control>
-			
+
 			<control type="image"> <!--scrollbar arrow down-->
 				<left>370</left>
 				<top>960</top>

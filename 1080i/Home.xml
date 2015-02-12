@@ -4,19 +4,19 @@
 
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	
+
 	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=50&amp;levels=0)</onload>
 
 	<controls>
-	
-		<!--loading stuff-->		
+
+		<!--loading stuff-->
 		<!--control type="image">
 			<include>FullscreenDimensions</include>
 			<texture>backgrounds/white.png</texture>
 		</control>
-		
+
 		<control type="group">
-	
+
 			<control type="label">
 				<centerleft>50%</centerleft>
 				<top>580</top>
@@ -26,7 +26,7 @@
 				<textcolor>LoginT</textcolor>
 				<align>center</align>
 			</control>
-		
+
 			<control type="label">
 				<centerleft>50%</centerleft>
 				<top>650</top>
@@ -36,11 +36,11 @@
 				<textcolor>LoginT</textcolor>
 				<align>center</align>
 			</control>
-			
+
 			<control type="group">
 				<left>810</left>
 				<top>300</top>
-				
+
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -48,7 +48,7 @@
 					<height>300</height>
 					<texture>logo/1.png</texture>
 				</control>
-					
+
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -57,7 +57,7 @@
 					<texture>logo/2.png</texture>
 					<animation effect="rotate" start="0" end="-72" center="auto" time="2000" acceleration="0" pulse="true" delay="500" condition="true">conditional</animation>
 				</control>
-					
+
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -66,7 +66,7 @@
 					<texture>logo/3.png</texture>
 					<animation effect="rotate" start="0" end="-144" center="auto" time="2000" acceleration="0" pulse="true" delay="500" condition="true">conditional</animation>
 				</control>
-					
+
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -75,7 +75,7 @@
 					<texture>logo/4.png</texture>
 					<animation effect="rotate" start="0" end="-216" center="auto" time="2000" acceleration="0" pulse="true" delay="500" condition="true">conditional</animation>
 				</control>
-					
+
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -84,32 +84,32 @@
 					<texture>logo/5.png</texture>
 					<animation effect="rotate" start="0" end="-288" center="auto" time="2000" acceleration="0" pulse="true" delay="500" condition="true">conditional</animation>
 				</control>
-				
+
 			</control>
-			
+
 		</control-->
-		
+
 		<control type="group"> <!--content-->
-	
+
 			<!--animation type="WindowOpen" condition="Window.Previous(Startup)">
 				<effect type="fade" start="0" end="100" time="0" delay="5000" />
 			</animation-->
-			
+
 			<control type="group"> <!--backgrounds-->
-	
+
 				<control type="group"> <!--base background-->
-				
+
 					<control type="image">
 						<texture>backgrounds/white.png</texture>
 						<visible>Skin.HasSetting(global.slideshow)</visible>
 					</control>
-				
+
 					<control type="image"> <!--global background-->
 						<include>FullscreenDimensions</include>
 						<texture>$INFO[Skin.String(background)]</texture>
 						<visible>Skin.HasSetting(global.background)</visible>
 					</control>
-						
+
 					<control type="multiimage"> <!--global slideshow-->
 						<include>FullscreenDimensions</include>
 						<timeperimage>60000</timeperimage>
@@ -118,7 +118,7 @@
 						<imagepath background="true">$INFO[Skin.String(global.slideshow)]</imagepath>
 						<visible>Skin.HasSetting(global.slideshow)</visible>
 					</control>
-					
+
 				</control>
 
 				<!--control type="image"> <!--home fanart-->
@@ -165,11 +165,11 @@
 					<animation effect="fade" start="0" end="100" time="250">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="250">Hidden</animation>
 				</control>
-				
+
 				<control type="image">
 					<texture colordiffuse="HomeBG">backgrounds/diffuse.png</texture>
 				</control>
-			
+
 			</control>
 
 			<include>GlobalClock</include>
@@ -187,31 +187,31 @@
 			<include condition="Skin.HasSetting(recent.added.albums.widget.1) | Skin.HasSetting(recent.added.albums.widget.2)">RecentAddedAlbums</include>
 			<include condition="Skin.HasSetting(random.albums.widget.1) | Skin.HasSetting(random.albums.widget.2)">RandomAlbums</include>
 			<include>Games</include>
-			
+
 			<control type="group">
 				<top>170</top>
 				<height>860</height>
 				<width>1920</width>
 				<include>ViewAnimation</include>
 				<include>HiddenByMenu</include>
-				
-				
+
+
 				<!------------------------>
 				<!---------menus---------->
 				<!------------------------>
-				
+
 				<control type="group">
-				
+
 					<control type="label"> <!--label-->
 						<left>75</left>
 						<width>1000</width>
 						<font>HomeHeader</font>
 						<label>31087</label>
 					</control>
-					
+
 					<control type="group"> <!--arrows-->
 						<visible>IntegerGreaterThan(Container(50).NumItems,8)</visible>
-						
+
 						<control type="image" id="901"> <!--left arrow-->
 							<left>40</left>
 							<top>94</top>
@@ -221,7 +221,7 @@
 							<visible>Control.HasFocus(50)</visible>
 							<animation effect="zoom" start="90" end="110" center="auto" time="400" pulse="true" condition="true">Conditional</animation>
 						</control>
-							
+
 						<control type="image" id="901"> <!--right arrow-->
 							<right>40</right>
 							<top>94</top>
@@ -231,7 +231,7 @@
 							<visible>Control.HasFocus(50)</visible>
 							<animation effect="zoom" start="90" end="110" center="auto" time="400" pulse="true" condition="true">Conditional</animation>
 						</control>
-							
+
 						<control type="image" id="901"> <!--left arrow-->
 							<left>40</left>
 							<top>94</top>
@@ -241,7 +241,7 @@
 							<visible>!Control.HasFocus(50)</visible>
 							<animation effect="fade" start="100" end="30" time="0" condition="true">Conditional</animation>
 						</control>
-							
+
 						<control type="image" id="901"> <!--right arrow-->
 							<right>40</right>
 							<top>94</top>
@@ -251,7 +251,7 @@
 							<visible>!Control.HasFocus(50)</visible>
 							<animation effect="fade" start="100" end="30" time="0" condition="true">Conditional</animation>
 						</control>
-						
+
 					</control>
 
 					<control type="list" id="50"> <!--main menu-->
@@ -266,7 +266,7 @@
 						<onright>50</onright>
 						<orientation>horizontal</orientation>
 						<scrolltime tween="quadratic" easing="out">0</scrolltime>
-					
+
 						<itemlayout width="222" height="200">
 
 							<control type="image"> <!--background-->
@@ -274,7 +274,7 @@
 								<height>90</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-				
+
 							<control type="label">
 								<left>107</left>
 								<top>13</top>
@@ -283,9 +283,9 @@
 								<align>center</align>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
-					
+
 						</itemlayout>
-				
+
 						<focusedlayout width="222" height="200">
 
 							<control type="image"> <!--background-->
@@ -301,7 +301,7 @@
 								<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 								<visible>Control.HasFocus(50)</visible>
 							</control>
-				
+
 							<control type="label">
 								<left>107</left>
 								<top>13</top>
@@ -312,7 +312,7 @@
 								<label>$INFO[ListItem.Label]</label>
 								<visible>!Control.HasFocus(50)</visible>
 							</control>
-				
+
 							<control type="label">
 								<left>107</left>
 								<top>13</top>
@@ -323,17 +323,17 @@
 								<label>$INFO[ListItem.Label]</label>
 								<visible>Control.HasFocus(50)</visible>
 							</control>
-					
+
 						</focusedlayout>
 
 						<content>
-						
+
 						<include>skinshortcuts-mainmenu</include>
-							
+
 						</content>
 
 					</control>
-				
+
 					<control type="label"> <!--label-->
 						<left>75</left>
 						<top>175</top>
@@ -359,7 +359,7 @@
 						<onback>50</onback>
 						<orientation>vertical</orientation>
 						<scrolltime tween="quadratic" easing="out">0</scrolltime>
-					
+
 						<itemlayout width="300" height="78">
 
 							<control type="image"> <!--background-->
@@ -367,7 +367,7 @@
 								<height>70</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-				
+
 							<control type="label">
 								<left>25</left>
 								<top>3</top>
@@ -377,9 +377,9 @@
 								<label>$INFO[ListItem.Label]</label>
 								<scroll>false</scroll>
 							</control>
-					
+
 						</itemlayout>
-				
+
 						<focusedlayout width="300" height="78">
 
 							<control type="image"> <!--background-->
@@ -395,7 +395,7 @@
 								<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 								<visible>Control.HasFocus(51)</visible>
 							</control>
-				
+
 							<control type="label">
 								<left>25</left>
 								<top>3</top>
@@ -406,7 +406,7 @@
 								<label>$INFO[ListItem.Label]</label>
 								<visible>!Control.HasFocus(51)</visible>
 							</control>
-				
+
 							<control type="label">
 								<left>25</left>
 								<top>3</top>
@@ -417,32 +417,32 @@
 								<label>$INFO[ListItem.Label]</label>
 								<visible>Control.HasFocus(51)</visible>
 							</control>
-					
+
 						</focusedlayout>
 
 						<content>
 
 						<include>skinshortcuts-submenu</include>
-							
+
 						</content>
 
 					</control>
-					
+
 				</control>
-				
-				
+
+
 				<!------------------------>
 				<!------home content------>
 				<!------------------------>
-				
+
 				<control type="group">
 					<top>1200</top>
 					<animation effect="slide" start="0,0" end="0,-1000" time="0" condition="StringCompare(Container(50).ListItem.Property(defaultID),home)">Conditional</animation>
-				
+
 					<control type="group"> <!--widget 1-->
 						<left>245</left>
 						<visible>false</visible>
-					
+
 						<control type="label"> <!--label-->
 							<left>0</left>
 							<include>Widget1Title</include>
@@ -462,7 +462,7 @@
 							<orientation>vertical</orientation>
 							<preloaditems>2</preloaditems>
 							<scrolltime tween="quadratic" easing="out">0</scrolltime>
-											
+
 							<itemlayout width="967" height="538">
 
 								<control type="image"> <!--bg-->
@@ -482,14 +482,14 @@
 									<aspectratio>scale</aspectratio>
 									<texture background="true">$INFO[ListItem.Property(Fanart)]</texture>
 								</control>
-			
+
 								<control type="image"> <!--label bg-->
 									<left>0</left>
 									<top>383</top>
 									<width>752</width>
 									<height>55</height>
 									<texture colordiffuse="Black95">backgrounds/white.png</texture>
-										
+
 								</control>
 
 								<control type="label"> <!--label-->
@@ -503,7 +503,7 @@
 									<scroll>false</scroll>
 									<label>$INFO[ListItem.Label]$INFO[ListItem.Property(showtitle), (, - ]$INFO[ListItem.Property(season)]$INFO[ListItem.Property(episode),x,)]</label>
 								</control>
-						
+
 							</itemlayout>
 
 							<focusedlayout width="967" height="538">
@@ -525,14 +525,14 @@
 									<aspectratio>scale</aspectratio>
 									<texture background="true">$INFO[ListItem.Property(Fanart)]</texture>
 								</control>
-			
+
 								<control type="image"> <!--label bg-->
 									<left>0</left>
 									<top>348</top>
 									<width>752</width>
 									<height>90</height>
 									<texture colordiffuse="Black95">backgrounds/white.png</texture>
-										
+
 								</control>
 
 								<control type="label"> <!--label-->
@@ -546,10 +546,10 @@
 									<scroll>false</scroll>
 									<label>$INFO[ListItem.Label]$INFO[ListItem.Property(showtitle), (, - ]$INFO[ListItem.Property(season)]$INFO[ListItem.Property(episode),x,)]</label>
 								</control>
-				
+
 								<control type="group"> <!--base info-->
 									<top>-180</top>
-										
+
 									<control type="image"> <!--star-->
 										<left>13</left>
 										<top>578</top>
@@ -558,7 +558,7 @@
 										<texture>symbols/infostar.png</texture>
 										<aspectratio>keep</aspectratio>
 									</control>
-									
+
 									<control type="label"> <!--base info-->
 										<left>40</left>
 										<top>565</top>
@@ -570,7 +570,7 @@
 										<label fallback="NR">$INFO[ListItem.Property(rating)]</label>
 										<visible>!StringCompare(ListItem.Property(rating),10.0)</visible>
 									</control>
-									
+
 									<control type="label"> <!--base info-->
 										<left>40</left>
 										<top>565</top>
@@ -582,7 +582,7 @@
 										<label>31079</label>
 										<visible>StringCompare(ListItem.Property(rating),10.0)</visible>
 									</control>
-									
+
 									<control type="label"> <!--base info-->
 										<left>72</left>
 										<top>565</top>
@@ -594,10 +594,10 @@
 										<label>$INFO[ListItem.Property(year), • ,]$INFO[ListItem.Property(premiered), • ,]$INFO[ListItem.Property(duration), • , [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]]</label>
 										<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Property(rating),10.0)">Conditional</animation>
 									</control>
-									
+
 								</control>
-					
-								<control type="label"> <!--number-->	
+
+								<control type="label"> <!--number-->
 									<left>727</left>
 									<top>385</top>
 									<width>235</width>
@@ -608,15 +608,15 @@
 									<align>right</align>
 									<label>$INFO[ListItem.Property(number)]</label>
 								</control>
-						
+
 							</focusedlayout>
-						
+
 							<content>
 								<include>RecentVideosContent</include>
 							</content>
 
 						</control>
-						
+
 						<control type="group">
 							<top>-100</top>
 							<visible>Control.HasFocus(101)</visible>
@@ -652,13 +652,13 @@
 								<height>7</height>
 								<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 							</control>
-							
+
 						</control>
-						
+
 					</control>
-					
+
 					<control type="group"> <!--search-->
-					
+
 						<control type="button" id="10001"> <!--search button-->
 							<centerleft>50%</centerleft>
 							<top>60</top>
@@ -671,7 +671,7 @@
 							<onclick>RunScript(script.globalsearch)</onclick>
 							<texturenofocus colordiffuse="TertiaryM">backgrounds/white.png</texturenofocus>
 						</control>
-						
+
 						<control type="image"> <!--symbol-->
 							<left>440</left>
 							<top>82</top>
@@ -679,10 +679,10 @@
 							<height>80</height>
 							<texture>symbols/search-128.png</texture>
 						</control>
-						
+
 						<control type="group">
 							<left>250</left>
-						
+
 							<control type="grouplist"> <!--rating-->
 								<centerleft>50%</centerleft>
 								<top>60</top>
@@ -691,14 +691,14 @@
 								<itemgap>15</itemgap>
 								<orientation>horizontal</orientation>
 								<align>left</align>
-							
+
 								<control type="label"> <!--search label-->
 									<width min="10" max="1000">auto</width>
 									<height>120</height>
 									<font>MusicNowPlaying</font>
 									<label>$LOCALIZE[31148]</label>
 								</control>
-							
+
 								<control type="fadelabel"> <!--search label-->
 									<width min="10" max="1000">auto</width>
 									<height>120</height>
@@ -710,11 +710,11 @@
 									<label>$LOCALIZE[132]</label>
 									<label>$LOCALIZE[134]</label>
 								</control>
-								
+
 							</control>
-						
+
 						</control>
-					
+
 						<control type="group">
 							<centerleft>50%</centerleft>
 							<top>0</top>
@@ -752,16 +752,16 @@
 								<height>7</height>
 								<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 							</control>
-							
+
 						</control>
-						
+
 					</control>
-					
+
 					<control type="group" id="102"> <!--shortcut tiles-->
 						<centerleft>50%</centerleft>
 						<top>200</top>
 						<width>1085</width>
-					
+
 						<control type="label"> <!--label-->
 							<left>-</left>
 							<top>-60</top>
@@ -769,15 +769,15 @@
 							<label>$LOCALIZE[111]</label>
 							<visible>false</visible>
 						</control>
-						
+
 						<control type="group"> <!--tile 1-->
-					
+
 							<control type="image"> <!--tile bg-->
 								<width>263</width>
 								<height>263</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="button" id="1023"> <!--tile bg-->
 								<onleft>1026</onleft>
 								<onright>1024</onright>
@@ -790,7 +790,7 @@
 								<texturenofocus>special://skin/extras/icons/youtube.png</texturenofocus>
 								<onclick>ActivateWindow(10025,"plugin://plugin.video.youtube/",return)</onclick>
 							</control>
-							
+
 							<control type="group"> <!--border-->
 								<visible>Control.HasFocus(1023)</visible>
 
@@ -825,20 +825,20 @@
 									<height>7</height>
 									<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 								</control>
-								
+
 							</control>
-							
+
 						</control>
-						
+
 						<control type="group"> <!--tile 2-->
 							<left>274</left>
-					
+
 							<control type="image"> <!--tile bg-->
 								<width>263</width>
 								<height>263</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="button" id="1024"> <!--tile bg-->
 								<onleft>1023</onleft>
 								<onright>1025</onright>
@@ -851,7 +851,7 @@
 								<texturenofocus>special://skin/extras/icons/iplayer.png</texturenofocus>
 								<onclick>ActivateWindow(10025,"plugin://plugin.video.iplayer/",return)</onclick>
 							</control>
-							
+
 							<control type="group"> <!--border-->
 								<visible>Control.HasFocus(1024)</visible>
 
@@ -886,20 +886,20 @@
 									<height>7</height>
 									<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 								</control>
-								
+
 							</control>
-							
+
 						</control>
-						
+
 						<control type="group"> <!--tile 3-->
 							<left>548</left>
-					
+
 							<control type="image"> <!--tile bg-->
 								<width>263</width>
 								<height>263</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="button" id="1025"> <!--tile bg-->
 								<onleft>1024</onleft>
 								<onright>1026</onright>
@@ -912,7 +912,7 @@
 								<texturenofocus>special://skin/extras/icons/ign.png</texturenofocus>
 								<onclick>ActivateWindow(10025,"plugin://plugin.video.ign_com/",return)</onclick>
 							</control>
-							
+
 							<control type="group"> <!--border-->
 								<visible>Control.HasFocus(1025)</visible>
 
@@ -947,20 +947,20 @@
 									<height>7</height>
 									<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 								</control>
-								
+
 							</control>
-							
+
 						</control>
-						
+
 						<control type="group"> <!--tile 4-->
 							<left>822</left>
-					
+
 							<control type="image"> <!--tile bg-->
 								<width>263</width>
 								<height>263</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="button" id="1026"> <!--tile bg-->
 								<onleft>1025</onleft>
 								<onright>1023</onright>
@@ -973,7 +973,7 @@
 								<texturenofocus>special://skin/extras/icons/gametrailers.png</texturenofocus>
 								<onclick>ActivateWindow(10025,"plugin://plugin.video.gametrailerscom/",return)</onclick>
 							</control>
-							
+
 							<control type="group"> <!--border-->
 								<visible>Control.HasFocus(1026)</visible>
 
@@ -1008,42 +1008,42 @@
 									<height>7</height>
 									<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 								</control>
-								
+
 							</control>
-							
+
 						</control>
-						
+
 					</control>
-					
+
 				</control>
-				
-				
+
+
 				<!------------------------>
 				<!-----movie content------>
 				<!------------------------>
-				
+
 				<control type="group">
 					<top>1175</top>
 					<left>75</left>
 					<animation effect="slide" start="0,0" end="0,-1000" time="0" condition="StringCompare(Container(50).ListItem.Property(defaultID),movies)">Conditional</animation>
-				
+
 					<control type="group"> <!--widget 1-->
 						<left>245</left>
 						<visible>!Skin.HasSetting(empty.movies.widget.1)</visible>
-					
+
 						<control type="label"> <!--label-->
 							<include>Widget1Title</include>
 							<label>$VAR[MovieWidget1Title]</label>
 						</control>
-						
+
 						<include>Widget1Info</include>
 
 						<control type="panel" id="201"> <!--content-->
 							<onright>202</onright>
 							<ondown>201</ondown>
-						
+
 							<include>Widget1Layout</include>
-						
+
 							<content>
 								<include condition="Skin.HasSetting(recent.movies.widget.1)">RecentMoviesContent</include>
 								<include condition="Skin.HasSetting(random.movies.widget.1)">RandomMoviesContent</include>
@@ -1051,13 +1051,13 @@
 							</content>
 
 						</control>
-						
+
 					</control>
-				
+
 					<control type="group"> <!--widget 2-->
 						<left>1392</left>
 						<visible>!Skin.HasSetting(empty.movies.widget.2)</visible>
-					
+
 						<control type="label"> <!--label-->
 							<include>Widget2Title</include>
 							<label>$VAR[MovieWidget2Title]</label>
@@ -1067,7 +1067,7 @@
 							<onup>202</onup>
 							<ondown>202</ondown>
 							<onleft>201</onleft>
-							
+
 							<include>Widget2Layout</include>
 
 							<content>
@@ -1078,36 +1078,36 @@
 							</content>
 
 						</control>
-						
+
 					</control>
-					
+
 				</control>
-				
-				
+
+
 				<!------------------------>
 				<!----tv shows content---->
 				<!------------------------>
-				
+
 				<control type="group">
 					<top>1175</top>
 					<left>75</left>
 					<animation effect="slide" start="0,0" end="0,-1000" time="0" condition="StringCompare(Container(50).ListItem.Property(defaultID),tvshows)">Conditional</animation>
-				
+
 					<control type="group"> <!--widget 1-->
 						<left>245</left>
 							<visible>!Skin.HasSetting(empty.episodes.widget.1)</visible>
-					
+
 						<control type="label"> <!--label-->
 							<include>Widget1Title</include>
 							<label>$VAR[TVWidget1Title]</label>
 						</control>
-						
+
 						<include>Widget1Info</include>
-						
+
 						<control type="panel" id="301"> <!--content-->
 							<onright>302</onright>
 							<ondown>301</ondown>
-						
+
 							<include>Widget1Layout</include>
 
 							<content>
@@ -1117,13 +1117,13 @@
 							</content>
 
 						</control>
-						
+
 					</control>
-				
+
 					<control type="group"> <!--widget 2-->
 						<left>1392</left>
 							<visible>!Skin.HasSetting(empty.episodes.widget.2)</visible>
-					
+
 						<control type="label"> <!--label-->
 							<include>Widget2Title</include>
 							<label>$VAR[TVWidget2Title]</label>
@@ -1133,7 +1133,7 @@
 							<onup>302</onup>
 							<ondown>302</ondown>
 							<onleft>301</onleft>
-							
+
 							<include>Widget2Layout</include>
 
 							<content>
@@ -1143,52 +1143,52 @@
 							</content>
 
 						</control>
-						
+
 					</control>
-					
+
 				</control>
-				
-				
+
+
 				<!------------------------>
 				<!-----music content------>
 				<!------------------------>
-				
+
 				<control type="group">
 					<top>1175</top>
 					<left>75</left>
 					<animation effect="slide" start="0,0" end="0,-1000" time="0" condition="StringCompare(Container(50).ListItem.Property(defaultID),music)">Conditional</animation>
-				
+
 					<control type="group"> <!--widget 1-->
 						<left>245</left>
 						<visible>!Skin.HasSetting(empty.albums.widget.1)</visible>
-					
+
 						<control type="label"> <!--label-->
 							<include>Widget1Title</include>
 							<label>$VAR[MusicWidget1Title]</label>
 						</control>
-						
+
 						<include>Widget1Info</include>
-						
+
 						<control type="panel" id="401"> <!--content-->
 							<onright>402</onright>
 							<ondown>401</ondown>
-						
+
 							<include>Widget1Layout</include>
-							
+
 							<content>
-								<include condition="Skin.HasSetting(recent.played.albums.widget.1)">RecentPlayedAlbumsContent</include>	
-								<include condition="Skin.HasSetting(recent.added.albums.widget.1)">RecentAddedAlbumsContent</include>	
-								<include condition="Skin.HasSetting(random.albums.widget.1)">RandomAlbumsContent</include>							
+								<include condition="Skin.HasSetting(recent.played.albums.widget.1)">RecentPlayedAlbumsContent</include>
+								<include condition="Skin.HasSetting(recent.added.albums.widget.1)">RecentAddedAlbumsContent</include>
+								<include condition="Skin.HasSetting(random.albums.widget.1)">RandomAlbumsContent</include>
 							</content>
 
 						</control>
-						
+
 					</control>
-				
+
 					<control type="group"> <!--widget 2-->
 						<left>1392</left>
 						<visible>!Skin.HasSetting(empty.albums.widget.2)</visible>
-					
+
 						<control type="label"> <!--label-->
 							<include>Widget2Title</include>
 							<label>$VAR[MusicWidget2Title]</label>
@@ -1198,42 +1198,42 @@
 							<onup>402</onup>
 							<ondown>402</ondown>
 							<onleft>401</onleft>
-							
+
 							<include>Widget2Layout</include>
 
 							<content>
-								<include condition="Skin.HasSetting(recent.played.albums.widget.2)">RecentPlayedAlbumsContent</include>	
-								<include condition="Skin.HasSetting(recent.added.albums.widget.2)">RecentAddedAlbumsContent</include>	
-								<include condition="Skin.HasSetting(random.albums.widget.2)">RandomAlbumsContent</include>							
+								<include condition="Skin.HasSetting(recent.played.albums.widget.2)">RecentPlayedAlbumsContent</include>
+								<include condition="Skin.HasSetting(recent.added.albums.widget.2)">RecentAddedAlbumsContent</include>
+								<include condition="Skin.HasSetting(random.albums.widget.2)">RandomAlbumsContent</include>
 							</content>
 
 						</control>
-						
+
 					</control>
-					
+
 				</control>
-				
-				
+
+
 				<!------------------------>
 				<!-----games content------>
 				<!------------------------>
-				
+
 				<control type="group">
 					<top>1175</top>
 					<left>75</left>
 					<animation effect="slide" start="0,0" end="0,-1000" time="0" condition="StringCompare(Container(50).ListItem.Property(defaultID),plugin.program.advanced.launcher/)">Conditional</animation>
-				
+
 					<control type="group"> <!--widget 1-->
 						<left>245</left>
 						<visible>Skin.HasSetting(games.widget)</visible>
-					
+
 						<control type="label"> <!--label-->
 							<include>Widget1Title</include>
 							<label>$INFO[Skin.String(Games.Widget.1.Label)]</label>
-						</control>		
-						
+						</control>
+
 						<control type="group"> <!--selected info-->
-					
+
 							<control type="image"> <!--fallback icon-->
 								<left>75</left>
 								<top>60</top>
@@ -1242,7 +1242,7 @@
 								<aspectratio>scale</aspectratio>
 								<texture>special://skin/backgrounds/games.jpg</texture>
 							</control>
-						
+
 							<control type="image"> <!--fanart-->
 								<left>75</left>
 								<top>60</top>
@@ -1252,20 +1252,20 @@
 								<fadetime>250</fadetime>
 								<texture>$INFO[Container(501).ListItem.Property(Fanart_Image)]</texture>
 							</control>
-							
+
 							<control type="group">
-							
+
 								<control type="image"> <!--label bg-->
 									<left>75</left>
 									<top>543</top>
 									<width>752</width>
 									<height>55</height>
 									<texture colordiffuse="Black95">backgrounds/white.png</texture>
-										
+
 									<animation type="Conditional" condition="Control.HasFocus(201) | Control.HasFocus(301) | Control.HasFocus(401) | Control.HasFocus(501)" reversible="true" loop="false">
 										<effect type="zoom" end="0,508,752,90" time="100" />
 									</animation>
-										
+
 								</control>
 
 								<control type="label"> <!--label-->
@@ -1280,13 +1280,13 @@
 									<label>$VAR[Widget1Label]</label>
 									<animation effect="slide" start="0,0" end="0,35" time="100" condition="![Control.HasFocus(201) | Control.HasFocus(301) | Control.HasFocus(401) | Control.HasFocus(501)]">Conditional</animation>
 								</control>
-								
+
 								<control type="group"> <!--base info-->
 									<left>75</left>
 									<top>-17</top>
 									<visible>Control.HasFocus(201) | Control.HasFocus(301) | Control.HasFocus(401) | Control.HasFocus(501)</visible>
 									<animation effect="fade" start="0" end="100" time="500">Visible</animation>
-									
+
 									<control type="label"> <!--base info-->
 										<left>15</left>
 										<top>565</top>
@@ -1297,8 +1297,8 @@
 										<selectedcolor>white</selectedcolor>
 										<label>$INFO[Container(501).ListItem.Year,, • ]$INFO[Container(501).ListItem.Genre,, • ]$INFO[Container(501).ListItem.Studio]</label>
 									</control>
-									
-									<control type="label"> <!--number-->	
+
+									<control type="label"> <!--number-->
 										<left>501</left>
 										<top>565</top>
 										<width>235</width>
@@ -1309,45 +1309,45 @@
 										<align>right</align>
 										<label>$VAR[Widget1Number]</label>
 									</control>
-									
+
 								</control>
-								
+
 							</control>
-							
-						</control>	
+
+						</control>
 
 						<control type="panel" id="501"> <!--content-->
 							<onright>502</onright>
 							<ondown>501</ondown>
-						
+
 							<include>GamesWidgetDVD</include>
-						
+
 							<content>$INFO[Skin.String(Games.Widget.1.Path)]</content>
 
 						</control>
-						
+
 					</control>
-					
+
 					<control type="group" id="502"> <!--program tiles-->
 						<top>60</top>
 						<left>1467</left>
 						<visible>Skin.HasSetting(games.apps.shortcut)</visible>
-					
+
 						<control type="label"> <!--label-->
 							<left>-</left>
 							<top>-60</top>
 							<include>Widget2Title</include>
 							<label>$LOCALIZE[31146]</label>
 						</control>
-						
+
 						<control type="group"> <!--tile 1-->
-					
+
 							<control type="image"> <!--tile bg-->
 								<width>263</width>
 								<height>263</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="button" id="5021"> <!--tile bg-->
 								<onleft>501</onleft>
 								<onright>51</onright>
@@ -1359,7 +1359,7 @@
 								<texturenofocus>special://skin/extras/icons/ign.png</texturenofocus>
 								<onclick>ActivateWindow(10025,"plugin://plugin.video.ign_com/",return)</onclick>
 							</control>
-							
+
 							<control type="group"> <!--border-->
 								<visible>Control.HasFocus(5021)</visible>
 
@@ -1394,20 +1394,20 @@
 									<height>7</height>
 									<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 								</control>
-								
+
 							</control>
-							
+
 						</control>
-						
+
 						<control type="group"> <!--tile 2-->
 							<top>274</top>
-					
+
 							<control type="image"> <!--tile bg-->
 								<width>263</width>
 								<height>263</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="button" id="5022"> <!--tile bg-->
 								<onleft>501</onleft>
 								<onright>51</onright>
@@ -1419,7 +1419,7 @@
 								<texturenofocus>special://skin/extras/icons/gametrailers.png</texturenofocus>
 								<onclick>ActivateWindow(10025,"plugin://plugin.video.gametrailerscom/",return)</onclick>
 							</control>
-							
+
 							<control type="group"> <!--border-->
 								<visible>Control.HasFocus(5022)</visible>
 
@@ -1454,41 +1454,41 @@
 									<height>7</height>
 									<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 								</control>
-								
+
 							</control>
-							
+
 						</control>
-						
+
 					</control>
-					
+
 				</control>
-				
-				
+
+
 				<!------------------------>
 				<!----weather content----->
 				<!------------------------>
-				
+
 				<control type="group">
 					<top>1175</top>
 					<left>75</left>
 					<animation effect="slide" start="0,0" end="0,-1000" time="0" condition="StringCompare(Container(50).ListItem.Property(defaultID),weather)">Conditional</animation>
-				
+
 					<control type="group"> <!--widgets-->
 						<left>245</left>
 						<visible>!Skin.HasSetting(weather.widget)</visible>
-						
+
 						<control type="group"> <!--widget 1-->
-					
+
 							<control type="label"> <!--hidden label to fetch weather-->
 								<label>$INFO[Weather.Temperature]</label>
 								<visible>false</visible>
-							</control>			
-					
+							</control>
+
 							<control type="label"> <!--label-->
 								<include>Widget1Title</include>
 								<label>$INFO[Window(Weather).Property(Daily.1.LongDay)]</label>
-							</control>						
-							
+							</control>
+
 							<control type="image"> <!--widget bg-->
 								<left>75</left>
 								<top>60</top>
@@ -1496,7 +1496,7 @@
 								<height>226</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="image"> <!--weather icon-->
 								<left>125</left>
 								<top>75</top>
@@ -1507,7 +1507,7 @@
 
 							<control type="group">
 								<top>135</top>
-	
+
 								<control type="label">
 									<left>95</left>
 									<top>60</top>
@@ -1517,7 +1517,7 @@
 									<label>$INFO[Window(Weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits] / $INFO[Window(Weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
 									<scroll>false</scroll>
 								</control>
-		
+
 								<control type="label">
 									<left>95</left>
 									<top>90</top>
@@ -1527,19 +1527,19 @@
 									<label>$INFO[Window(Weather).Property(Day1.Outlook)]</label>
 									<scroll>false</scroll>
 								</control>
-								
-							</control>	
-							
+
+							</control>
+
 						</control>
-						
+
 						<control type="group"> <!--widget 2-->
 							<left>250</left>
-					
+
 							<control type="label"> <!--label-->
 								<include>Widget1Title</include>
 								<label>$INFO[Window(Weather).Property(Daily.2.LongDay)]</label>
-							</control>						
-							
+							</control>
+
 							<control type="image"> <!--widget bg-->
 								<left>75</left>
 								<top>60</top>
@@ -1547,7 +1547,7 @@
 								<height>226</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="image"> <!--weather icon-->
 								<left>125</left>
 								<top>75</top>
@@ -1558,7 +1558,7 @@
 
 							<control type="group">
 								<top>135</top>
-	
+
 								<control type="label">
 									<left>95</left>
 									<top>60</top>
@@ -1568,7 +1568,7 @@
 									<label>$INFO[Window(Weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits] / $INFO[Window(Weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
 									<scroll>false</scroll>
 								</control>
-		
+
 								<control type="label">
 									<left>95</left>
 									<top>90</top>
@@ -1578,19 +1578,19 @@
 									<label>$INFO[Window(Weather).Property(Day2.Outlook)]</label>
 									<scroll>false</scroll>
 								</control>
-								
-							</control>	
-							
+
+							</control>
+
 						</control>
-						
+
 						<control type="group"> <!--widget 3-->
 							<left>500</left>
-					
+
 							<control type="label"> <!--label-->
 								<include>Widget1Title</include>
 								<label>$INFO[Window(Weather).Property(Daily.3.LongDay)]</label>
-							</control>						
-							
+							</control>
+
 							<control type="image"> <!--widget bg-->
 								<left>75</left>
 								<top>60</top>
@@ -1598,7 +1598,7 @@
 								<height>226</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="image"> <!--weather icon-->
 								<left>125</left>
 								<top>75</top>
@@ -1609,7 +1609,7 @@
 
 							<control type="group">
 								<top>135</top>
-	
+
 								<control type="label">
 									<left>95</left>
 									<top>60</top>
@@ -1619,7 +1619,7 @@
 									<label>$INFO[Window(Weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits] / $INFO[Window(Weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
 									<scroll>false</scroll>
 								</control>
-		
+
 								<control type="label">
 									<left>95</left>
 									<top>90</top>
@@ -1629,19 +1629,19 @@
 									<label>$INFO[Window(Weather).Property(Day3.Outlook)]</label>
 									<scroll>false</scroll>
 								</control>
-								
-							</control>	
-							
+
+							</control>
+
 						</control>
-						
+
 						<control type="group"> <!--widget 4-->
 							<left>750</left>
-					
+
 							<control type="label"> <!--label-->
 								<include>Widget1Title</include>
 								<label>$INFO[Window(Weather).Property(Daily.4.LongDay)]</label>
-							</control>						
-							
+							</control>
+
 							<control type="image"> <!--widget bg-->
 								<left>75</left>
 								<top>60</top>
@@ -1649,7 +1649,7 @@
 								<height>226</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="image"> <!--weather icon-->
 								<left>125</left>
 								<top>75</top>
@@ -1660,7 +1660,7 @@
 
 							<control type="group">
 								<top>135</top>
-	
+
 								<control type="label">
 									<left>95</left>
 									<top>60</top>
@@ -1670,7 +1670,7 @@
 									<label>$INFO[Window(Weather).Property(Day4.LowTemp)]$INFO[System.TemperatureUnits] / $INFO[Window(Weather).Property(Day4.HighTemp)]$INFO[System.TemperatureUnits]</label>
 									<scroll>false</scroll>
 								</control>
-		
+
 								<control type="label">
 									<left>95</left>
 									<top>90</top>
@@ -1680,19 +1680,19 @@
 									<label>$INFO[Window(Weather).Property(Day4.Outlook)]</label>
 									<scroll>false</scroll>
 								</control>
-								
-							</control>	
-							
+
+							</control>
+
 						</control>
-						
+
 						<control type="group"> <!--widget 5-->
 							<left>1000</left>
-					
+
 							<control type="label"> <!--label-->
 								<include>Widget1Title</include>
 								<label>$INFO[Window(Weather).Property(Daily.5.LongDay)]</label>
-							</control>						
-							
+							</control>
+
 							<control type="image"> <!--widget bg-->
 								<left>75</left>
 								<top>60</top>
@@ -1700,7 +1700,7 @@
 								<height>226</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="image"> <!--weather icon-->
 								<left>125</left>
 								<top>75</top>
@@ -1711,7 +1711,7 @@
 
 							<control type="group">
 								<top>135</top>
-	
+
 								<control type="label">
 									<left>95</left>
 									<top>60</top>
@@ -1721,7 +1721,7 @@
 									<label>$INFO[Window(Weather).Property(Day5.LowTemp)]$INFO[System.TemperatureUnits] / $INFO[Window(Weather).Property(Day5.HighTemp)]$INFO[System.TemperatureUnits]</label>
 									<scroll>false</scroll>
 								</control>
-		
+
 								<control type="label">
 									<left>95</left>
 									<top>90</top>
@@ -1731,19 +1731,19 @@
 									<label>$INFO[Window(Weather).Property(Day5.Outlook)]</label>
 									<scroll>false</scroll>
 								</control>
-								
-							</control>	
-							
+
+							</control>
+
 						</control>
-						
+
 						<control type="group"> <!--widget 6-->
 							<top>312</top>
-					
+
 							<control type="label"> <!--label-->
 								<include>Widget1Title</include>
 								<label>$INFO[Window(Weather).Property(Daily.6.LongDay)]</label>
-							</control>						
-							
+							</control>
+
 							<control type="image"> <!--widget bg-->
 								<left>75</left>
 								<top>60</top>
@@ -1751,7 +1751,7 @@
 								<height>226</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="image"> <!--weather icon-->
 								<left>125</left>
 								<top>75</top>
@@ -1762,7 +1762,7 @@
 
 							<control type="group">
 								<top>135</top>
-	
+
 								<control type="label">
 									<left>95</left>
 									<top>60</top>
@@ -1772,7 +1772,7 @@
 									<label>$INFO[Window(Weather).Property(Day6.LowTemp)]$INFO[System.TemperatureUnits] / $INFO[Window(Weather).Property(Day6.HighTemp)]$INFO[System.TemperatureUnits]</label>
 									<scroll>false</scroll>
 								</control>
-		
+
 								<control type="label">
 									<left>95</left>
 									<top>90</top>
@@ -1782,20 +1782,20 @@
 									<label>$INFO[Window(Weather).Property(Day6.Outlook)]</label>
 									<scroll>false</scroll>
 								</control>
-								
-							</control>	
-							
+
+							</control>
+
 						</control>
-						
+
 						<control type="group"> <!--widget 7-->
 							<left>250</left>
 							<top>312</top>
-					
+
 							<control type="label"> <!--label-->
 								<include>Widget1Title</include>
 								<label>$INFO[Window(Weather).Property(Daily.7.LongDay)]</label>
-							</control>						
-							
+							</control>
+
 							<control type="image"> <!--widget bg-->
 								<left>75</left>
 								<top>60</top>
@@ -1803,7 +1803,7 @@
 								<height>226</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="image"> <!--weather icon-->
 								<left>125</left>
 								<top>75</top>
@@ -1814,7 +1814,7 @@
 
 							<control type="group">
 								<top>135</top>
-	
+
 								<control type="label">
 									<left>95</left>
 									<top>60</top>
@@ -1824,7 +1824,7 @@
 									<label>$INFO[Window(Weather).Property(Daily.7.LowTemp)]$INFO[System.TemperatureUnits] / $INFO[Window(Weather).Property(Daily.7.HighTemp)]$INFO[System.TemperatureUnits]</label>
 									<scroll>false</scroll>
 								</control>
-		
+
 								<control type="label">
 									<left>95</left>
 									<top>90</top>
@@ -1834,20 +1834,20 @@
 									<label>$INFO[Window(Weather).Property(Daily.7.Outlook)]</label>
 									<scroll>false</scroll>
 								</control>
-								
-							</control>	
-							
+
+							</control>
+
 						</control>
-						
+
 						<control type="group"> <!--widget 8-->
 							<left>500</left>
 							<top>312</top>
-					
+
 							<control type="label"> <!--label-->
 								<include>Widget1Title</include>
 								<label>$INFO[Window(Weather).Property(Daily.8.LongDay)]</label>
-							</control>						
-							
+							</control>
+
 							<control type="image"> <!--widget bg-->
 								<left>75</left>
 								<top>60</top>
@@ -1855,7 +1855,7 @@
 								<height>226</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="image"> <!--weather icon-->
 								<left>125</left>
 								<top>75</top>
@@ -1866,7 +1866,7 @@
 
 							<control type="group">
 								<top>135</top>
-	
+
 								<control type="label">
 									<left>95</left>
 									<top>60</top>
@@ -1876,7 +1876,7 @@
 									<label>$INFO[Window(Weather).Property(Daily.8.LowTemp)]$INFO[System.TemperatureUnits] / $INFO[Window(Weather).Property(Daily.8.HighTemp)]$INFO[System.TemperatureUnits]</label>
 									<scroll>false</scroll>
 								</control>
-		
+
 								<control type="label">
 									<left>95</left>
 									<top>90</top>
@@ -1886,20 +1886,20 @@
 									<label>$INFO[Window(Weather).Property(Daily.8.Outlook)]</label>
 									<scroll>false</scroll>
 								</control>
-								
-							</control>	
-							
+
+							</control>
+
 						</control>
-						
+
 						<control type="group"> <!--widget 9-->
 							<left>750</left>
 							<top>312</top>
-					
+
 							<control type="label"> <!--label-->
 								<include>Widget1Title</include>
 								<label>$INFO[Window(Weather).Property(Daily.9.LongDay)]</label>
-							</control>						
-							
+							</control>
+
 							<control type="image"> <!--widget bg-->
 								<left>75</left>
 								<top>60</top>
@@ -1907,7 +1907,7 @@
 								<height>226</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="image"> <!--weather icon-->
 								<left>125</left>
 								<top>75</top>
@@ -1918,7 +1918,7 @@
 
 							<control type="group">
 								<top>135</top>
-	
+
 								<control type="label">
 									<left>95</left>
 									<top>60</top>
@@ -1928,7 +1928,7 @@
 									<label>$INFO[Window(Weather).Property(Daily.9.LowTemp)]$INFO[System.TemperatureUnits] / $INFO[Window(Weather).Property(Daily.9.HighTemp)]$INFO[System.TemperatureUnits]</label>
 									<scroll>false</scroll>
 								</control>
-		
+
 								<control type="label">
 									<left>95</left>
 									<top>90</top>
@@ -1938,20 +1938,20 @@
 									<label>$INFO[Window(Weather).Property(Daily.9.Outlook)]</label>
 									<scroll>false</scroll>
 								</control>
-								
-							</control>	
-							
+
+							</control>
+
 						</control>
-						
+
 						<control type="group"> <!--widget 10-->
 							<left>1000</left>
 							<top>312</top>
-					
+
 							<control type="label"> <!--label-->
 								<include>Widget1Title</include>
 								<label>$INFO[Window(Weather).Property(Daily.10.LongDay)]</label>
-							</control>						
-							
+							</control>
+
 							<control type="image"> <!--widget bg-->
 								<left>75</left>
 								<top>60</top>
@@ -1959,7 +1959,7 @@
 								<height>226</height>
 								<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							</control>
-						
+
 							<control type="image"> <!--weather icon-->
 								<left>125</left>
 								<top>75</top>
@@ -1970,7 +1970,7 @@
 
 							<control type="group">
 								<top>135</top>
-	
+
 								<control type="label">
 									<left>95</left>
 									<top>60</top>
@@ -1980,7 +1980,7 @@
 									<label>$INFO[Window(Weather).Property(Daily.10.LowTemp)]$INFO[System.TemperatureUnits] / $INFO[Window(Weather).Property(Daily.10.HighTemp)]$INFO[System.TemperatureUnits]</label>
 									<scroll>false</scroll>
 								</control>
-		
+
 								<control type="label">
 									<left>95</left>
 									<top>90</top>
@@ -1990,106 +1990,106 @@
 									<label>$INFO[Window(Weather).Property(Daily.10.Outlook)]</label>
 									<scroll>false</scroll>
 								</control>
-								
-							</control>	
-							
+
+							</control>
+
 						</control>
-						
+
 					</control>
-					
+
 				</control>
-				
-				
+
+
 				<!------------------------>
 				<!----settings content---->
 				<!------------------------>
-				
+
 				<control type="group">
 					<top>1175</top>
 					<left>75</left>
 					<animation effect="slide" start="0,0" end="0,-1000" time="0" condition="StringCompare(Container(50).ListItem.Property(defaultID),settings)">Conditional</animation>
-				
+
 					<control type="group"> <!--widgets-->
 						<left>245</left>
-						
+
 						<control type="group"> <!--widget 1-->
 							<visible>!Skin.HasSetting(empty.settings.widget.1)</visible>
-					
+
 							<control type="label"> <!--label-->
 								<include>Widget1Title</include>
 								<label>$VAR[SettingsWidget1Title]</label>
 							</control>
-						
+
 							<include>SettingsWidgetBG</include>
-							
+
 							<include condition="Skin.HasSetting(system.widget.1)">SystemWidget</include>
 							<include condition="Skin.HasSetting(performance.widget.1)">PerformanceWidget</include>
 							<include condition="Skin.HasSetting(network.widget.1)">NetworkWidget</include>
 							<include condition="Skin.HasSetting(user.widget.1)">UserWidget</include>
-						
+
 						</control>
-						
+
 						<control type="group"> <!--widget 2-->
 							<top>312</top>
 							<visible>!Skin.HasSetting(empty.settings.widget.3)</visible>
-					
+
 							<control type="label"> <!--label-->
 								<include>Widget1Title</include>
 								<label>$VAR[SettingsWidget3Title]</label>
 							</control>
-						
+
 							<include>SettingsWidgetBG</include>
-							
+
 							<include condition="Skin.HasSetting(system.widget.3)">SystemWidget</include>
 							<include condition="Skin.HasSetting(performance.widget.3)">PerformanceWidget</include>
 							<include condition="Skin.HasSetting(network.widget.3)">NetworkWidget</include>
 							<include condition="Skin.HasSetting(user.widget.3)">UserWidget</include>
-							
+
 						</control>
-						
+
 						<control type="group"> <!--widget 3-->
 							<left>622</left>
 							<visible>!Skin.HasSetting(empty.settings.widget.2)</visible>
-					
+
 							<control type="label"> <!--label-->
 								<include>Widget1Title</include>
 								<label>$VAR[SettingsWidget2Title]</label>
 							</control>
-						
+
 							<include>SettingsWidgetBG</include>
-							
+
 							<include condition="Skin.HasSetting(system.widget.2)">SystemWidget</include>
 							<include condition="Skin.HasSetting(performance.widget.2)">PerformanceWidget</include>
 							<include condition="Skin.HasSetting(network.widget.2)">NetworkWidget</include>
 							<include condition="Skin.HasSetting(user.widget.2)">UserWidget</include>
-							
+
 						</control>
-						
+
 						<control type="group"> <!--widget 4-->
 							<left>622</left>
 							<top>312</top>
 							<visible>!Skin.HasSetting(empty.settings.widget.4)</visible>
-					
+
 							<control type="label"> <!--label-->
 								<include>Widget1Title</include>
 								<label>$VAR[SettingsWidget4Title]</label>
 							</control>
-						
+
 							<include>SettingsWidgetBG</include>
-							
+
 							<include condition="Skin.HasSetting(system.widget.4)">SystemWidget</include>
 							<include condition="Skin.HasSetting(performance.widget.4)">PerformanceWidget</include>
 							<include condition="Skin.HasSetting(network.widget.4)">NetworkWidget</include>
 							<include condition="Skin.HasSetting(user.widget.4)">UserWidget</include>
-							
+
 						</control>
-						
+
 					</control>
-					
+
 				</control>
-				
+
 			</control>
-			
+
 		</control>
 
 	</controls>

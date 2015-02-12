@@ -6,9 +6,9 @@
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>
-		
+
 		<include>DialogBG</include>
-		
+
 		<control type="image"> <!--top-->
 			<include>FullScreenDimensions</include>
 			<texture colordiffuse="Black95">backgrounds/white.png</texture>
@@ -34,9 +34,9 @@
 				<ondown>2</ondown>
 				<scrolltime>0</scrolltime>
 				<pagecontrol>60</pagecontrol>
-				
+
 				<itemlayout width="600" height="65">
-	
+
 					<control type="label"> <!--label-->
 						<left>20</left>
 						<width>560</width>
@@ -44,11 +44,11 @@
 						<font>ButtonUpper</font>
 						<scroll>false</scroll>
 					</control>
-		
+
 				</itemlayout>
-	
+
 				<focusedlayout width="600" height="65">
-	
+
 					<control type="image"> <!--focus bg-->
 						<left>0</left>
 						<top>0</top>
@@ -56,20 +56,20 @@
 						<height>60</height>
 						<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 					</control>
-	
+
 					<control type="label"> <!--label-->
 						<left>20</left>
 						<width>560</width>
 						<label>$INFO[ListItem.Label]</label>
 						<font>ButtonUpper</font>
 					</control>
-		
+
 				</focusedlayout>
 
 			</control>
-			
+
 			<control type="group"> <!--scrollbar stuff-->
-		
+
 				<control type="image"> <!--scrollbar arrow up-->
 					<left>630</left>
 					<top>315</top>
@@ -85,7 +85,7 @@
 					<height>420</height>
 					<showonepage>false</showonepage>
 				</control>
-			
+
 				<control type="image"> <!--scrollbar arrow down-->
 					<left>630</left>
 					<top>758</top>
@@ -94,7 +94,7 @@
 					<texture colordiffuse="PrimaryM" flipy="true">controls/scrollarrow.png</texture>
 					<visible>Control.IsVisible(60)</visible>
 				</control>
-				
+
 			</control>
 
 		</control>

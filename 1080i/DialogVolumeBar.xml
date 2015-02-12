@@ -12,7 +12,7 @@
 
 			<control type="group">
 				<visible>!player.passthrough</visible>
-				
+
 				<control type="group">
 					<right>-23</right>
 					<top>997</top>
@@ -25,7 +25,7 @@
 						<texture colordiffuse="PrimaryT">symbols/volume_up-48.png</texture>
 						<animation effect="slide" time="0" start="0,0" end="-60,0" condition="Window.IsVisible(mutebug)">Conditional</animation>
 					</control>
-					
+
 					<control type="label"> <!--volume-->
 						<right>160</right>
 						<top>3</top>
@@ -36,9 +36,9 @@
 						<label>$INFO[Player.Volume]</label>
 						<animation effect="slide" time="0" start="0,0" end="-60,0" condition="Window.IsVisible(mutebug)">Conditional</animation>
 					</control>
-					
+
 				</control>
-				
+
 				<control type="group">
 					<visible>Window.IsVisible(fullscreenvideo)</visible>
 
@@ -50,7 +50,7 @@
 						<texture colordiffuse="Black95">backgrounds/white.png</texture>
 						<visible>![Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsVisible(fullscreeninfo) | Window.IsVisible(videoosd) | Window.IsVisible(seekbar)]</visible>
 					</control>
-			
+
 					<control type="image"> <!--volume icon-->
 						<right>75</right>
 						<top>74</top>
@@ -59,7 +59,7 @@
 						<texture colordiffuse="white">symbols/volume_up-48.png</texture>
 						<animation effect="slide" time="0" start="0,0" end="-60,0" condition="Window.IsVisible(mutebug)">Conditional</animation>
 					</control>
-					
+
 					<control type="label"> <!--volume-->
 						<right>135</right>
 						<top>77</top>
@@ -71,7 +71,7 @@
 						<textcolor>white</textcolor>
 						<animation effect="slide" time="0" start="0,0" end="-60,0" condition="Window.IsVisible(mutebug)">Conditional</animation>
 					</control>
-					
+
 				</control>
 
 				<control type="progress" id="1">
@@ -82,7 +82,7 @@
 
 			<control type="group">
 				<visible>player.passthrough</visible>
-				
+
 				<control type="group">
 					<right>-23</right>
 					<top>987</top>
@@ -106,9 +106,9 @@
 						<label>29802</label>
 						<animation effect="slide" time="0" start="0,0" end="-60,0" condition="Window.IsVisible(mutebug)">Conditional</animation>
 					</control>
-					
+
 				</control>
-				
+
 				<control type="group">
 					<visible>Window.IsVisible(fullscreenvideo)</visible>
 
@@ -120,7 +120,7 @@
 						<texture colordiffuse="Black95">backgrounds/white.png</texture>
 						<visible>![Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsVisible(fullscreeninfo) | Window.IsVisible(videoosd) | Window.IsVisible(seekbar)]</visible>
 					</control>
-			
+
 					<control type="image"> <!--volume icon-->
 						<right>75</right>
 						<top>74</top>
@@ -129,7 +129,7 @@
 						<texture colordiffuse="white">symbols/volume_up-48.png</texture>
 						<animation effect="slide" time="0" start="0,0" end="-60,0" condition="Window.IsVisible(mutebug)">Conditional</animation>
 					</control>
-					
+
 					<control type="label"> <!--passthrough label-->
 						<right>135</right>
 						<top>77</top>
@@ -141,7 +141,7 @@
 						<textcolor>white</textcolor>
 						<animation effect="slide" time="0" start="0,0" end="-60,0" condition="Window.IsVisible(mutebug)">Conditional</animation>
 					</control>
-					
+
 				</control>
 
 			</control>

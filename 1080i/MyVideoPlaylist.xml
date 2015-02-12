@@ -14,17 +14,17 @@
 		<include>Breadcrumb</include>
 
 		<include>View_501_List_Videos</include>
-		
+
 		<control type="group">
 			<include>DialogBG</include>
 			<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
 			<include>BGFade</include>
 		</control>
-		
+
 		<control type="group">
 			<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus + !Window.IsActive(ShutdownMenu) + !Window.IsActive(virtualkeyboard) + !Window.IsActive(mediafilter) + !Window.IsActive(filebrowser)</visible>
 			<include>FadeandZoom</include>
-		
+
 			<control type="label">
 				<left>760</left>
 				<top>240</top>
@@ -74,19 +74,19 @@
 				<control type="button" id="23"> <!--play-->
 					<label>208</label>
 				</control>
-				
+
 				<control type="button" id="350"> <!--change background-->
 					<label>$LOCALIZE[31077]</label>
 					<onclick>ActivateWindow(701)</onclick>
 				</control>
-				
+
 				<control type="button" id="351"> <!--change colour-->
 					<label>$LOCALIZE[31074]</label>
 					<onclick>ActivateWindow(700)</onclick>
 				</control>
 
 			</control>
-			
+
 		</control>
 
 	</controls>

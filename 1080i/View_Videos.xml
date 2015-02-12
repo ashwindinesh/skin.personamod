@@ -3,11 +3,11 @@
 <includes>
 
 	<include name="View_50_List_Videos">
-		
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
-		
+
 			<control type="list" id="50">
 				<left>75</left>
 				<top>250</top>
@@ -24,14 +24,14 @@
 				<focusposition>0</focusposition>
 
 				<itemlayout width="1200" height="85">
-				
+
 					<control type="image"> <!--watched icon-->
 						<right>0</right>
 						<include>WatchedOverlay</include>
 						<texture colordiffuse="PrimaryM">$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<right>0</right>
 						<include>WatchedOverlay</include>
@@ -79,14 +79,14 @@
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 						<animation effect="fade" start="100" end="30" time="100" condition="Control.HasFocus(60)">Conditional</animation>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<right>0</right>
 						<include>WatchedOverlay</include>
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<right>0</right>
 						<include>WatchedOverlay</include>
@@ -112,10 +112,10 @@
 				</focusedlayout>
 
 			</control>
-			
+
 			<control type="group"> <!--poster/info-->
 				<visible>Control.IsVisible(50)</visible>
-				
+
 				<control type="image"> <!--poster-->
 					<right>75</right>
 					<top>250</top>
@@ -126,12 +126,12 @@
 					<visible>[!Skin.HasSetting(ListMoviePlot) + Container.Content(Movies)] | [!Skin.HasSetting(ListTVPlot) + Container.Content(TVShows)] | Container.Content(Seasons) | SubString(Container.FolderPath,plugin://)]] | [Skin.HasSetting(ListMoviePlot) | Skin.HasSetting(ListTVPlot)] + Container.Content(Seasons)] | StringCompare(Container.FolderPath,videodb://movies/actors/) | SubString(Container.FolderPath,plugin://) | Container.Content(Addons) | Container.Content(Files)</visible>
 					<include>PosterMenuFade</include>
 				</control>
-				
+
 				<control type="group"> <!--plot items-->
 					<top>250</top>
 					<height>680</height>
 					<visible>[[Container.Content(Movies) + Skin.HasSetting(ListMoviePlot)] | [Container.Content(TVShows) + Skin.HasSetting(ListTVPlot)] | Container.Content(Episodes)] + !SubString(Container.FolderPath,plugin://)</visible>
-					
+
 					<control type="image"> <!--plot background-->
 						<right>75</right>
 						<top>0</top>
@@ -139,7 +139,7 @@
 						<height>670</height>
 						<texture colordiffuse="QuaternaryM">backgrounds/white.png</texture>
 					</control>
-										
+
 					<control type="image"> <!--show plot image-->
 						<right>75</right>
 						<top>0</top>
@@ -149,7 +149,7 @@
 						<aspectratio>scale</aspectratio>
 						<include>PosterMenuFade</include>
 					</control>
-					
+
 					<control type="textbox"> <!--plot-->
 						<right>90</right>
 						<top>334</top>
@@ -160,8 +160,8 @@
 						<textcolor>PrimaryT</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll delay="10000" time="2000" repeat="10000"/>
-					</control> 
-					
+					</control>
+
 					<control type="image"> <!--background base-->
 						<right>75</right>
 						<top>665</top>
@@ -169,9 +169,9 @@
 						<height>5</height>
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 					</control>
-					
+
 				</control>
-				
+
 				<control type="group">
 					<visible>Control.IsVisible(50)</visible>
 
@@ -184,21 +184,21 @@
 						<showonepage>true</showonepage>
 						<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 					</control>
-					
+
 				</control>
-				
+
 			</control>
-		
+
 		</control>
 
 	</include>
 
 	<include name="View_501_List_Videos">
-		
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
-		
+
 			<control type="list" id="501">
 				<left>75</left>
 				<top>250</top>
@@ -215,14 +215,14 @@
 				<focusposition>0</focusposition>
 
 				<itemlayout width="1200" height="85">
-				
+
 					<control type="image"> <!--watched icon-->
 						<right>0</right>
 						<include>WatchedOverlay</include>
 						<texture colordiffuse="PrimaryM">$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<right>0</right>
 						<include>WatchedOverlay</include>
@@ -260,14 +260,14 @@
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 						<animation effect="fade" start="100" end="30" time="100" condition="Control.HasFocus(60)">Conditional</animation>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<right>0</right>
 						<include>WatchedOverlay</include>
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<right>0</right>
 						<include>WatchedOverlay</include>
@@ -283,10 +283,10 @@
 				</focusedlayout>
 
 			</control>
-			
+
 			<control type="group"> <!--poster/info-->
 				<visible>Control.IsVisible(501)</visible>
-				
+
 				<control type="image"> <!--poster-->
 					<right>75</right>
 					<top>250</top>
@@ -296,7 +296,7 @@
 					<aspectratio>keep</aspectratio>
 					<include>PosterMenuFade</include>
 				</control>
-				
+
 				<control type="group">
 					<visible>Control.IsVisible(501)</visible>
 
@@ -309,21 +309,21 @@
 						<showonepage>true</showonepage>
 						<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 					</control>
-					
+
 				</control>
-				
+
 			</control>
-		
+
 		</control>
 
 	</include>
-	
+
 	<include name="View_51_Poster_Videos">
-	
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
-		
+
 			<control type="list" id="51">
 				<left>75</left>
 				<top>325</top>
@@ -390,7 +390,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -399,7 +399,7 @@
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -408,7 +408,7 @@
 						<texture>overlay/true.png</texture>
 						<visible>ListItem.IsResumable</visible>
 					</control>
-					
+
 					<control type="image"> <!--label bg-->
 						<left>0</left>
 						<top>495</top>
@@ -430,7 +430,7 @@
 				</itemlayout>
 
 				<itemlayout height="700" width="445" condition="Container.Content(Episodes) | Container.Content(Files)">
-				
+
 					<control type="group">
 						<top>225</top>
 
@@ -471,7 +471,7 @@
 							<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 							<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 						</control>
-					
+
 						<control type="image"> <!--watched icon-->
 							<left>-8</left>
 							<top>-8</top>
@@ -480,7 +480,7 @@
 							<texture>$VAR[Overlay]</texture>
 							<visible>!ListItem.IsResumable</visible>
 						</control>
-					
+
 						<control type="image"> <!--resumable icon-->
 							<left>-8</left>
 							<top>-8</top>
@@ -489,7 +489,7 @@
 							<texture>overlay/true.png</texture>
 							<visible>ListItem.IsResumable</visible>
 						</control>
-						
+
 						<control type="image"> <!--label bg-->
 							<left>0</left>
 							<top>268</top>
@@ -507,13 +507,13 @@
 							<textcolor>PrimaryT</textcolor>
 							<scroll>false</scroll>
 						</control>
-						
+
 					</control>
 
 				</itemlayout>
 
 				<focusedlayout height="700" width="345" condition="Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Actors)">
-					
+
 					<control type="image"> <!--thumb bg-->
 						<left>0</left>
 						<top>0</top>
@@ -561,7 +561,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -570,7 +570,7 @@
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -579,7 +579,7 @@
 						<texture>overlay/true.png</texture>
 						<visible>ListItem.IsResumable</visible>
 					</control>
-					
+
 					<control type="image"> <!--label bg-->
 						<left>0</left>
 						<top>495</top>
@@ -599,10 +599,10 @@
 						<selectedcolor>white</selectedcolor>
 						<autoscroll delay="2000" time="1750" repeat="3000"/>
 					</control>
-					
+
 					<control type="group"> <!--movie/tv show base info-->
 						<visible>Container.Content(Movies) | Container.Content(TVShows)</visible>
-							
+
 						<control type="image"> <!--star-->
 							<left>13</left>
 							<top>578</top>
@@ -611,7 +611,7 @@
 							<texture>symbols/infostar.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>40</left>
 							<top>565</top>
@@ -623,7 +623,7 @@
 							<label fallback="NR">$INFO[ListItem.Rating]</label>
 							<visible>!StringCompare(ListItem.Rating,10.0)</visible>
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>40</left>
 							<top>565</top>
@@ -635,7 +635,7 @@
 							<label>31079</label>
 							<visible>StringCompare(ListItem.Rating,10.0)</visible>
 						</control>
-						
+
 						<control type="label"> <!--movies base info-->
 							<left>72</left>
 							<top>565</top>
@@ -648,7 +648,7 @@
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 							<visible>Container.Content(Movies)</visible>
 						</control>
-						
+
 						<control type="label"> <!--tv shows base info-->
 							<left>72</left>
 							<top>565</top>
@@ -661,12 +661,12 @@
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 							<visible>Container.Content(TVShows)</visible>
 						</control>
-						
+
 					</control>
-					
+
 					<control type="group"> <!--season show base info-->
 						<visible>Container.Content(Seasons)</visible>
-						
+
 						<control type="label"> <!--base info-->
 							<left>15</left>
 							<top>565</top>
@@ -677,13 +677,13 @@
 							<selectedcolor>white</selectedcolor>
 							<label>$INFO[ListItem.Property(TotalEpisodes),, episodes ]$INFO[ListItem.Property(UnWatchedEpisodes),(, unwatched)]</label>
 						</control>
-						
+
 					</control>
 
 				</focusedlayout>
 
 				<focusedlayout height="700" width="445" condition="Container.Content(Episodes) | Container.Content(Files)">
-				
+
 					<control type="group">
 						<top>225</top>
 
@@ -724,7 +724,7 @@
 							<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 							<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 						</control>
-					
+
 						<control type="image"> <!--watched icon-->
 							<left>-8</left>
 							<top>-8</top>
@@ -733,7 +733,7 @@
 							<texture>$VAR[Overlay]</texture>
 							<visible>!ListItem.IsResumable</visible>
 						</control>
-					
+
 						<control type="image"> <!--resumable icon-->
 							<left>-8</left>
 							<top>-8</top>
@@ -742,7 +742,7 @@
 							<texture>overlay/true.png</texture>
 							<visible>ListItem.IsResumable</visible>
 						</control>
-						
+
 						<control type="image"> <!--label bg-->
 							<left>0</left>
 							<top>268</top>
@@ -762,10 +762,10 @@
 							<selectedcolor>white</selectedcolor>
 							<autoscroll delay="2000" time="1750" repeat="3000"/>
 						</control>
-						
+
 						<control type="group">
 							<visible>Container.Content(Episodes)</visible>
-								
+
 							<control type="image"> <!--star-->
 								<left>13</left>
 								<top>351</top>
@@ -774,7 +774,7 @@
 								<texture>symbols/infostar.png</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
-							
+
 							<control type="label"> <!--base info-->
 								<left>40</left>
 								<top>338</top>
@@ -786,7 +786,7 @@
 								<label fallback="NR">$INFO[ListItem.Rating]</label>
 								<visible>!StringCompare(ListItem.Rating,10.0)</visible>
 							</control>
-							
+
 							<control type="label"> <!--base info-->
 								<left>40</left>
 								<top>338</top>
@@ -798,7 +798,7 @@
 								<label>31079</label>
 								<visible>StringCompare(ListItem.Rating,10.0)</visible>
 							</control>
-							
+
 							<control type="label"> <!--base info-->
 								<left>72</left>
 								<top>338</top>
@@ -811,7 +811,7 @@
 								<visible>!IsEmpty(ListItem.Premiered)</visible>
 								<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 							</control>
-							
+
 							<control type="label"> <!--base info-->
 								<left>72</left>
 								<top>338</top>
@@ -824,12 +824,12 @@
 								<visible>IsEmpty(ListItem.Premiered)</visible>
 								<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 							</control>
-							
+
 						</control>
-						
+
 						<control type="group">
 							<visible>Container.Content(Episodes)</visible>
-							
+
 							<control type="label"> <!--base info-->
 								<left>15</left>
 								<top>338</top>
@@ -840,15 +840,15 @@
 								<selectedcolor>white</selectedcolor>
 								<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]]</label>
 							</control>
-							
+
 						</control>
-						
+
 					</control>
 
 				</focusedlayout>
-				
+
 			</control>
-			
+
 			<control type="group">
 				<visible>Control.IsVisible(51)</visible>
 
@@ -863,19 +863,19 @@
 					<showonepage>true</showonepage>
 					<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 				</control>
-				
+
 			</control>
-		
+
 		</control>
-	
+
 	</include>
-	
+
 	<include name="View_52_Landscape_Videos">
-	
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
-		
+
 			<control type="list" id="52">
 				<left>75</left>
 				<top>235</top>
@@ -892,7 +892,7 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="quadratic" easing="out">0</scrolltime>
 				<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Files)</visible>
-				
+
 				<itemlayout height="800" width="515">
 
 					<control type="image"> <!--background-->
@@ -920,7 +920,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -929,7 +929,7 @@
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -957,7 +957,7 @@
 						<textcolor>PrimaryT</textcolor>
 						<autoscroll>false</autoscroll>
 					</control>
-					
+
 					<control type="textbox"> <!--plot-->
 						<left>15</left>
 						<top>428</top>
@@ -968,11 +968,11 @@
 						<textcolor>PrimaryT</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll>false</autoscroll>
-					</control> 
-					
+					</control>
+
 					<control type="group">
 						<visible>!ListItem.IsFolder</visible>
-							
+
 						<control type="image"> <!--star-->
 							<left>13</left>
 							<top>661</top>
@@ -981,7 +981,7 @@
 							<texture colordiffuse="$INFO[Skin.String(MainColour)]">symbols/infostar.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>40</left>
 							<top>648</top>
@@ -992,7 +992,7 @@
 							<label fallback="NR">$INFO[ListItem.Rating]</label>
 							<visible>!StringCompare(ListItem.Rating,10.0)</visible>
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>40</left>
 							<top>648</top>
@@ -1003,7 +1003,7 @@
 							<label>31079</label>
 							<visible>StringCompare(ListItem.Rating,10.0)</visible>
 						</control>
-						
+
 						<control type="label"> <!-- movies base info-->
 							<left>72</left>
 							<top>648</top>
@@ -1015,7 +1015,7 @@
 							<visible>!Container.Content(Episodes) + !Container.Content(TVShows) + !Container.Content(Files)</visible>
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 						</control>
-						
+
 						<control type="label"> <!-- tv shows base info-->
 							<left>72</left>
 							<top>648</top>
@@ -1027,7 +1027,7 @@
 							<visible>!Container.Content(Episodes) + !Container.Content(Movies) + !Container.Content(Files)</visible>
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>72</left>
 							<top>648</top>
@@ -1040,7 +1040,7 @@
 							<visible>!IsEmpty(ListItem.Premiered)</visible>
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>72</left>
 							<top>648</top>
@@ -1053,9 +1053,9 @@
 							<visible>IsEmpty(ListItem.Premiered)</visible>
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 						</control>
-						
+
 					</control>
-					
+
 				</itemlayout>
 
 				<focusedlayout height="800" width="515">
@@ -1085,7 +1085,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -1094,7 +1094,7 @@
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -1123,7 +1123,7 @@
 						<selectedcolor>white</selectedcolor>
 						<autoscroll delay="3000" time="2500" repeat="3000"/>
 					</control>
-					
+
 					<control type="textbox"> <!--plot-->
 						<left>15</left>
 						<top>428</top>
@@ -1134,11 +1134,11 @@
 						<textcolor>PrimaryT</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll delay="10000" time="2500" repeat="10000"/>
-					</control> 
-					
+					</control>
+
 					<control type="group">
 						<visible>!ListItem.IsFolder</visible>
-							
+
 						<control type="image"> <!--star-->
 							<left>13</left>
 							<top>661</top>
@@ -1147,7 +1147,7 @@
 							<texture colordiffuse="$INFO[Skin.String(MainColour)]">symbols/infostar.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>40</left>
 							<top>648</top>
@@ -1158,7 +1158,7 @@
 							<label fallback="NR">$INFO[ListItem.Rating]</label>
 							<visible>!StringCompare(ListItem.Rating,10.0)</visible>
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>40</left>
 							<top>648</top>
@@ -1169,7 +1169,7 @@
 							<label>31079</label>
 							<visible>StringCompare(ListItem.Rating,10.0)</visible>
 						</control>
-						
+
 						<control type="label"> <!-- movies base info-->
 							<left>72</left>
 							<top>648</top>
@@ -1181,7 +1181,7 @@
 							<visible>!Container.Content(Episodes) + !Container.Content(TVShows) + !Container.Content(Files)</visible>
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 						</control>
-						
+
 						<control type="label"> <!-- tv shows base info-->
 							<left>72</left>
 							<top>648</top>
@@ -1193,7 +1193,7 @@
 							<visible>!Container.Content(Episodes) + !Container.Content(Movies) + !Container.Content(Files)</visible>
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>72</left>
 							<top>648</top>
@@ -1206,7 +1206,7 @@
 							<visible>!IsEmpty(ListItem.Premiered)</visible>
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>72</left>
 							<top>648</top>
@@ -1219,13 +1219,13 @@
 							<visible>IsEmpty(ListItem.Premiered)</visible>
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 						</control>
-						
+
 					</control>
-					
+
 				</focusedlayout>
-				
+
 			</control>
-			
+
 			<control type="group">
 				<visible>Control.IsVisible(52)</visible>
 
@@ -1240,19 +1240,19 @@
 					<showonepage>true</showonepage>
 					<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 				</control>
-				
+
 			</control>
-			
+
 		</control>
-	
+
 	</include>
-	
+
 	<include name="View_53_Panel_Videos">
-	
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
-		
+
 			<control type="panel" id="53">
 				<left>68</left>
 				<top>228</top>
@@ -1319,7 +1319,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-1</left>
 						<top>-1</top>
@@ -1328,7 +1328,7 @@
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<left>-1</left>
 						<top>-1</top>
@@ -1379,7 +1379,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-1</left>
 						<top>-1</top>
@@ -1388,7 +1388,7 @@
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<left>-1</left>
 						<top>-1</top>
@@ -1401,7 +1401,7 @@
 				</itemlayout>
 
 				<focusedlayout height="353" width="245" condition="Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Actors)">
-					
+
 					<control type="image"> <!--thumb bg-->
 						<left>7</left>
 						<top>7</top>
@@ -1449,7 +1449,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-1</left>
 						<top>-1</top>
@@ -1458,7 +1458,7 @@
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<left>-1</left>
 						<top>-1</top>
@@ -1541,7 +1541,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-1</left>
 						<top>-1</top>
@@ -1550,7 +1550,7 @@
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<left>-1</left>
 						<top>-1</top>
@@ -1593,9 +1593,9 @@
 					</control>
 
 				</focusedlayout>
-				
+
 			</control>
-			
+
 			<control type="group"> <!--movies/tv show info-->
 				<left>312</left>
 				<top>228</top>
@@ -1607,16 +1607,16 @@
 				<animation effect="slide" start="0,0" end="980,0" time="0" condition="Container(53).Column(4)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="601,0" time="0" condition="Container(53).Column(5)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="846,0" time="0" condition="Container(53).Column(6)">Conditional</animation>
-				
+
 				<animation effect="slide" start="0,0" end="50,0" time="450" condition="Container(53).OnScrollNext">Conditional</animation>
-					
+
 				<control type="image"> <!--bg-->
 					<left>0</left>
 					<top>0</top>
 					<width>380</width>
 					<height>352</height>
 					<texture colordiffuse="QuaternaryM">backgrounds/white.png</texture>
-				</control>	
+				</control>
 
 				<control type="image"> <!--label bg-->
 					<left>0</left>
@@ -1636,12 +1636,12 @@
 					<textcolor>white</textcolor>
 					<selectedcolor>white</selectedcolor>
 					<autoscroll delay="2000" time="1750" repeat="3000"/>
-				</control>	
-				
+				</control>
+
 				<control type="group"> <!--movie/tv show base info-->
 					<top>-480</top>
 					<visible>Container.Content(Movies) | Container.Content(TVShows)</visible>
-						
+
 					<control type="image"> <!--star-->
 						<left>13</left>
 						<top>578</top>
@@ -1650,7 +1650,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">symbols/infostar.png</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
-					
+
 					<control type="label"> <!--base info-->
 						<left>40</left>
 						<top>565</top>
@@ -1662,7 +1662,7 @@
 						<label fallback="NR">$INFO[ListItem.Rating]</label>
 						<visible>!StringCompare(ListItem.Rating,10.0)</visible>
 					</control>
-					
+
 					<control type="label"> <!--base info-->
 						<left>40</left>
 						<top>565</top>
@@ -1674,7 +1674,7 @@
 						<label>31079</label>
 						<visible>StringCompare(ListItem.Rating,10.0)</visible>
 					</control>
-					
+
 					<control type="label"> <!--movies base info-->
 						<left>72</left>
 						<top>565</top>
@@ -1687,7 +1687,7 @@
 						<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 						<visible>Container.Content(Movies)</visible>
 					</control>
-					
+
 					<control type="label"> <!--tv shows base info-->
 						<left>72</left>
 						<top>565</top>
@@ -1700,13 +1700,13 @@
 						<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 						<visible>Container.Content(TVShows)</visible>
 					</control>
-					
+
 				</control>
-				
+
 				<control type="group"> <!--season show base info-->
 					<top>-480</top>
 					<visible>Container.Content(Seasons)</visible>
-					
+
 					<control type="label"> <!--base info-->
 						<left>15</left>
 						<top>565</top>
@@ -1717,9 +1717,9 @@
 						<selectedcolor>white</selectedcolor>
 						<label>$INFO[ListItem.Property(TotalEpisodes),, episodes ]$INFO[ListItem.Property(UnWatchedEpisodes),(, unwatched)]</label>
 					</control>
-					
-				</control>	
-					
+
+				</control>
+
 				<control type="textbox"> <!--plot-->
 					<left>15</left>
 					<top>130</top>
@@ -1731,10 +1731,10 @@
 					<label>$INFO[ListItem.Plot]</label>
 					<autoscroll delay="5000" time="2000" repeat="10000"/>
 					<visible>!Container.Content(seasons)</visible>
-				</control> 	
-				
+				</control>
+
 			</control>
-			
+
 			<control type="group"> <!--episodes info-->
 				<left>472</left>
 				<top>228</top>
@@ -1744,16 +1744,16 @@
 				<animation effect="slide" start="0,0" end="405,0" time="0" condition="Container(53).Column(1)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="810,0" time="0" condition="Container(53).Column(2)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="231,0" time="0" condition="Container(53).Column(3)">Conditional</animation>
-				
+
 				<animation effect="slide" start="0,0" end="50,0" time="450" condition="Container(53).OnScrollNext">Conditional</animation>
-					
+
 				<control type="image"> <!--bg-->
 					<left>0</left>
 					<top>0</top>
 					<width>580</width>
 					<height>231</height>
 					<texture colordiffuse="QuaternaryM">backgrounds/white.png</texture>
-				</control>	
+				</control>
 
 				<control type="image"> <!--label bg-->
 					<left>0</left>
@@ -1774,11 +1774,11 @@
 					<selectedcolor>white</selectedcolor>
 					<autoscroll delay="2000" time="1750" repeat="3000"/>
 				</control>
-						
+
 				<control type="group">
 					<top>-279</top>
 					<visible>Container.Content(Episodes)</visible>
-						
+
 					<control type="image"> <!--star-->
 						<left>13</left>
 						<top>351</top>
@@ -1787,7 +1787,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">symbols/infostar.png</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
-					
+
 					<control type="label"> <!--base info-->
 						<left>40</left>
 						<top>338</top>
@@ -1799,7 +1799,7 @@
 						<label fallback="NR">$INFO[ListItem.Rating]</label>
 						<visible>!StringCompare(ListItem.Rating,10.0)</visible>
 					</control>
-					
+
 					<control type="label"> <!--base info-->
 						<left>40</left>
 						<top>338</top>
@@ -1811,7 +1811,7 @@
 						<label>31079</label>
 						<visible>StringCompare(ListItem.Rating,10.0)</visible>
 					</control>
-					
+
 					<control type="label"> <!--base info-->
 						<left>72</left>
 						<top>338</top>
@@ -1824,7 +1824,7 @@
 						<visible>!IsEmpty(ListItem.Premiered)</visible>
 						<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 					</control>
-					
+
 					<control type="label"> <!--base info-->
 						<left>72</left>
 						<top>338</top>
@@ -1837,13 +1837,13 @@
 						<visible>IsEmpty(ListItem.Premiered)</visible>
 						<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 					</control>
-					
+
 				</control>
-				
+
 				<control type="group">
 					<top>-279</top>
 					<visible>!Container.Content(Episodes)</visible>
-					
+
 					<control type="label"> <!--base info-->
 						<left>15</left>
 						<top>338</top>
@@ -1854,9 +1854,9 @@
 						<selectedcolor>white</selectedcolor>
 						<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]]</label>
 					</control>
-					
+
 				</control>
-					
+
 				<control type="textbox"> <!--plot-->
 					<left>15</left>
 					<top>105</top>
@@ -1867,10 +1867,10 @@
 					<textcolor>PrimaryT</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
 					<autoscroll delay="5000" time="2000" repeat="10000"/>
-				</control> 	
-				
+				</control>
+
 			</control>
-			
+
 			<control type="group">
 				<visible>Control.IsVisible(53)</visible>
 
@@ -1885,19 +1885,19 @@
 					<showonepage>true</showonepage>
 					<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 				</control>
-				
+
 			</control>
-		
+
 		</control>
-	
+
 	</include>
-	
+
 	<include name="View_54_Info_Panel_Videos">
-	
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
-		
+
 			<control type="panel" id="54">
 				<left>108</left>
 				<top>228</top>
@@ -1953,7 +1953,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-1</left>
 						<top>-1</top>
@@ -1962,7 +1962,7 @@
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<left>-1</left>
 						<top>-1</top>
@@ -2013,7 +2013,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -2022,7 +2022,7 @@
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -2035,7 +2035,7 @@
 				</itemlayout>
 
 				<focusedlayout height="353" width="245" condition="Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Actors)">
-					
+
 					<control type="image"> <!--thumb bg-->
 						<left>7</left>
 						<top>7</top>
@@ -2073,7 +2073,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-1</left>
 						<top>-1</top>
@@ -2082,7 +2082,7 @@
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<left>-1</left>
 						<top>-1</top>
@@ -2165,7 +2165,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -2174,7 +2174,7 @@
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -2217,12 +2217,12 @@
 					</control>
 
 				</focusedlayout>
-				
+
 			</control>
-			
+
 			<control type="group"> <!--poster/info-->
 				<visible>Control.IsVisible(54)</visible>
-				
+
 				<control type="image"> <!--poster-->
 					<right>115</right>
 					<top>235</top>
@@ -2232,24 +2232,24 @@
 					<aspectratio>scale</aspectratio>
 					<include>PosterMenuFade</include>
 				</control>
-				
+
 				<control type="group"> <!--plot items-->
 					<right>115</right>
 					<top>226</top>
 					<width>460</width>
 					<height>680</height>
-					
+
 					<control type="image"> <!--label bg-->
 						<left>0</left>
 						<top>630</top>
 						<width>460</width>
 						<height>70</height>
 						<texture colordiffuse="Black95">backgrounds/white.png</texture>
-						
+
 						<animation type="Conditional" condition="System.IdleTime(2)" reversible="true" loop="false">
 							<effect type="zoom" end="0,362,460,338" time="250" />
 						</animation>
-						
+
 					</control>
 
 					<control type="label"> <!--label-->
@@ -2262,17 +2262,17 @@
 						<textcolor>white</textcolor>
 						<selectedcolor>white</selectedcolor>
 						<scroll>false</scroll>
-		
+
 						<animation type="Conditional" condition="System.IdleTime(2)" reversible="true" loop="false">
 							<effect type="slide" start="0,0" end="0,-268" time="250" />
 						</animation>
-			
-					</control>	
+
+					</control>
 
 					<control type="group"> <!--movies info-->
 						<visible>Container.Content(Movies)</visible>
 						<top>-88</top>
-								
+
 						<control type="image"> <!--star-->
 							<left>13</left>
 							<top>513</top>
@@ -2281,13 +2281,13 @@
 							<texture colordiffuse="$INFO[Skin.String(MainColour)]">symbols/infostar.png</texture>
 							<aspectratio>keep</aspectratio>
 							<visible>System.IdleTime(2)</visible>
-			
+
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" time="250" delay="250" />
 							</animation>
-							
+
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>40</left>
 							<top>500</top>
@@ -2298,13 +2298,13 @@
 							<label fallback="NR">$INFO[ListItem.Rating]</label>
 							<visible>!StringCompare(ListItem.Rating,10.0)</visible>
 							<visible>System.IdleTime(2)</visible>
-			
+
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" time="250" delay="250" />
 							</animation>
-							
+
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>40</left>
 							<top>500</top>
@@ -2315,13 +2315,13 @@
 							<label>31079</label>
 							<visible>StringCompare(ListItem.Rating,10.0)</visible>
 							<visible>System.IdleTime(2)</visible>
-			
+
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" time="250" delay="250" />
 							</animation>
-							
+
 						</control>
-								
+
 						<control type="label"> <!--base info-->
 							<left>72</left>
 							<top>500</top>
@@ -2334,19 +2334,19 @@
 							<scroll>false</scroll>
 							<visible>System.IdleTime(2)</visible>
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
-			
+
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" time="250" delay="250" />
 							</animation>
-							
+
 						</control>
-					
+
 					</control>
 
 					<control type="group"> <!--tv shows info-->
 						<visible>Container.Content(TVShows)</visible>
 						<top>-88</top>
-								
+
 						<control type="image"> <!--star-->
 							<left>13</left>
 							<top>513</top>
@@ -2355,13 +2355,13 @@
 							<texture colordiffuse="$INFO[Skin.String(MainColour)]">symbols/infostar.png</texture>
 							<aspectratio>keep</aspectratio>
 							<visible>System.IdleTime(2)</visible>
-			
+
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" time="250" delay="250" />
 							</animation>
-							
+
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>40</left>
 							<top>500</top>
@@ -2372,13 +2372,13 @@
 							<label fallback="NR">$INFO[ListItem.Rating]</label>
 							<visible>!StringCompare(ListItem.Rating,10.0)</visible>
 							<visible>System.IdleTime(2)</visible>
-			
+
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" time="250" delay="250" />
 							</animation>
-							
+
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>40</left>
 							<top>500</top>
@@ -2389,13 +2389,13 @@
 							<label>31079</label>
 							<visible>StringCompare(ListItem.Rating,10.0)</visible>
 							<visible>System.IdleTime(2)</visible>
-			
+
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" time="250" delay="250" />
 							</animation>
-							
+
 						</control>
-								
+
 						<control type="label"> <!--base info-->
 							<left>72</left>
 							<top>500</top>
@@ -2408,19 +2408,19 @@
 							<scroll>false</scroll>
 							<visible>System.IdleTime(2)</visible>
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
-			
+
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" time="250" delay="250" />
 							</animation>
-							
+
 						</control>
-					
+
 					</control>
 
 					<control type="group"> <!--seasons info-->
 						<visible>Container.Content(Seasons)</visible>
 						<top>-88</top>
-								
+
 						<control type="label"> <!--base info-->
 							<left>15</left>
 							<top>500</top>
@@ -2433,19 +2433,19 @@
 							<scroll>false</scroll>
 							<visible>System.IdleTime(2)</visible>
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
-			
+
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" time="250" delay="250" />
 							</animation>
-							
+
 						</control>
-					
+
 					</control>
 
 					<control type="group"> <!--episodes info-->
 						<visible>Container.Content(Episodes)</visible>
 						<top>-88</top>
-								
+
 						<control type="image"> <!--star-->
 							<left>13</left>
 							<top>513</top>
@@ -2454,13 +2454,13 @@
 							<texture colordiffuse="$INFO[Skin.String(MainColour)]">symbols/infostar.png</texture>
 							<aspectratio>keep</aspectratio>
 							<visible>System.IdleTime(2)</visible>
-			
+
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" time="250" delay="250" />
 							</animation>
-							
+
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>40</left>
 							<top>500</top>
@@ -2471,13 +2471,13 @@
 							<label fallback="NR">$INFO[ListItem.Rating]</label>
 							<visible>!StringCompare(ListItem.Rating,10.0)</visible>
 							<visible>System.IdleTime(2)</visible>
-			
+
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" time="250" delay="250" />
 							</animation>
-							
+
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>40</left>
 							<top>500</top>
@@ -2488,13 +2488,13 @@
 							<label>31079</label>
 							<visible>StringCompare(ListItem.Rating,10.0)</visible>
 							<visible>System.IdleTime(2)</visible>
-			
+
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" time="250" delay="250" />
 							</animation>
-							
+
 						</control>
-								
+
 						<control type="label"> <!--base info-->
 							<left>72</left>
 							<top>500</top>
@@ -2507,15 +2507,15 @@
 							<scroll>false</scroll>
 							<visible>System.IdleTime(2)</visible>
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
-			
+
 							<animation type="Visible">
 								<effect type="fade" start="0" end="100" time="250" delay="250" />
 							</animation>
-							
+
 						</control>
-					
+
 					</control>
-						
+
 					<control type="textbox"> <!--plot-->
 						<left>15</left>
 						<top>465</top>
@@ -2527,15 +2527,15 @@
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll delay="7000" time="2000" repeat="10000"/>
 						<visible>System.IdleTime(2)</visible>
-		
+
 						<animation type="Visible">
 							<effect type="fade" start="0" end="100" time="250" delay="250" />
 						</animation>
-						
-					</control> 
-					
+
+					</control>
+
 				</control>
-				
+
 				<control type="group">
 					<visible>Control.IsVisible(50)</visible>
 
@@ -2548,11 +2548,11 @@
 						<showonepage>false</showonepage>
 						<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 					</control>
-					
+
 				</control>
-				
-			</control>			
-			
+
+			</control>
+
 			<control type="group">
 				<visible>Control.IsVisible(54)</visible>
 
@@ -2567,19 +2567,19 @@
 					<showonepage>true</showonepage>
 					<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 				</control>
-				
+
 			</control>
-		
+
 		</control>
-	
+
 	</include>
-	
+
 	<include name="View_58_Slideshow_Videos">
-	
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
-		
+
 			<control type="wraplist" id="58">
 				<left>210</left>
 				<top>220</top>
@@ -2606,7 +2606,7 @@
 						<aspectratio>scale</aspectratio>
 						<texture>special://skin/backgrounds/games.jpg</texture>
 						<visible>IsEmpty(ListItem.Property(Fanart_Image))</visible>
-					</control>	
+					</control>
 
 					<control type="image"> <!--fanart-->
 						<left>0</left>
@@ -2615,7 +2615,7 @@
 						<height>730</height>
 						<aspectratio>scale</aspectratio>
 						<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-					</control>	
+					</control>
 
 					<control type="image"> <!--watched/resumable background-->
 						<left>0</left>
@@ -2625,7 +2625,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -2634,7 +2634,7 @@
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -2656,7 +2656,7 @@
 						<aspectratio>scale</aspectratio>
 						<texture>special://skin/backgrounds/games.jpg</texture>
 						<visible>IsEmpty(ListItem.Property(Fanart_Image))</visible>
-					</control>	
+					</control>
 
 					<control type="image"> <!--fanart-->
 						<left>0</left>
@@ -2665,7 +2665,7 @@
 						<height>730</height>
 						<aspectratio>scale</aspectratio>
 						<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-					</control>	
+					</control>
 
 					<control type="image"> <!--watched/resumable background-->
 						<left>0</left>
@@ -2675,7 +2675,7 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -2684,7 +2684,7 @@
 						<texture>$VAR[Overlay]</texture>
 						<visible>!ListItem.IsResumable</visible>
 					</control>
-				
+
 					<control type="image"> <!--resumable icon-->
 						<left>-8</left>
 						<top>-8</top>
@@ -2695,9 +2695,9 @@
 					</control>
 
 				</focusedlayout>
-				
+
 			</control>
-			
+
 			<control type="group"> <!--info-->
 				<left>210</left>
 				<top>250</top>
@@ -2734,18 +2734,18 @@
 					<height>10</height>
 					<texture colordiffuse="SecondaryM">backgrounds/white.png</texture>
 				</control>
-					
+
 				<control type="image"> <!--label bg-->
 					<left>0</left>
 					<top>630</top>
 					<width>1500</width>
 					<height>70</height>
 					<texture colordiffuse="Black95">backgrounds/white.png</texture>
-					
+
 					<animation type="Conditional" condition="System.IdleTime(2)" reversible="true" loop="false">
 						<effect type="zoom" end="0,450,1500,250" time="250" />
 					</animation>
-					
+
 				</control>
 
 				<control type="label"> <!--label-->
@@ -2758,16 +2758,16 @@
 					<textcolor>white</textcolor>
 					<selectedcolor>white</selectedcolor>
 					<scroll>false</scroll>
-	
+
 					<animation type="Conditional" condition="System.IdleTime(2)" reversible="true" loop="false">
 						<effect type="slide" start="0,0" end="0,-180" time="250" />
 					</animation>
-		
-				</control>	
+
+				</control>
 
 				<control type="group"> <!--movies info-->
 					<visible>Container.Content(Movies)</visible>
-							
+
 					<control type="image"> <!--star-->
 						<left>13</left>
 						<top>513</top>
@@ -2776,13 +2776,13 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">symbols/infostar.png</texture>
 						<aspectratio>keep</aspectratio>
 						<visible>System.IdleTime(2)</visible>
-		
+
 						<animation type="Visible">
 							<effect type="fade" start="0" end="100" time="250" delay="250" />
 						</animation>
-						
+
 					</control>
-					
+
 					<control type="label"> <!--base info-->
 						<left>40</left>
 						<top>500</top>
@@ -2793,13 +2793,13 @@
 						<label fallback="NR">$INFO[ListItem.Rating]</label>
 						<visible>!StringCompare(ListItem.Rating,10.0)</visible>
 						<visible>System.IdleTime(2)</visible>
-		
+
 						<animation type="Visible">
 							<effect type="fade" start="0" end="100" time="250" delay="250" />
 						</animation>
-						
+
 					</control>
-					
+
 					<control type="label"> <!--base info-->
 						<left>40</left>
 						<top>500</top>
@@ -2810,13 +2810,13 @@
 						<label>31079</label>
 						<visible>StringCompare(ListItem.Rating,10.0)</visible>
 						<visible>System.IdleTime(2)</visible>
-		
+
 						<animation type="Visible">
 							<effect type="fade" start="0" end="100" time="250" delay="250" />
 						</animation>
-						
+
 					</control>
-							
+
 					<control type="label"> <!--base info-->
 						<left>72</left>
 						<top>500</top>
@@ -2829,18 +2829,18 @@
 						<scroll>false</scroll>
 						<visible>System.IdleTime(2)</visible>
 						<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
-		
+
 						<animation type="Visible">
 							<effect type="fade" start="0" end="100" time="250" delay="250" />
 						</animation>
-						
+
 					</control>
-				
+
 				</control>
 
 				<control type="group"> <!--tv shows info-->
 					<visible>Container.Content(TVShows)</visible>
-							
+
 					<control type="image"> <!--star-->
 						<left>13</left>
 						<top>513</top>
@@ -2849,13 +2849,13 @@
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">symbols/infostar.png</texture>
 						<aspectratio>keep</aspectratio>
 						<visible>System.IdleTime(2)</visible>
-		
+
 						<animation type="Visible">
 							<effect type="fade" start="0" end="100" time="250" delay="250" />
 						</animation>
-						
+
 					</control>
-					
+
 					<control type="label"> <!--base info-->
 						<left>40</left>
 						<top>500</top>
@@ -2866,13 +2866,13 @@
 						<label fallback="NR">$INFO[ListItem.Rating]</label>
 						<visible>!StringCompare(ListItem.Rating,10.0)</visible>
 						<visible>System.IdleTime(2)</visible>
-		
+
 						<animation type="Visible">
 							<effect type="fade" start="0" end="100" time="250" delay="250" />
 						</animation>
-						
+
 					</control>
-					
+
 					<control type="label"> <!--base info-->
 						<left>40</left>
 						<top>500</top>
@@ -2883,13 +2883,13 @@
 						<label>31079</label>
 						<visible>StringCompare(ListItem.Rating,10.0)</visible>
 						<visible>System.IdleTime(2)</visible>
-		
+
 						<animation type="Visible">
 							<effect type="fade" start="0" end="100" time="250" delay="250" />
 						</animation>
-						
+
 					</control>
-							
+
 					<control type="label"> <!--base info-->
 						<left>72</left>
 						<top>500</top>
@@ -2902,15 +2902,15 @@
 						<scroll>false</scroll>
 						<visible>System.IdleTime(2)</visible>
 						<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
-		
+
 						<animation type="Visible">
 							<effect type="fade" start="0" end="100" time="250" delay="250" />
 						</animation>
-						
+
 					</control>
-				
+
 				</control>
-					
+
 				<control type="textbox"> <!--plot-->
 					<left>15</left>
 					<top>545</top>
@@ -2922,15 +2922,15 @@
 					<label>$INFO[ListItem.Plot]</label>
 					<autoscroll delay="10000" time="4000" repeat="18000"/>
 					<visible>System.IdleTime(2)</visible>
-	
+
 					<animation type="Visible">
 						<effect type="fade" start="0" end="100" time="250" delay="250" />
 					</animation>
-					
-				</control> 
-					
+
+				</control>
+
 			</control>
-			
+
 			<control type="group">
 				<visible>Control.IsVisible(58)</visible>
 
@@ -2946,19 +2946,19 @@
 					<orientation>horizontal</orientation>
 					<showonepage>false</showonepage>
 				</control>
-				
+
 			</control>
-		
+
 		</control>
-	
+
 	</include>
-	
+
 	<include name="View_59_Episode_Videos">
-	
+
 		<control type="group">
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
-		
+
 			<control type="fixedlist" id="59">
 				<left>410</left>
 				<top>250</top>
@@ -2976,9 +2976,9 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="quadratic" easing="out">0</scrolltime>
 				<visible>Container.Content(Episodes) | Container.Content(Files)</visible>
-							
+
 				<itemlayout width="1870" height="90">
-			
+
 					<control type="label">
 						<posx>487</posx>
 						<posy>0</posy>
@@ -2988,7 +2988,7 @@
 						<scroll>false</scroll>
 						<selectedcolor>PrimaryT</selectedcolor>
 					</control>
-			
+
 					<control type="label">
 						<posx>487</posx>
 						<posy>35</posy>
@@ -3001,9 +3001,9 @@
 					</control>
 
 				</itemlayout>
-							
+
 				<focusedlayout width="1870" height="320">
-				
+
 					<control type="image">
 						<posx>10</posx>
 						<posy>21</posy>
@@ -3012,7 +3012,7 @@
 						<aspectratio>scale</aspectratio>
 						<texture colordiffuse="QuaternaryM">backgrounds/white.png</texture>
 					</control>
-				
+
 					<control type="image">
 						<posx>10</posx>
 						<posy>21</posy>
@@ -3021,7 +3021,7 @@
 						<aspectratio>scale</aspectratio>
 						<texture background="true">$INFO[ListItem.Thumb]</texture>
 					</control>
-			
+
 					<control type="label"> <!--title-->
 						<posx>475</posx>
 						<posy>38</posy>
@@ -3031,12 +3031,12 @@
 						<font>ListLarge</font>
 						<textcolor>PrimaryT</textcolor>
 						<scroll>true</scroll>
-					</control>   
-					
+					</control>
+
 					<control type="group"> <!--info-->
 						<top>-570</top>
 						<left>460</left>
-							
+
 						<control type="image"> <!--star-->
 							<left>13</left>
 							<top>661</top>
@@ -3046,7 +3046,7 @@
 							<aspectratio>keep</aspectratio>
 							<visible>!Container.Content(Files)</visible>
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>40</left>
 							<top>648</top>
@@ -3058,7 +3058,7 @@
 							<visible>!Container.Content(Files)</visible>
 							<visible>!StringCompare(ListItem.Rating,10.0)</visible>
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>40</left>
 							<top>648</top>
@@ -3070,7 +3070,7 @@
 							<visible>!Container.Content(Files)</visible>
 							<visible>StringCompare(ListItem.Rating,10.0)</visible>
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>72</left>
 							<top>648</top>
@@ -3083,7 +3083,7 @@
 							<visible>!IsEmpty(ListItem.Premiered)</visible>
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 						</control>
-						
+
 						<control type="label"> <!--base info-->
 							<left>72</left>
 							<top>648</top>
@@ -3096,7 +3096,7 @@
 							<visible>IsEmpty(ListItem.Premiered)</visible>
 							<animation effect="slide" start="0,0" end="-5,0" time="0" condition="StringCompare(ListItem.Rating,10.0)">Conditional</animation>
 						</control>
-								
+
 						<control type="label"> <!--base info-->
 							<left>15</left>
 							<top>648</top>
@@ -3107,7 +3107,7 @@
 							<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]]$INFO[ListItem.Size, • ]</label>
 							<visible>Container.Content(Files)</visible>
 						</control>
-						
+
 					</control>
 
 					<control type="textbox">
@@ -3119,12 +3119,12 @@
 						<align>left</align>
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll delay="5000" time="2500" repeat="10000"/>
-					</control>  
+					</control>
 
 				</focusedlayout>
-				
+
 			</control>
-				
+
 			<control type="group">
 				<visible>Control.IsVisible(59)</visible>
 
@@ -3137,11 +3137,11 @@
 					<showonepage>true</showonepage>
 					<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 				</control>
-				
+
 			</control>
-			
+
 		</control>
-	
+
 	</include>
 
 </includes>

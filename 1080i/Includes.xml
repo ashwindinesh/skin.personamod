@@ -10,14 +10,14 @@
 	<include file="Animations.xml" />
 	<include file="Variables.xml" />
 	<include file="script-skinshortcuts-includes.xml"/>
-	
-	
+
+
 	<!------------------------->
 	<!------------------------->
 	<!-----Global Includes----->
 	<!------------------------->
 	<!------------------------->
-	
+
 	<include name="HiddenButton">
 		<posx>-20</posx>
 		<posy>-20</posy>
@@ -27,26 +27,26 @@
 		<texturenofocus>-</texturenofocus>
 		<texturefocus>-</texturefocus>
 	</include>
-	
+
 	<include name="HiddenByMenu">
 		<visible allowhiddenfocus="true">
-		!Window.IsActive(movieinformation) + 
-		!Window.IsActive(DialogAlbumInfo.xml) + 
-		!Window.IsActive(DialogSongInfo.xml) + 
-		!Window.IsActive(DialogAddonInfo.xml) + 
-		!Window.IsActive(addonsettings) + 
-		!Window.IsActive(shutdownmenu) + 
-		!Window.IsActive(contextmenu) + 
-		!Window.IsActive(filebrowser) + 
-		!Window.IsActive(mediasource) + 
-		!Window.IsActive(contentsettings) + 
-		!Window.IsActive(yesnodialog) + 
-		!Window.IsActive(okdialog) + 
-		!Window.IsActive(progressdialog) + 
-		!Window.IsActive(virtualkeyboard) + 
-		!Window.IsActive(numericinput) + 
-		!Window.IsActive(fullscreenvideo) + 
-		!Window.IsActive(visualisation) + 
+		!Window.IsActive(movieinformation) +
+		!Window.IsActive(DialogAlbumInfo.xml) +
+		!Window.IsActive(DialogSongInfo.xml) +
+		!Window.IsActive(DialogAddonInfo.xml) +
+		!Window.IsActive(addonsettings) +
+		!Window.IsActive(shutdownmenu) +
+		!Window.IsActive(contextmenu) +
+		!Window.IsActive(filebrowser) +
+		!Window.IsActive(mediasource) +
+		!Window.IsActive(contentsettings) +
+		!Window.IsActive(yesnodialog) +
+		!Window.IsActive(okdialog) +
+		!Window.IsActive(progressdialog) +
+		!Window.IsActive(virtualkeyboard) +
+		!Window.IsActive(numericinput) +
+		!Window.IsActive(fullscreenvideo) +
+		!Window.IsActive(visualisation) +
 		!Window.IsActive(selectdialog) +
 		!Window.IsActive(filestackingdialog) +
 		!Window.IsActive(peripherals) +
@@ -55,33 +55,33 @@
 		!Window.IsActive(script-skinshortcuts.xml) +
 		!Window.IsActive(smartplaylisteditor) +
 		!Window.IsActive(textviewer) +
-		!Window.IsActive(Custom_Game_Info.xml) + 
-		!Window.IsActive(RatingDialog.xml) + 
-		!Window.IsActive(script-globalsearch-contextmenu.xml) + 
-		!Window.IsActive(script-globalsearch-infodialog.xml) + 
+		!Window.IsActive(Custom_Game_Info.xml) +
+		!Window.IsActive(RatingDialog.xml) +
+		!Window.IsActive(script-globalsearch-contextmenu.xml) +
+		!Window.IsActive(script-globalsearch-infodialog.xml) +
 		!ControlGroup(9000).HasFocus
 		</visible>
 	</include>
-	
+
 	<include name="HiddenByMenu2">
 		<visible allowhiddenfocus="true">
-		!Window.IsActive(movieinformation) + 
-		!Window.IsActive(DialogAlbumInfo.xml) + 
-		!Window.IsActive(DialogSongInfo.xml) + 
-		!Window.IsActive(DialogAddonInfo.xml) + 
-		!Window.IsActive(addonsettings) + 
-		!Window.IsActive(shutdownmenu) + 
-		!Window.IsActive(contextmenu) + 
-		!Window.IsActive(filebrowser) + 
-		!Window.IsActive(mediasource) + 
-		!Window.IsActive(contentsettings) + 
-		!Window.IsActive(yesnodialog) + 
-		!Window.IsActive(okdialog) + 
-		!Window.IsActive(progressdialog) + 
-		!Window.IsActive(virtualkeyboard) + 
-		!Window.IsActive(numericinput) + 
-		!Window.IsActive(fullscreenvideo) + 
-		!Window.IsActive(visualisation) + 
+		!Window.IsActive(movieinformation) +
+		!Window.IsActive(DialogAlbumInfo.xml) +
+		!Window.IsActive(DialogSongInfo.xml) +
+		!Window.IsActive(DialogAddonInfo.xml) +
+		!Window.IsActive(addonsettings) +
+		!Window.IsActive(shutdownmenu) +
+		!Window.IsActive(contextmenu) +
+		!Window.IsActive(filebrowser) +
+		!Window.IsActive(mediasource) +
+		!Window.IsActive(contentsettings) +
+		!Window.IsActive(yesnodialog) +
+		!Window.IsActive(okdialog) +
+		!Window.IsActive(progressdialog) +
+		!Window.IsActive(virtualkeyboard) +
+		!Window.IsActive(numericinput) +
+		!Window.IsActive(fullscreenvideo) +
+		!Window.IsActive(visualisation) +
 		!Window.IsActive(selectdialog) +
 		!Window.IsActive(filestackingdialog) +
 		!Window.IsActive(peripherals) +
@@ -92,26 +92,26 @@
 		!Window.IsActive(smartplaylisteditor)
 		</visible>
 	</include>
-	
+
 	<include name="HiddenByMenuMusicPlayer">
 		<visible allowhiddenfocus="true">
-		!Window.IsActive(movieinformation) + 
-		!Window.IsActive(DialogAlbumInfo.xml) + 
-		!Window.IsActive(DialogSongInfo.xml) + 
-		!Window.IsActive(DialogAddonInfo.xml) + 
-		!Window.IsActive(addonsettings) + 
-		!Window.IsActive(shutdownmenu) + 
-		!Window.IsActive(contextmenu) + 
-		!Window.IsActive(filebrowser) + 
-		!Window.IsActive(mediasource) + 
-		!Window.IsActive(contentsettings) + 
-		!Window.IsActive(yesnodialog) + 
-		!Window.IsActive(okdialog) + 
-		!Window.IsActive(contextmenu) + 
-		!Window.IsActive(progressdialog) + 
-		!Window.IsActive(virtualkeyboard) + 
-		!Window.IsActive(numericinput) + 
-		!Window.IsActive(fullscreenvideo) + 
+		!Window.IsActive(movieinformation) +
+		!Window.IsActive(DialogAlbumInfo.xml) +
+		!Window.IsActive(DialogSongInfo.xml) +
+		!Window.IsActive(DialogAddonInfo.xml) +
+		!Window.IsActive(addonsettings) +
+		!Window.IsActive(shutdownmenu) +
+		!Window.IsActive(contextmenu) +
+		!Window.IsActive(filebrowser) +
+		!Window.IsActive(mediasource) +
+		!Window.IsActive(contentsettings) +
+		!Window.IsActive(yesnodialog) +
+		!Window.IsActive(okdialog) +
+		!Window.IsActive(contextmenu) +
+		!Window.IsActive(progressdialog) +
+		!Window.IsActive(virtualkeyboard) +
+		!Window.IsActive(numericinput) +
+		!Window.IsActive(fullscreenvideo) +
 		!Window.IsActive(selectdialog) +
 		!Window.IsVisible(VisualisationSettings) +
 		!Window.IsVisible(VisualisationPresetList) +
@@ -123,16 +123,16 @@
 		!ControlGroup(9000).HasFocus
 		</visible>
 	</include>
-	
+
 	<include name="DialogBG">
-		
+
 		<control type="image"> <!--top-->
 			<include>FullScreenDimensions</include>
 			<texture colordiffuse="Black95">backgrounds/whites.png</texture>
 		</control>
-		
+
 	</include>
-	
+
 	<include name="BreadcrumbLabelLeft">
 		<left>75</left>
 		<top>50</top>
@@ -142,9 +142,9 @@
 		<include>ViewAnimation</include>
 		<include>HiddenByMenu</include>
 	</include>
-	
+
 	<include name="Breadcrumb">
-						
+
 		<control type="grouplist"> <!--rating-->
 			<left>75</left>
 			<top>50</top>
@@ -153,13 +153,13 @@
 			<itemgap>15</itemgap>
 			<orientation>horizontal</orientation>
 			<align>left</align>
-		
+
 			<control type="label">
 				<label>$VAR[Breadcrumb1]</label>
 				<width>auto</width>
 				<include>BreadcrumbLabelLeft</include>
 			</control>
-		
+
 			<control type="label">
 				<label>$VAR[Breadcrumb2]</label>
 				<width max="1300">auto</width>
@@ -170,9 +170,9 @@
 				<include>BreadcrumbLabelLeft</include>
 				<scroll>false</scroll>
 			</control>
-			
+
 		</control>
-		
+
 	</include>
 
 	<include name="FullscreenDimensions">
@@ -183,20 +183,20 @@
 	</include>
 
 	<include name="GlobalBackground"> <!--fanart images-->
-	
+
 		<control type="group"> <!--base background-->
-			
+
 			<control type="image">
 				<texture>backgrounds/white.png</texture>
 				<visible>Skin.HasSetting(global.slideshow)</visible>
 			</control>
-		
+
 			<control type="image"> <!--global background-->
 				<include>FullscreenDimensions</include>
 				<texture>$INFO[Skin.String(background)]</texture>
 				<visible>Skin.HasSetting(global.background)</visible>
 			</control>
-				
+
 			<control type="multiimage"> <!--global slideshow-->
 				<include>FullscreenDimensions</include>
 				<timeperimage>60000</timeperimage>
@@ -205,76 +205,76 @@
 				<imagepath background="true">$INFO[Skin.String(global.slideshow)]</imagepath>
 				<visible>Skin.HasSetting(global.slideshow)</visible>
 			</control>
-			
+
 		</control>
-		
+
 		<control type="group"> <!--custom backgrounds-->
-		
+
 			<control type="image"> <!--videos-->
 				<include>FullscreenDimensions</include>
 				<fadetime>250</fadetime>
 				<texture>$INFO[Skin.String(video.custom.bg)]</texture>
 				<visible>[Window.IsVisible(videolibrary) + !SubString(Container.FolderPath,/movies/) + !SubString(Container.FolderPath,/tvshows/) + !Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)] + Skin.HasSetting(video.custom.bg) + Skin.HasSetting(sectional.background)</visible>
 			</control>
-		
+
 			<control type="image"> <!--movies-->
 				<include>FullscreenDimensions</include>
 				<fadetime>250</fadetime>
 				<texture>$INFO[Skin.String(movie.custom.bg)]</texture>
 				<visible>[SubString(Container.FolderPath,/movies/) | Container.Content(movies)] + Skin.HasSetting(movie.custom.bg) + Skin.HasSetting(sectional.background)</visible>
 			</control>
-		
+
 			<control type="image"> <!--tv shows-->
 				<include>FullscreenDimensions</include>
 				<fadetime>250</fadetime>
 				<texture>$INFO[Skin.String(tv.custom.bg)]</texture>
 				<visible>[SubString(Container.FolderPath,/tvshows/) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + Skin.HasSetting(tv.custom.bg) + Skin.HasSetting(sectional.background)</visible>
 			</control>
-		
+
 			<control type="image"> <!--music-->
 				<include>FullscreenDimensions</include>
 				<fadetime>250</fadetime>
 				<texture>$INFO[Skin.String(music.custom.bg)]</texture>
 				<visible>Window.IsVisible(musiclibrary) + Skin.HasSetting(music.custom.bg) + Skin.HasSetting(sectional.background)</visible>
 			</control>
-		
+
 			<control type="image"> <!--picture-->
 				<include>FullscreenDimensions</include>
 				<fadetime>250</fadetime>
 				<texture>$INFO[Skin.String(picture.custom.bg)]</texture>
 				<visible>Window.IsVisible(pictures) + Skin.HasSetting(picture.custom.bg) + Skin.HasSetting(sectional.background)</visible>
 			</control>
-		
+
 			<control type="image"> <!--weather-->
 				<include>FullscreenDimensions</include>
 				<fadetime>250</fadetime>
 				<texture>$INFO[Skin.String(weather.custom.bg)]</texture>
 				<visible>Window.IsVisible(weather) + Skin.HasSetting(weather.custom.bg) + Skin.HasSetting(sectional.background)</visible>
 			</control>
-		
+
 			<control type="image"> <!--add-ons-->
 				<include>FullscreenDimensions</include>
 				<fadetime>250</fadetime>
 				<texture>$INFO[Skin.String(addon.custom.bg)]</texture>
 				<visible>[Window.IsVisible(addonbrowser) | Window.IsVisible(programs)] + Skin.HasSetting(addon.custom.bg) + Skin.HasSetting(sectional.background)</visible>
 			</control>
-		
+
 			<control type="image"> <!--settings-->
 				<include>FullscreenDimensions</include>
 				<fadetime>250</fadetime>
 				<texture>$INFO[Skin.String(settings.custom.bg)]</texture>
 				<visible>[Window.IsVisible(settings) | Window.IsVisible(systeminfo) | Window.IsVisible(picturessettings) | Window.IsVisible(programssettings) | Window.IsVisible(weathersettings) | Window.IsVisible(musicsettings) | Window.IsVisible(systemsettings) | Window.IsVisible(videossettings) | Window.IsVisible(servicesettings) | Window.IsVisible(appearancesettings) | Window.IsVisible(skinsettings) | Window.IsVisible(profiles)] + Skin.HasSetting(settings.custom.bg) + Skin.HasSetting(sectional.background)</visible>
 			</control>
-		
+
 			<control type="image"> <!--games-->
 				<include>FullscreenDimensions</include>
 				<fadetime>250</fadetime>
 				<texture>$INFO[Skin.String(games.custom.bg)]</texture>
 				<visible>SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher) + Skin.HasSetting(games.custom.bg) + Skin.HasSetting(sectional.background)</visible>
 			</control>
-			
+
 		</control>
-		
+
 		<control type="group"> <!--fanart-->
 
 			<control type="image"> <!--games fanart-->
@@ -284,7 +284,7 @@
 				<visible>Skin.HasSetting(games.fanart)</visible>
 				<visible>SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher)</visible>
 			</control>
-				
+
 			<control type="multiimage"> <!--games extra fanart-->
 				<include>FullscreenDimensions</include>
 				<timeperimage>5000</timeperimage>
@@ -324,7 +324,7 @@
 				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + Skin.HasSetting(music.fanart)</visible>
 			</control>
-				
+
 			<control type="multiimage"> <!--music extra fanart-->
 				<include>FullscreenDimensions</include>
 				<timeperimage>5000</timeperimage>
@@ -333,17 +333,17 @@
 				<imagepath background="true">$INFO[Skin.String(artists.path)]$INFO[ListItem.Artist,,/extrafanart]</imagepath>
 				<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + Skin.HasSetting(music.extra.fanart)</visible>
 			</control>
-			
+
 		</control>
-		
+
 		<control type="image">
 			<texture colordiffuse="HomeBG">backgrounds/diffuse.png</texture>
 		</control>
-		
+
 	</include>
 
 	<include name="GlobalClock"> <!--time and date-->
-	
+
 		<control type="label">
 			<right>75</right>
 			<top>50</top>
@@ -356,7 +356,7 @@
 			<include>ViewAnimation2</include>
 			<include>HiddenByMenu</include>
 		</control>
-	
+
 		<control type="label">
 			<right>75</right>
 			<top>105</top>
@@ -368,11 +368,11 @@
 			<include>ViewAnimation2</include>
 			<include>HiddenByMenu</include>
 		</control>
-		
+
 	</include>
-	
+
 	<include name="GlobalItems"> <!-- number of items and current page/pages-->
-	
+
 		<control type="label">
 			<left>75</left>
 			<top>105</top>
@@ -384,90 +384,90 @@
 			<include>HiddenByMenu</include>
 			<label>$INFO[Container().NumItems,, $LOCALIZE[31071]] $INFO[Container.SortMethod,($LOCALIZE[31072] ,)]</label>
 		</control>
-		
+
 	</include>
-	
+
 
 	<!------------------------->
 	<!------------------------->
 	<!------Home Includes------>
 	<!------------------------->
 	<!------------------------->
-	
+
 	<include name="RecentMovies">
 		<control type="list" id="1000"> <!--recently added movies-->
 			<content target="video">videodb://recentlyaddedmovies</content>
-		</control>		
+		</control>
 	</include>
-	
+
 	<include name="RandomMovies">
 		<control type="list" id="1001"> <!--random movies-->
 			<content target="video">plugin://service.library.data.provider?type=randommovies&amp;reload=$INFO[Window.Property(randommovies)]</content>
-		</control>		
+		</control>
 	</include>
-	
+
 	<include name="RecommendedMovies">
 		<control type="list" id="1002"> <!--recommended movies-->
 			<content target="video">plugin://service.library.data.provider?type=recommendedmovies&amp;reload=$INFO[Window.Property(recommendedmovies)]</content>
 		</control>
 	</include>
-	
+
 	<include name="YoutubeTrailers">
 		<control type="list" id="1003"> <!--recent youtube trailers-->
 			<content target="video">plugin://plugin.video.youtube/?contact=trailers&amp;external=true&amp;feed=uploads&amp;login=false&amp;path=%2froot%2fexplore%2ftrailers</content>
 		</control>
 	</include>
-	
+
 	<include name="RecentVideos">
 		<control type="list" id="1004"> <!--recommended movies-->
-			<content target="video">plugin://service.library.data.provider?type=recentvideos&amp;reload=$INFO[Window.Property(recentvideos)]</content> 
+			<content target="video">plugin://service.library.data.provider?type=recentvideos&amp;reload=$INFO[Window.Property(recentvideos)]</content>
 		</control>
 	</include>
-	
+
 	<include name="RecentEpisodes">
 		<control type="list" id="1010"> <!--recently added episodes-->
 			<content target="video">videodb://recentlyaddedepisodes</content>
-		</control>	
+		</control>
 	</include>
-	
+
 	<include name="RandomEpisodes">
 		<control type="list" id="1011"> <!--random episodes-->
 			<content target="video">plugin://service.library.data.provider?type=randomepisodes&amp;reload=$INFO[Window.Property(randomepisodes)]</content>
-		</control>	
+		</control>
 	</include>
-	
+
 	<include name="RecommendedEpisodes">
 		<control type="list" id="1012"> <!--recommended episodes-->
 			<content target="video">plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)]</content>
-		</control>	
+		</control>
 	</include>
-	
+
 	<include name="RecentPlayedAlbums">
 		<control type="list" id="1020"> <!--recently played albums-->
 			<content target="music">musicdb://recentlyplayedalbums</content>
 		</control>
 	</include>
-	
+
 	<include name="RecentAddedAlbums">
 		<control type="list" id="1021"> <!--recently added albums-->
 			<content target="music">plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]</content>
 		</control>
 	</include>
-	
+
 	<include name="RandomAlbums">
 		<control type="list" id="1022"> <!--random albums-->
 			<content target="music">plugin://service.library.data.provider?type=randomalbums&amp;reload=$INFO[Window.Property(randomalbums)]</content>
 		</control>
 	</include>
-	
+
 	<include name="Games">
 		<control type="list" id="1030"> <!--games-->
 			<content>$INFO[Skin.String(Games.Widget.1.Path)]</content>
 		</control>
 	</include>
-	
+
 	<include name="RecentMoviesContent">
-							
+
 		<item id="1" description="movie 0">
 			<label>$INFO[Container(1000).ListItem(0).Label]</label>
 			<thumb>$INFO[Container(1000).ListItem(0).Thumb]</thumb>
@@ -477,7 +477,7 @@
 			<property name="duration">$INFO[Container(1000).ListItem(0).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1000).ListItem(0).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="2" description="movie 1">
 			<label>$INFO[Container(1000).ListItem(1).Label]</label>
 			<thumb>$INFO[Container(1000).ListItem(1).Thumb]</thumb>
@@ -487,7 +487,7 @@
 			<property name="duration">$INFO[Container(1000).ListItem(1).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1000).ListItem(1).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="3" description="movie 2">
 			<label>$INFO[Container(1000).ListItem(2).Label]</label>
 			<thumb>$INFO[Container(1000).ListItem(2).Thumb]</thumb>
@@ -497,7 +497,7 @@
 			<property name="duration">$INFO[Container(1000).ListItem(2).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1000).ListItem(2).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="4" description="movie 3">
 			<label>$INFO[Container(1000).ListItem(3).Label]</label>
 			<thumb>$INFO[Container(1000).ListItem(3).Thumb]</thumb>
@@ -507,7 +507,7 @@
 			<property name="duration">$INFO[Container(1000).ListItem(3).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1000).ListItem(3).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="5" description="movie 4">
 			<label>$INFO[Container(1000).ListItem(4).Label]</label>
 			<thumb>$INFO[Container(1000).ListItem(4).Thumb]</thumb>
@@ -517,7 +517,7 @@
 			<property name="duration">$INFO[Container(1000).ListItem(4).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1000).ListItem(4).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="6" description="movie 5">
 			<label>$INFO[Container(1000).ListItem(5).Label]</label>
 			<thumb>$INFO[Container(1000).ListItem(5).Thumb]</thumb>
@@ -527,11 +527,11 @@
 			<property name="duration">$INFO[Container(1000).ListItem(5).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1000).ListItem(5).FileNameAndPath])</onclick>
 		</item>
-							
+
 	</include>
-	
+
 	<include name="RandomMoviesContent">
-							
+
 		<item id="1" description="movie 0">
 			<label>$INFO[Container(1001).ListItem(0).Label]</label>
 			<thumb>$INFO[Container(1001).ListItem(0).Thumb]</thumb>
@@ -541,7 +541,7 @@
 			<property name="duration">$INFO[Container(1001).ListItem(0).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1001).ListItem(0).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="2" description="movie 1">
 			<label>$INFO[Container(1001).ListItem(1).Label]</label>
 			<thumb>$INFO[Container(1001).ListItem(1).Thumb]</thumb>
@@ -551,7 +551,7 @@
 			<property name="duration">$INFO[Container(1001).ListItem(1).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1001).ListItem(1).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="3" description="movie 2">
 			<label>$INFO[Container(1001).ListItem(2).Label]</label>
 			<thumb>$INFO[Container(1001).ListItem(2).Thumb]</thumb>
@@ -561,7 +561,7 @@
 			<property name="duration">$INFO[Container(1001).ListItem(2).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1001).ListItem(2).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="4" description="movie 3">
 			<label>$INFO[Container(1001).ListItem(3).Label]</label>
 			<thumb>$INFO[Container(1001).ListItem(3).Thumb]</thumb>
@@ -571,7 +571,7 @@
 			<property name="duration">$INFO[Container(1001).ListItem(3).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1001).ListItem(3).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="5" description="movie 4">
 			<label>$INFO[Container(1001).ListItem(4).Label]</label>
 			<thumb>$INFO[Container(1001).ListItem(4).Thumb]</thumb>
@@ -581,7 +581,7 @@
 			<property name="duration">$INFO[Container(1001).ListItem(4).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1001).ListItem(4).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="6" description="movie 5">
 			<label>$INFO[Container(1001).ListItem(5).Label]</label>
 			<thumb>$INFO[Container(1001).ListItem(5).Thumb]</thumb>
@@ -591,11 +591,11 @@
 			<property name="duration">$INFO[Container(1001).ListItem(5).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1001).ListItem(5).FileNameAndPath])</onclick>
 		</item>
-							
+
 	</include>
-	
+
 	<include name="RecommendedMoviesContent">
-							
+
 		<item id="1" description="movie 0">
 			<label>$INFO[Container(1002).ListItem(0).Label]</label>
 			<thumb>$INFO[Container(1002).ListItem(0).Thumb]</thumb>
@@ -605,7 +605,7 @@
 			<property name="duration">$INFO[Container(1002).ListItem(0).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1002).ListItem(0).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="2" description="movie 1">
 			<label>$INFO[Container(1002).ListItem(1).Label]</label>
 			<thumb>$INFO[Container(1002).ListItem(1).Thumb]</thumb>
@@ -615,7 +615,7 @@
 			<property name="duration">$INFO[Container(1002).ListItem(1).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1002).ListItem(1).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="3" description="movie 2">
 			<label>$INFO[Container(1002).ListItem(2).Label]</label>
 			<thumb>$INFO[Container(1002).ListItem(2).Thumb]</thumb>
@@ -625,7 +625,7 @@
 			<property name="duration">$INFO[Container(1002).ListItem(2).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1002).ListItem(2).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="4" description="movie 3">
 			<label>$INFO[Container(1002).ListItem(3).Label]</label>
 			<thumb>$INFO[Container(1002).ListItem(3).Thumb]</thumb>
@@ -635,7 +635,7 @@
 			<property name="duration">$INFO[Container(1002).ListItem(3).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1002).ListItem(3).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="5" description="movie 4">
 			<label>$INFO[Container(1002).ListItem(4).Label]</label>
 			<thumb>$INFO[Container(1002).ListItem(4).Thumb]</thumb>
@@ -645,7 +645,7 @@
 			<property name="duration">$INFO[Container(1002).ListItem(4).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1002).ListItem(4).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="6" description="movie 5">
 			<label>$INFO[Container(1002).ListItem(5).Label]</label>
 			<thumb>$INFO[Container(1002).ListItem(5).Thumb]</thumb>
@@ -655,11 +655,11 @@
 			<property name="duration">$INFO[Container(1002).ListItem(5).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1002).ListItem(5).FileNameAndPath])</onclick>
 		</item>
-							
+
 	</include>
-	
+
 	<include name="RecentVideosContent">
-							
+
 		<item id="1" description="video 0">
 			<label>$INFO[Container(1004).ListItem(0).Label]</label>
 			<thumb>$INFO[Container(1004).ListItem(0).Thumb]</thumb>
@@ -674,7 +674,7 @@
 			<property name="number">1/10</property>
 			<onclick>PlayMedia($INFO[Container(1004).ListItem(0).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="2" description="video 1">
 			<label>$INFO[Container(1004).ListItem(1).Label]</label>
 			<thumb>$INFO[Container(1004).ListItem(1).Thumb]</thumb>
@@ -689,7 +689,7 @@
 			<property name="number">2/10</property>
 			<onclick>PlayMedia($INFO[Container(1004).ListItem(1).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="3" description="video 2">
 			<label>$INFO[Container(1004).ListItem(2).Label]</label>
 			<thumb>$INFO[Container(1004).ListItem(2).Thumb]</thumb>
@@ -704,7 +704,7 @@
 			<property name="number">3/10</property>
 			<onclick>PlayMedia($INFO[Container(1004).ListItem(2).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="4" description="video 3">
 			<label>$INFO[Container(1004).ListItem(3).Label]</label>
 			<thumb>$INFO[Container(1004).ListItem(3).Thumb]</thumb>
@@ -719,7 +719,7 @@
 			<property name="number">4/10</property>
 			<onclick>PlayMedia($INFO[Container(1004).ListItem(3).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="5" description="video 4">
 			<label>$INFO[Container(1004).ListItem(4).Label]</label>
 			<thumb>$INFO[Container(1004).ListItem(4).Thumb]</thumb>
@@ -734,7 +734,7 @@
 			<property name="number">5/10</property>
 			<onclick>PlayMedia($INFO[Container(1004).ListItem(4).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="6" description="video 5">
 			<label>$INFO[Container(1004).ListItem(5).Label]</label>
 			<thumb>$INFO[Container(1004).ListItem(5).Thumb]</thumb>
@@ -749,7 +749,7 @@
 			<property name="number">6/10</property>
 			<onclick>PlayMedia($INFO[Container(1004).ListItem(5).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="7" description="video 6">
 			<label>$INFO[Container(1004).ListItem(6).Label]</label>
 			<thumb>$INFO[Container(1004).ListItem(6).Thumb]</thumb>
@@ -764,7 +764,7 @@
 			<property name="number">7/10</property>
 			<onclick>PlayMedia($INFO[Container(1004).ListItem(6).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="8" description="video 7">
 			<label>$INFO[Container(1004).ListItem(7).Label]</label>
 			<thumb>$INFO[Container(1004).ListItem(7).Thumb]</thumb>
@@ -779,7 +779,7 @@
 			<property name="number">8/10</property>
 			<onclick>PlayMedia($INFO[Container(1004).ListItem(7).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="9" description="video 8">
 			<label>$INFO[Container(1004).ListItem(8).Label]</label>
 			<thumb>$INFO[Container(1004).ListItem(8).Thumb]</thumb>
@@ -794,7 +794,7 @@
 			<property name="number">9/10</property>
 			<onclick>PlayMedia($INFO[Container(1004).ListItem(8).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="10" description="video 9">
 			<label>$INFO[Container(1004).ListItem(9).Label]</label>
 			<thumb>$INFO[Container(1004).ListItem(9).Thumb]</thumb>
@@ -809,57 +809,57 @@
 			<property name="number">10/10</property>
 			<onclick>PlayMedia($INFO[Container(1004).ListItem(9).FileNameAndPath])</onclick>
 		</item>
-							
+
 	</include>
-	
+
 	<include name="YoutubeTrailersContent">
-							
+
 		<item id="1" description="trailer 1">
 			<label>$INFO[Container(1003).ListItem(0).Label]</label>
 			<thumb>$INFO[Container(1003).ListItem(0).Thumb]</thumb>
 			<property name="fanart">$INFO[Container(1003).ListItem(0).Thumb]</property>
 			<onclick>PlayMedia($INFO[Container(1003).ListItem(0).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="2" description="trailer 2">
 			<label>$INFO[Container(1003).ListItem(1).Label]</label>
 			<thumb>$INFO[Container(1003).ListItem(1).Thumb]</thumb>
 			<property name="fanart">$INFO[Container(1003).ListItem(1).Thumb]</property>
 			<onclick>PlayMedia($INFO[Container(1003).ListItem(1).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="3" description="trailer 3">
 			<label>$INFO[Container(1003).ListItem(2).Label]</label>
 			<thumb>$INFO[Container(1003).ListItem(2).Thumb]</thumb>
 			<property name="fanart">$INFO[Container(1003).ListItem(2).Thumb]</property>
 			<onclick>PlayMedia($INFO[Container(1003).ListItem(2).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="4" description="trailer 4">
 			<label>$INFO[Container(1003).ListItem(3).Label]</label>
 			<thumb>$INFO[Container(1003).ListItem(3).Thumb]</thumb>
 			<property name="fanart">$INFO[Container(1003).ListItem(3).Thumb]</property>
 			<onclick>PlayMedia($INFO[Container(1003).ListItem(3).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="5" description="trailer 5">
 			<label>$INFO[Container(1003).ListItem(4).Label]</label>
 			<thumb>$INFO[Container(1003).ListItem(4).Thumb]</thumb>
 			<property name="fanart">$INFO[Container(1003).ListItem(4).Thumb]</property>
 			<onclick>PlayMedia($INFO[Container(1003).ListItem(4).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="5" description="trailer 6">
 			<label>$INFO[Container(1003).ListItem(5).Label]</label>
 			<thumb>$INFO[Container(1003).ListItem(5).Thumb]</thumb>
 			<property name="fanart">$INFO[Container(1003).ListItem(5).Thumb]</property>
 			<onclick>PlayMedia($INFO[Container(1003).ListItem(5).FileNameAndPath])</onclick>
 		</item>
-							
+
 	</include>
-	
+
 	<include name="RecentEpisodesContent">
-							
+
 		<item id="1" description="tv show 0">
 			<label>$INFO[Container(1010).ListItem(0).Label]</label>
 			<thumb>$INFO[Container(1010).ListItem(0).Art(tvshow.poster)]</thumb>
@@ -872,7 +872,7 @@
 			<property name="episode">$INFO[Container(1010).ListItem(0).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1010).ListItem(0).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="2" description="tv show 1">
 			<label>$INFO[Container(1010).ListItem(1).Label]</label>
 			<thumb>$INFO[Container(1010).ListItem(1).Art(tvshow.poster)]</thumb>
@@ -885,7 +885,7 @@
 			<property name="episode">$INFO[Container(1010).ListItem(1).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1010).ListItem(1).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="3" description="tv show 2">
 			<label>$INFO[Container(1010).ListItem(2).Label]</label>
 			<thumb>$INFO[Container(1010).ListItem(2).Art(tvshow.poster)]</thumb>
@@ -898,7 +898,7 @@
 			<property name="episode">$INFO[Container(1010).ListItem(2).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1010).ListItem(2).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="4" description="tv show 3">
 			<label>$INFO[Container(1010).ListItem(3).Label]</label>
 			<thumb>$INFO[Container(1010).ListItem(3).Art(tvshow.poster)]</thumb>
@@ -911,7 +911,7 @@
 			<property name="episode">$INFO[Container(1010).ListItem(3).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1010).ListItem(3).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="5" description="tv show 4">
 			<label>$INFO[Container(1010).ListItem(4).Label]</label>
 			<thumb>$INFO[Container(1010).ListItem(4).Art(tvshow.poster)]</thumb>
@@ -924,7 +924,7 @@
 			<property name="episode">$INFO[Container(1010).ListItem(4).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1010).ListItem(4).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="6" description="tv show 5">
 			<label>$INFO[Container(1010).ListItem(5).Label]</label>
 			<thumb>$INFO[Container(1010).ListItem(5).Art(tvshow.poster)]</thumb>
@@ -937,11 +937,11 @@
 			<property name="episode">$INFO[Container(1010).ListItem(5).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1010).ListItem(5).FileNameAndPath])</onclick>
 		</item>
-							
+
 	</include>
-	
+
 	<include name="RandomEpisodesContent">
-							
+
 		<item id="1" description="tv show 0">
 			<label>$INFO[Container(1011).ListItem(0).Label]</label>
 			<thumb>$INFO[Container(1011).ListItem(0).Art(tvshow.poster)]</thumb>
@@ -954,7 +954,7 @@
 			<property name="episode">$INFO[Container(1011).ListItem(0).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1011).ListItem(0).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="2" description="tv show 1">
 			<label>$INFO[Container(1011).ListItem(1).Label]</label>
 			<thumb>$INFO[Container(1011).ListItem(1).Art(tvshow.poster)]</thumb>
@@ -967,7 +967,7 @@
 			<property name="episode">$INFO[Container(1011).ListItem(1).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1011).ListItem(1).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="3" description="tv show 2">
 			<label>$INFO[Container(1011).ListItem(2).Label]</label>
 			<thumb>$INFO[Container(1011).ListItem(2).Art(tvshow.poster)]</thumb>
@@ -980,7 +980,7 @@
 			<property name="episode">$INFO[Container(1011).ListItem(2).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1011).ListItem(2).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="4" description="tv show 3">
 			<label>$INFO[Container(1011).ListItem(3).Label]</label>
 			<thumb>$INFO[Container(1011).ListItem(3).Art(tvshow.poster)]</thumb>
@@ -993,7 +993,7 @@
 			<property name="episode">$INFO[Container(1011).ListItem(3).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1011).ListItem(3).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="5" description="tv show 4">
 			<label>$INFO[Container(1011).ListItem(4).Label]</label>
 			<thumb>$INFO[Container(1011).ListItem(4).Art(tvshow.poster)]</thumb>
@@ -1006,7 +1006,7 @@
 			<property name="episode">$INFO[Container(1011).ListItem(4).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1011).ListItem(4).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="6" description="tv show 5">
 			<label>$INFO[Container(1011).ListItem(5).Label]</label>
 			<thumb>$INFO[Container(1011).ListItem(5).Art(tvshow.poster)]</thumb>
@@ -1019,11 +1019,11 @@
 			<property name="episode">$INFO[Container(1011).ListItem(5).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1011).ListItem(5).FileNameAndPath])</onclick>
 		</item>
-							
+
 	</include>
-	
+
 	<include name="RecommendedEpisodesContent">
-							
+
 		<item id="1" description="tv show 0">
 			<label>$INFO[Container(1012).ListItem(0).Label]</label>
 			<thumb>$INFO[Container(1012).ListItem(0).Art(tvshow.poster)]</thumb>
@@ -1036,7 +1036,7 @@
 			<property name="episode">$INFO[Container(1012).ListItem(0).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1012).ListItem(0).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="2" description="tv show 1">
 			<label>$INFO[Container(1012).ListItem(1).Label]</label>
 			<thumb>$INFO[Container(1012).ListItem(1).Art(tvshow.poster)]</thumb>
@@ -1049,7 +1049,7 @@
 			<property name="episode">$INFO[Container(1012).ListItem(1).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1012).ListItem(1).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="3" description="tv show 2">
 			<label>$INFO[Container(1012).ListItem(2).Label]</label>
 			<thumb>$INFO[Container(1012).ListItem(2).Art(tvshow.poster)]</thumb>
@@ -1062,7 +1062,7 @@
 			<property name="episode">$INFO[Container(1012).ListItem(2).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1012).ListItem(2).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="4" description="tv show 3">
 			<label>$INFO[Container(1012).ListItem(3).Label]</label>
 			<thumb>$INFO[Container(1012).ListItem(3).Art(tvshow.poster)]</thumb>
@@ -1075,7 +1075,7 @@
 			<property name="episode">$INFO[Container(1012).ListItem(3).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1012).ListItem(3).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="5" description="tv show 4">
 			<label>$INFO[Container(1012).ListItem(4).Label]</label>
 			<thumb>$INFO[Container(1012).ListItem(4).Art(tvshow.poster)]</thumb>
@@ -1088,7 +1088,7 @@
 			<property name="episode">$INFO[Container(1012).ListItem(4).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1012).ListItem(4).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="6" description="tv show 5">
 			<label>$INFO[Container(1012).ListItem(5).Label]</label>
 			<thumb>$INFO[Container(1012).ListItem(5).Art(tvshow.poster)]</thumb>
@@ -1101,11 +1101,11 @@
 			<property name="episode">$INFO[Container(1012).ListItem(5).Episode]</property>
 			<onclick>PlayMedia($INFO[Container(1012).ListItem(5).FileNameAndPath])</onclick>
 		</item>
-							
+
 	</include>
-		
+
 	<include name="RecentPlayedAlbumsContent">
-							
+
 		<item id="1" description="album 0">
 			<label>$INFO[Container(1020).ListItem(1).Label]</label>
 			<thumb>$INFO[Container(1020).ListItem(1).Thumb]</thumb>
@@ -1114,7 +1114,7 @@
 			<property name="year">$INFO[Container(1020).ListItem(1).Year]</property>
 			<onclick>PlayMedia($INFO[Container(1020).ListItem(1).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="2" description="album 1">
 			<label>$INFO[Container(1020).ListItem(2).Label]</label>
 			<thumb>$INFO[Container(1020).ListItem(2).Thumb]</thumb>
@@ -1123,7 +1123,7 @@
 			<property name="year">$INFO[Container(1020).ListItem(2).Year]</property>
 			<onclick>-</onclick>
 		</item>
-		
+
 		<item id="3" description="album 2">
 			<label>$INFO[Container(1020).ListItem(3).Label]</label>
 			<thumb>$INFO[Container(1020).ListItem(3).Thumb]</thumb>
@@ -1132,7 +1132,7 @@
 			<property name="year">$INFO[Container(1020).ListItem(3).Year]</property>
 			<onclick>-</onclick>
 		</item>
-		
+
 		<item id="4" description="album 3">
 			<label>$INFO[Container(1020).ListItem(4).Label]</label>
 			<thumb>$INFO[Container(1020).ListItem(4).Thumb]</thumb>
@@ -1141,7 +1141,7 @@
 			<property name="year">$INFO[Container(1020).ListItem(4).Year]</property>
 			<onclick>-</onclick>
 		</item>
-		
+
 		<item id="5" description="album 4">
 			<label>$INFO[Container(1020).ListItem(5).Label]</label>
 			<thumb>$INFO[Container(1020).ListItem(5).Thumb]</thumb>
@@ -1150,7 +1150,7 @@
 			<property name="year">$INFO[Container(1020).ListItem(5).Year]</property>
 			<onclick>-</onclick>
 		</item>
-		
+
 		<item id="6" description="album 5">
 			<label>$INFO[Container(1020).ListItem(6).Label]</label>
 			<thumb>$INFO[Container(1020).ListItem(6).Thumb]</thumb>
@@ -1159,11 +1159,11 @@
 			<property name="year">$INFO[Container(1020).ListItem(6).Year]</property>
 			<onclick>-</onclick>
 		</item>
-							
+
 	</include>
-	
+
 	<include name="RecentAddedAlbumsContent">
-							
+
 		<item id="1" description="album 0">
 			<label>$INFO[Container(1021).ListItem(1).Label]</label>
 			<thumb>$INFO[Container(1021).ListItem(1).Thumb]</thumb>
@@ -1172,7 +1172,7 @@
 			<property name="year">$INFO[Container(1021).ListItem(1).Year]</property>
 			<onclick>PlayMedia($INFO[Container(1021).ListItem(1).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="2" description="album 1">
 			<label>$INFO[Container(1021).ListItem(2).Label]</label>
 			<thumb>$INFO[Container(1021).ListItem(2).Thumb]</thumb>
@@ -1181,7 +1181,7 @@
 			<property name="year">$INFO[Container(1021).ListItem(2).Year]</property>
 			<onclick>PlayMedia($INFO[Container(1021).ListItem(2).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="3" description="album 2">
 			<label>$INFO[Container(1021).ListItem(3).Label]</label>
 			<thumb>$INFO[Container(1021).ListItem(3).Thumb]</thumb>
@@ -1190,7 +1190,7 @@
 			<property name="year">$INFO[Container(1021).ListItem(3).Year]</property>
 			<onclick>PlayMedia($INFO[Container(1021).ListItem(3).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="4" description="album 3">
 			<label>$INFO[Container(1021).ListItem(4).Label]</label>
 			<thumb>$INFO[Container(1021).ListItem(4).Thumb]</thumb>
@@ -1199,7 +1199,7 @@
 			<property name="year">$INFO[Container(1021).ListItem(4).Year]</property>
 			<onclick>PlayMedia($INFO[Container(1021).ListItem(4).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="5" description="album 4">
 			<label>$INFO[Container(1021).ListItem(5).Label]</label>
 			<thumb>$INFO[Container(1021).ListItem(5).Thumb]</thumb>
@@ -1208,7 +1208,7 @@
 			<property name="year">$INFO[Container(1021).ListItem(5).Year]</property>
 			<onclick>PlayMedia($INFO[Container(1021).ListItem(5).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="6" description="album 5">
 			<label>$INFO[Container(1021).ListItem(6).Label]</label>
 			<thumb>$INFO[Container(1021).ListItem(6).Thumb]</thumb>
@@ -1217,11 +1217,11 @@
 			<property name="year">$INFO[Container(1021).ListItem(6).Year]</property>
 			<onclick>PlayMedia($INFO[Container(1021).ListItem(6).FileNameAndPath])</onclick>
 		</item>
-							
+
 	</include>
-	
+
 	<include name="RandomAlbumsContent">
-							
+
 		<item id="1" description="album 0">
 			<label>$INFO[Container(1022).ListItem(1).Label]</label>
 			<thumb>$INFO[Container(1022).ListItem(1).Thumb]</thumb>
@@ -1230,7 +1230,7 @@
 			<property name="year">$INFO[Container(1022).ListItem(1).Year]</property>
 			<onclick>PlayMedia($INFO[Container(1022).ListItem(1).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="2" description="album 1">
 			<label>$INFO[Container(1022).ListItem(2).Label]</label>
 			<thumb>$INFO[Container(1022).ListItem(2).Thumb]</thumb>
@@ -1239,7 +1239,7 @@
 			<property name="year">$INFO[Container(1022).ListItem(2).Year]</property>
 			<onclick>PlayMedia($INFO[Container(1022).ListItem(2).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="3" description="album 2">
 			<label>$INFO[Container(1022).ListItem(3).Label]</label>
 			<thumb>$INFO[Container(1022).ListItem(3).Thumb]</thumb>
@@ -1248,7 +1248,7 @@
 			<property name="year">$INFO[Container(1022).ListItem(3).Year]</property>
 			<onclick>PlayMedia($INFO[Container(1022).ListItem(3).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="4" description="album 3">
 			<label>$INFO[Container(1022).ListItem(4).Label]</label>
 			<thumb>$INFO[Container(1022).ListItem(4).Thumb]</thumb>
@@ -1257,7 +1257,7 @@
 			<property name="year">$INFO[Container(1022).ListItem(4).Year]</property>
 			<onclick>PlayMedia($INFO[Container(1022).ListItem(4).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="5" description="album 4">
 			<label>$INFO[Container(1022).ListItem(5).Label]</label>
 			<thumb>$INFO[Container(1022).ListItem(5).Thumb]</thumb>
@@ -1266,7 +1266,7 @@
 			<property name="year">$INFO[Container(1022).ListItem(5).Year]</property>
 			<onclick>PlayMedia($INFO[Container(1022).ListItem(5).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="6" description="album 5">
 			<label>$INFO[Container(1022).ListItem(6).Label]</label>
 			<thumb>$INFO[Container(1022).ListItem(6).Thumb]</thumb>
@@ -1275,11 +1275,11 @@
 			<property name="year">$INFO[Container(1022).ListItem(6).Year]</property>
 			<onclick>PlayMedia($INFO[Container(1022).ListItem(6).FileNameAndPath])</onclick>
 		</item>
-							
+
 	</include>
-	
+
 	<include name="GamesContent">
-							
+
 		<item id="1" description="game 0">
 			<label>$INFO[Container(1030).ListItem(0).Label]</label>
 			<thumb>$INFO[Container(1030).ListItem(0).Thumb]</thumb>
@@ -1291,7 +1291,7 @@
 			<property name="duration">$INFO[Container(1030).ListItem(0).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1030).ListItem(0).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="2" description="game 1">
 			<label>$INFO[Container(1030).ListItem(1).Label]</label>
 			<thumb>$INFO[Container(1030).ListItem(1).Thumb]</thumb>
@@ -1303,7 +1303,7 @@
 			<property name="duration">$INFO[Container(1030).ListItem(1).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1030).ListItem(1).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="3" description="game 2">
 			<label>$INFO[Container(1030).ListItem(2).Label]</label>
 			<thumb>$INFO[Container(1030).ListItem(2).Thumb]</thumb>
@@ -1315,7 +1315,7 @@
 			<property name="duration">$INFO[Container(1030).ListItem(2).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1030).ListItem(2).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="4" description="game 3">
 			<label>$INFO[Container(1030).ListItem(3).Label]</label>
 			<thumb>$INFO[Container(1030).ListItem(3).Thumb]</thumb>
@@ -1327,7 +1327,7 @@
 			<property name="duration">$INFO[Container(1030).ListItem(3).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1030).ListItem(3).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="5" description="game 4">
 			<label>$INFO[Container(1030).ListItem(4).Label]</label>
 			<thumb>$INFO[Container(1030).ListItem(4).Thumb]</thumb>
@@ -1339,7 +1339,7 @@
 			<property name="duration">$INFO[Container(1030).ListItem(4).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1030).ListItem(4).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="6" description="game 5">
 			<label>$INFO[Container(1030).ListItem(5).Label]</label>
 			<thumb>$INFO[Container(1030).ListItem(5).Thumb]</thumb>
@@ -1351,7 +1351,7 @@
 			<property name="duration">$INFO[Container(1030).ListItem(5).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1030).ListItem(5).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="7" description="game 6">
 			<label>$INFO[Container(1030).ListItem(6).Label]</label>
 			<thumb>$INFO[Container(1030).ListItem(6).Thumb]</thumb>
@@ -1363,7 +1363,7 @@
 			<property name="duration">$INFO[Container(1030).ListItem(6).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1030).ListItem(6).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="8" description="game 7">
 			<label>$INFO[Container(1030).ListItem(7).Label]</label>
 			<thumb>$INFO[Container(1030).ListItem(7).Thumb]</thumb>
@@ -1375,7 +1375,7 @@
 			<property name="duration">$INFO[Container(1030).ListItem(7).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1030).ListItem(7).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="9" description="game 8">
 			<label>$INFO[Container(1030).ListItem(8).Label]</label>
 			<thumb>$INFO[Container(1030).ListItem(8).Thumb]</thumb>
@@ -1387,7 +1387,7 @@
 			<property name="duration">$INFO[Container(1030).ListItem(8).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1030).ListItem(8).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="10" description="game 9">
 			<label>$INFO[Container(1030).ListItem(9).Label]</label>
 			<thumb>$INFO[Container(1030).ListItem(9).Thumb]</thumb>
@@ -1399,7 +1399,7 @@
 			<property name="duration">$INFO[Container(1030).ListItem(9).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1030).ListItem(9).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="11" description="game 10">
 			<label>$INFO[Container(1030).ListItem(10).Label]</label>
 			<thumb>$INFO[Container(1030).ListItem(10).Thumb]</thumb>
@@ -1411,7 +1411,7 @@
 			<property name="duration">$INFO[Container(1030).ListItem(10).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1030).ListItem(10).FileNameAndPath])</onclick>
 		</item>
-		
+
 		<item id="12" description="game 11">
 			<label>$INFO[Container(1030).ListItem(11).Label]</label>
 			<thumb>$INFO[Container(1030).ListItem(11).Thumb]</thumb>
@@ -1423,24 +1423,24 @@
 			<property name="duration">$INFO[Container(1030).ListItem(11).Duration]</property>
 			<onclick>PlayMedia($INFO[Container(1030).ListItem(11).FileNameAndPath])</onclick>
 		</item>
-							
+
 	</include>
-	
+
 	<include name="Widget1Title">
 		<left>75</left>
 		<width>771</width>
 		<font>HomeHeader</font>
 	</include>
-	
+
 	<include name="Widget2Title">
 		<left>75</left>
 		<width>310</width>
 		<font>HomeHeader</font>
 	</include>
-	
-	<include name="Widget1Info">					
+
+	<include name="Widget1Info">
 		<control type="group"> <!--selected info-->
-	
+
 			<control type="image"> <!--fallback icon-->
 				<left>75</left>
 				<top>60</top>
@@ -1450,7 +1450,7 @@
 				<texture>$VAR[Widget1Fallback]</texture>
 				<visible>[IsEmpty(Container(201).ListItem.Property(fanart)) + StringCompare(Container(50).ListItem.Property(defaultID),movies)] | [IsEmpty(Container(301).ListItem.Property(fanart)) + StringCompare(Container(50).ListItem.Property(defaultID),tvshows)] | [IsEmpty(Container(401).ListItem.Property(fanart)) + StringCompare(Container(50).ListItem.Property(defaultID),music)] | [StringCompare(Container(50).ListItem.Property(defaultID),plugin.program.advanced.launcher/)]</visible>
 			</control>
-		
+
 			<control type="image"> <!--fanart-->
 				<left>75</left>
 				<top>60</top>
@@ -1460,20 +1460,20 @@
 				<fadetime>250</fadetime>
 				<texture>$VAR[Widget1Fanart]</texture>
 			</control>
-			
+
 			<control type="group">
-			
+
 				<control type="image"> <!--label bg-->
 					<left>75</left>
 					<top>543</top>
 					<width>752</width>
 					<height>55</height>
 					<texture colordiffuse="Black95">backgrounds/white.png</texture>
-						
+
 					<animation type="Conditional" condition="Control.HasFocus(201) | Control.HasFocus(301) | Control.HasFocus(401) | Control.HasFocus(501)" reversible="true" loop="false">
 						<effect type="zoom" end="0,508,752,90" time="100" />
 					</animation>
-						
+
 				</control>
 
 				<control type="label"> <!--label-->
@@ -1488,13 +1488,13 @@
 					<label>$VAR[Widget1Label]</label>
 					<animation effect="slide" start="0,0" end="0,35" time="100" condition="![Control.HasFocus(201) | Control.HasFocus(301) | Control.HasFocus(401) | Control.HasFocus(501)]">Conditional</animation>
 				</control>
-				
+
 				<control type="group"> <!--base info-->
 					<left>75</left>
 					<top>-17</top>
 					<visible>Control.HasFocus(201) | Control.HasFocus(301) | Control.HasFocus(401) | Control.HasFocus(501)</visible>
 					<animation effect="fade" start="0" end="100" time="500">Visible</animation>
-						
+
 					<control type="image"> <!--star-->
 						<left>13</left>
 						<top>578</top>
@@ -1504,7 +1504,7 @@
 						<aspectratio>keep</aspectratio>
 						<visible>![StringCompare(Container(50).ListItem.Property(defaultID),music) | StringCompare(Container(50).ListItem.Property(defaultID),plugin.program.advanced.launcher/)]</visible>
 					</control>
-					
+
 					<control type="label"> <!--base info-->
 						<left>40</left>
 						<top>565</top>
@@ -1517,7 +1517,7 @@
 						<visible>[!StringCompare(Container(201).ListItem.Property(rating),10.0) + StringCompare(Container(50).ListItem.Property(defaultID),movies)] | [!StringCompare(Container(301).ListItem.Property(rating),10.0) + StringCompare(Container(50).ListItem.Property(defaultID),tvshows)]</visible>
 						<visible>![StringCompare(Container(50).ListItem.Property(defaultID),music) | StringCompare(Container(50).ListItem.Property(defaultID),plugin.program.advanced.launcher/)]</visible>
 					</control>
-					
+
 					<control type="label"> <!--base info-->
 						<left>40</left>
 						<top>565</top>
@@ -1530,7 +1530,7 @@
 						<visible>[StringCompare(Container(201).ListItem.Property(rating),10.0) + StringCompare(Container(50).ListItem.Property(defaultID),movies)] | [StringCompare(Container(301).ListItem.Property(rating),10.0) + StringCompare(Container(50).ListItem.Property(defaultID),tvshows)]</visible>
 						<visible>![StringCompare(Container(50).ListItem.Property(defaultID),music) | StringCompare(Container(50).ListItem.Property(defaultID),plugin.program.advanced.launcher/)]</visible>
 					</control>
-					
+
 					<control type="label"> <!--base info-->
 						<left>72</left>
 						<top>565</top>
@@ -1543,8 +1543,8 @@
 						<animation effect="slide" start="0,0" end="-5,0" time="0" condition="[StringCompare(Container(201).ListItem.Property(rating),10.0) + StringCompare(Container(50).ListItem.Property(defaultID),movies)] | [StringCompare(Container(301).ListItem.Property(rating),10.0) + StringCompare(Container(50).ListItem.Property(defaultID),tvshows)]">Conditional</animation>
 						<animation effect="slide" start="0,0" end="-57,0" time="0" condition="StringCompare(Container(50).ListItem.Property(defaultID),music) | StringCompare(Container(50).ListItem.Property(defaultID),plugin.program.advanced.launcher/)">Conditional</animation>
 					</control>
-					
-					<control type="label"> <!--number-->	
+
+					<control type="label"> <!--number-->
 						<left>501</left>
 						<top>565</top>
 						<width>235</width>
@@ -1555,14 +1555,14 @@
 						<align>right</align>
 						<label>$VAR[Widget1Number]</label>
 					</control>
-					
+
 				</control>
-				
+
 			</control>
-			
-		</control>					
+
+		</control>
 	</include>
-	
+
 	<include name="Widget1Layout">
 		<left>837</left>
 		<top>53</top>
@@ -1574,7 +1574,7 @@
 		<orientation>vertical</orientation>
 		<preloaditems>2</preloaditems>
 		<scrolltime tween="quadratic" easing="out">0</scrolltime>
-						
+
 		<itemlayout width="186" height="274" condition="!StringCompare(Container(50).ListItem.Property(defaultID),music)">
 
 			<control type="image"> <!--fallback bg-->
@@ -1603,9 +1603,9 @@
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">$INFO[ListItem.Thumb]</texture>
 			</control>
-	
+
 		</itemlayout>
-					
+
 		<itemlayout width="186" height="183" condition="StringCompare(Container(50).ListItem.Property(defaultID),music)">
 
 			<control type="image"> <!--fallback bg-->
@@ -1634,7 +1634,7 @@
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">$INFO[ListItem.Thumb]</texture>
 			</control>
-	
+
 		</itemlayout>
 
 		<focusedlayout width="186" height="274" condition="!StringCompare(Container(50).ListItem.Property(defaultID),music)">
@@ -1665,11 +1665,11 @@
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">$INFO[ListItem.Thumb]</texture>
 			</control>
-			
+
 			<include>SmallPanelBorder</include>
-	
+
 		</focusedlayout>
-				
+
 		<focusedlayout width="186" height="183" condition="StringCompare(Container(50).ListItem.Property(defaultID),music)">
 
 			<control type="image"> <!--fallback bg-->
@@ -1698,13 +1698,13 @@
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">$INFO[ListItem.Thumb]</texture>
 			</control>
-			
+
 			<include>MusicSmallPanelBorder</include>
-	
+
 		</focusedlayout>
-		
+
 	</include>
-	
+
 	<include name="Widget2Layout">
 		<left>68</left>
 		<top>53</top>
@@ -1715,7 +1715,7 @@
 		<orientation>vertical</orientation>
 		<preloaditems>2</preloaditems>
 		<scrolltime tween="quadratic" easing="out">0</scrolltime>
-	
+
 		<itemlayout width="400" height="183">
 
 			<control type="image"> <!--bg-->
@@ -1805,7 +1805,7 @@
 				<scroll>false</scroll>
 				<visible>StringCompare(Container(50).ListItem.Property(defaultID),music)</visible>
 			</control>
-	
+
 		</itemlayout>
 
 		<focusedlayout width="208" height="182">
@@ -1929,11 +1929,11 @@
 				<height>7</height>
 				<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 			</control>
-	
+
 		</focusedlayout>
-		
+
 	</include>
-	
+
 	<include name="SmallPanelBorder">
 
 		<control type="image">
@@ -1967,9 +1967,9 @@
 			<height>7</height>
 			<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 		</control>
-						
+
 	</include>
-	
+
 	<include name="MusicSmallPanelBorder">
 
 		<control type="image">
@@ -2003,9 +2003,9 @@
 			<height>7</height>
 			<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 		</control>
-						
+
 	</include>
-	
+
 	<include name="RectangleSmallPanelBorder">
 
 		<control type="image">
@@ -2039,9 +2039,9 @@
 			<height>7</height>
 			<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 		</control>
-						
+
 	</include>
-	
+
 	<include name="GamesWidgetDVD">
 		<left>837</left>
 		<top>53</top>
@@ -2053,7 +2053,7 @@
 		<orientation>vertical</orientation>
 		<preloaditems>2</preloaditems>
 		<scrolltime tween="quadratic" easing="out">0</scrolltime>
-						
+
 		<itemlayout width="186" height="274" condition="Skin.HasSetting(games.widget.shape.dvd)">
 
 			<control type="image"> <!--fallback bg-->
@@ -2082,9 +2082,9 @@
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">$INFO[ListItem.Thumb]</texture>
 			</control>
-	
+
 		</itemlayout>
-						
+
 		<itemlayout width="186" height="183" condition="Skin.HasSetting(games.widget.shape.square)">
 
 			<control type="image"> <!--fallback bg-->
@@ -2113,9 +2113,9 @@
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">$INFO[ListItem.Thumb]</texture>
 			</control>
-	
+
 		</itemlayout>
-		
+
 		<itemlayout width="372" height="274" condition="Skin.HasSetting(games.widget.shape.rectangle)">
 
 			<control type="image"> <!--fallback bg-->
@@ -2144,7 +2144,7 @@
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">$INFO[ListItem.Thumb]</texture>
 			</control>
-	
+
 		</itemlayout>
 
 		<focusedlayout width="186" height="274" condition="Skin.HasSetting(games.widget.shape.dvd)">
@@ -2175,11 +2175,11 @@
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">$INFO[ListItem.Thumb]</texture>
 			</control>
-			
+
 			<include>SmallPanelBorder</include>
-	
+
 		</focusedlayout>
-						
+
 		<focusedlayout width="186" height="183" condition="Skin.HasSetting(games.widget.shape.square)">
 
 			<control type="image"> <!--fallback bg-->
@@ -2208,11 +2208,11 @@
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">$INFO[ListItem.Thumb]</texture>
 			</control>
-			
+
 			<include>MusicSmallPanelBorder</include>
-	
+
 		</focusedlayout>
-		
+
 		<focusedlayout width="372" height="274" condition="Skin.HasSetting(games.widget.shape.rectangle)">
 
 			<control type="image"> <!--fallback bg-->
@@ -2241,13 +2241,13 @@
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">$INFO[ListItem.Thumb]</texture>
 			</control>
-			
+
 			<include>RectangleSmallPanelBorder</include>
-	
+
 		</focusedlayout>
-		
+
 	</include>
-	
+
 	<include name="SettingsWidgetBG">
 		<control type="image"> <!--widget bg-->
 			<left>75</left>
@@ -2257,9 +2257,9 @@
 			<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 		</control>
 	</include>
-	
+
 	<include name="SystemWidget">
-	
+
 		<control type="label">
 			<left>95</left>
 			<top>60</top>
@@ -2267,7 +2267,7 @@
 			<font>HomeMovieTitle</font>
 			<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[24051][/COLOR] $INFO[System.BuildVersion]  $INFO[System.BuildDate]</label>
 		</control>
-		
+
 		<control type="label">
 			<left>95</left>
 			<top>100</top>
@@ -2275,7 +2275,7 @@
 			<font>HomeMovieTitle</font>
 			<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[21805]:[/COLOR] $INFO[System.ScreenResolution]</label>
 		</control>
-		
+
 		<control type="label">
 			<left>95</left>
 			<top>140</top>
@@ -2283,7 +2283,7 @@
 			<font>HomeMovieTitle</font>
 			<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[154]:[/COLOR] $INFO[System.TotalSpace]  $INFO[System.FreeSpace]</label>
 		</control>
-		
+
 		<control type="label">
 			<left>95</left>
 			<top>180</top>
@@ -2291,7 +2291,7 @@
 			<font>HomeMovieTitle</font>
 			<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[31114][/COLOR] $INFO[System.KernelVersion]</label>
 		</control>
-		
+
 		<control type="label">
 			<left>95</left>
 			<top>220</top>
@@ -2299,11 +2299,11 @@
 			<font>HomeMovieTitle</font>
 			<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[13295][/COLOR] $INFO[System.InternetState]</label>
 		</control>
-		
+
 	</include>
-	
+
 	<include name="PerformanceWidget">
-							
+
 		<control type="label">
 			<left>95</left>
 			<top>60</top>
@@ -2317,7 +2317,7 @@
 			<top>120</top>
 			<width>560</width>
 			<info>System.CPUUsage</info>
-		</control>	
+		</control>
 
 		<control type="label">
 			<left>95</left>
@@ -2332,8 +2332,8 @@
 			<top>190</top>
 			<width>560</width>
 			<info>system.memory(used)</info>
-		</control>	
-		
+		</control>
+
 		<control type="label">
 			<left>95</left>
 			<top>200</top>
@@ -2347,12 +2347,12 @@
 			<top>260</top>
 			<width>560</width>
 			<info>System.BatteryLevel</info>
-		</control>	
-							
+		</control>
+
 	</include>
-	
+
 	<include name="NetworkWidget">
-							
+
 		<control type="label">
 			<left>95</left>
 			<top>60</top>
@@ -2360,7 +2360,7 @@
 			<font>HomeMovieTitle</font>
 			<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[31117][/COLOR] $INFO[Network.IPAddress]</label>
 		</control>
-		
+
 		<control type="label">
 			<left>95</left>
 			<top>100</top>
@@ -2368,7 +2368,7 @@
 			<font>HomeMovieTitle</font>
 			<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[31118][/COLOR] $INFO[Network.MacAddress]</label>
 		</control>
-		
+
 		<control type="label">
 			<left>95</left>
 			<top>140</top>
@@ -2376,7 +2376,7 @@
 			<font>HomeMovieTitle</font>
 			<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[13160]:[/COLOR] $INFO[Network.GatewayAddress]</label>
 		</control>
-		
+
 		<control type="label">
 			<left>95</left>
 			<top>180</top>
@@ -2384,7 +2384,7 @@
 			<font>HomeMovieTitle</font>
 			<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[31119][/COLOR] $INFO[Network.SubnetMask]</label>
 		</control>
-		
+
 		<control type="label">
 			<left>95</left>
 			<top>220</top>
@@ -2392,11 +2392,11 @@
 			<font>HomeMovieTitle</font>
 			<label>$INFO[Network.LinkState]</label>
 		</control>
-		
+
 	</include>
-	
+
 	<include name="UserWidget">
-						
+
 		<control type="image"> <!--user thumb-->
 			<left>75</left>
 			<top>60</top>
@@ -2404,7 +2404,7 @@
 			<height>226</height>
 			<texture>$INFO[System.ProfileThumb]</texture>
 		</control>
-		
+
 		<control type="label">
 			<left>315</left>
 			<top>60</top>
@@ -2412,7 +2412,7 @@
 			<font>HomeMovieTitle</font>
 			<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[1014]:[/COLOR] $INFO[System.ProfileName]</label>
 		</control>
-		
+
 		<control type="label">
 			<left>315</left>
 			<top>100</top>
@@ -2420,7 +2420,7 @@
 			<font>HomeMovieTitle</font>
 			<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[342]:[/COLOR] $INFO[Window(Home).Property(Movies.Count)] ($INFO[Window(Home).Property(Movies.UnWatched)] [LOWERCASE]$LOCALIZE[16101][/LOWERCASE])</label>
 		</control>
-		
+
 		<control type="label">
 			<left>315</left>
 			<top>140</top>
@@ -2428,7 +2428,7 @@
 			<font>HomeMovieTitle</font>
 			<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[31007]:[/COLOR] $INFO[Window(Home).Property(TVShows.Count)] ($INFO[Window(Home).Property(TVShows.UnWatched)] [LOWERCASE]$LOCALIZE[16101][/LOWERCASE])</label>
 		</control>
-		
+
 		<control type="label">
 			<left>315</left>
 			<top>180</top>
@@ -2436,7 +2436,7 @@
 			<font>HomeMovieTitle</font>
 			<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[133]:[/COLOR] $INFO[Window(Home).Property(Music.ArtistsCount)]</label>
 		</control>
-		
+
 		<control type="label">
 			<left>315</left>
 			<top>220</top>
@@ -2444,9 +2444,9 @@
 			<font>HomeMovieTitle</font>
 			<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[132]:[/COLOR] $INFO[Window(Home).Property(Music.AlbumsCount)]</label>
 		</control>
-							
+
 	</include>
-	
+
 
 	<!------------------------->
 	<!------------------------->
@@ -2470,7 +2470,7 @@
 		<height>75</height>
 		<font>List</font>
 	</include>
-	
+
 	<include name="ListLabel2">
 		<right>180</right>
 		<top>-2</top>
@@ -2480,7 +2480,7 @@
 		<align>center</align>
 		<scroll>false</scroll>
 	</include>
-	
+
 	<include name="ListLabel2F">
 		<right>180</right>
 		<top>-2</top>
@@ -2489,7 +2489,7 @@
 		<font>ButtonBoldSmall</font>
 		<align>center</align>
 	</include>
-	
+
 	<include name="ListLabel3">
 		<right>10</right>
 		<top>-2</top>
@@ -2499,7 +2499,7 @@
 		<align>center</align>
 		<scroll>false</scroll>
 	</include>
-	
+
 	<include name="ListLabel3F">
 		<right>10</right>
 		<top>-2</top>
@@ -2508,26 +2508,26 @@
 		<font>ButtonBoldSmall</font>
 		<align>center</align>
 	</include>
-	
+
 	<include name="InfoLabel">
 		<width>1210</width>
 		<height>40</height>
 		<scroll>true</scroll>
 		<font>ButtonSmallUpper</font>
 	</include>
-	
+
 	<include name="InfoLabelShort">
 		<width>300</width>
 		<height>40</height>
 		<scroll>true</scroll>
 		<font>ButtonSmallUpper</font>
 	</include>
-	
+
 	<include name="WatchedOverlay">
 		<width>75</width>
 		<height>75</height>
 	</include>
-	
+
 	<include name="Flag">
 		<height>45</height>
 		<width>120</width>
@@ -2540,33 +2540,33 @@
 		<texturenofocus colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texturenofocus>
 		<texturefocus colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texturefocus>
 	</include>
-	
+
 	<include name="Width560">
 		<width>560</width>
 	</include>
-	
+
 	<include name="Width740">
 		<width>740</width>
 	</include>
-	
+
 	<include name="Width900">
 		<width>900</width>
 	</include>
-	
-	
+
+
 	<!------------------------->
 	<!------------------------->
 	<!-----Dialog Includes----->
 	<!------------------------->
 	<!------------------------->
-	
+
 	<include name="DialogProgressLine">
 		<label>-</label>
 		<width>570</width>
 		<align>center</align>
 		<scroll>true</scroll>
 	</include>
-	
+
 	<include name="OSDButton">
 		<width>80</width>
 		<height>70</height>
@@ -2576,7 +2576,7 @@
 		<alttexturenofocus colordiffuse="TertiaryOSD">backgrounds/white.png</alttexturenofocus>
 		<font>-</font>
 	</include>
-	
+
 	<include name="OptionButton">
 		<width>190</width>
 		<textoffsetx>10</textoffsetx>
@@ -2588,7 +2588,7 @@
 		<focusedcolor>white</focusedcolor>
 		<font>ButtonBoldUpper</font>
 	</include>
-	
+
 	<include name="OSDOptionButtonSmall">
 		<width>190</width>
 		<textoffsetx>10</textoffsetx>
@@ -2599,7 +2599,7 @@
 		<disabledcolor>TertiaryOSD</disabledcolor>
 		<font>ButtonBoldUpper</font>
 	</include>
-	
+
 	<include name="OptionButtonBig">
 		<width>210</width>
 		<textoffsetx>10</textoffsetx>
@@ -2609,7 +2609,7 @@
 		<focusedcolor>white</focusedcolor>
 		<font>ButtonBoldUpper</font>
 	</include>
-	
+
 	<include name="OptionButtonBigger">
 		<width>300</width>
 		<textoffsetx>10</textoffsetx>
@@ -2619,7 +2619,7 @@
 		<focusedcolor>white</focusedcolor>
 		<font>ButtonBoldUpper</font>
 	</include>
-	
+
 	<include name="OSDOptionButton">
 		<width>260</width>
 		<textoffsetx>10</textoffsetx>
@@ -2630,7 +2630,7 @@
 		<disabledcolor>TertiaryOSD</disabledcolor>
 		<font>ButtonBoldUpper</font>
 	</include>
-	
+
 	<include name="KeyboardSingle">
 		<width>80</width>
 		<height>70</height>
@@ -2645,7 +2645,7 @@
 		<textureradionofocus>-</textureradionofocus>
 		<font>ButtonBold</font>
 	</include>
-	
+
 	<include name="KeyboardDouble">
 		<width>165</width>
 		<height>70</height>
@@ -2660,7 +2660,7 @@
 		<textureradionofocus>-</textureradionofocus>
 		<font>ButtonBoldUpper</font>
 	</include>
-	
+
 	<include name="KeyboardSpace">
 		<width>760</width>
 		<height>70</height>
@@ -2675,9 +2675,9 @@
 		<textureradionofocus>-</textureradionofocus>
 		<font>ButtonBoldUpper</font>
 	</include>
-	
+
 	<include name="MenuScrollbar"> <!--scrollbar for menus e.g. context, shutdown, view options, etc-->
-		
+
 		<control type="image"> <!--scrollbar arrow up-->
 			<left>680</left>
 			<top>315</top>
@@ -2693,7 +2693,7 @@
 			<height>420</height>
 			<showonepage>false</showonepage>
 		</control>
-	
+
 		<control type="image"> <!--scrollbar arrow down-->
 			<left>680</left>
 			<top>758</top>
@@ -2702,16 +2702,16 @@
 			<texture colordiffuse="PrimaryM" flipy="true">controls/scrollarrow.png</texture>
 			<visible>Control.IsVisible(61)</visible>
 		</control>
-			
+
 	</include>
-	
-	
+
+
 	<!-------------------------->
 	<!-------------------------->
 	<!--Visualisation Includes-->
 	<!-------------------------->
 	<!-------------------------->
-	
+
 	<include name="MusicVizPausedLabel">
 		<width>1800</width>
 		<height>28</height>
@@ -2721,7 +2721,7 @@
 		<font>MusicLarge</font>
 		<textcolor>PrimaryT</textcolor>
 	</include>
-	
+
 	<include name="MusicVizPausedLabelSmall">
 		<width>1800</width>
 		<height>28</height>
@@ -2730,14 +2730,14 @@
 		<font>MusicSmall</font>
 		<textcolor>PrimaryT</textcolor>
 	</include>
-	
-	
+
+
 	<!------------------------->
 	<!------------------------->
 	<!-----Add-on Includes----->
 	<!------------------------->
 	<!------------------------->
-	
+
 	<include name="cdArtMenuButton">
 		<posx>0</posx>
 		<height>70</height>
@@ -2750,14 +2750,14 @@
 		<texturefocus colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texturefocus>
 		<texturenofocus colordiffuse="TertiaryM">backgrounds/white.png</texturenofocus>
 	</include>
-	
-	
+
+
 	<!------------------------->
 	<!------------------------->
 	<!------Misc Includes------>
 	<!------------------------->
 	<!------------------------->
-	
+
 	<include name="WindowID">
 		<width>780</width>
 		<height>21</height>

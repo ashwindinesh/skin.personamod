@@ -6,8 +6,8 @@
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>
-		
-		
+
+
 		<control type="image"> <!--top-->
 			<include>FullScreenDimensions</include>
 			<texture colordiffuse="Black95">backgrounds/white.png</texture>
@@ -36,9 +36,9 @@
 				<onright>450</onright>
 				<onup>5</onup>
 				<ondown>5</ondown>
-					
+
 				<itemlayout width="1000" height="65">
-	
+
 					<control type="label"> <!--label-->
 						<left>20</left>
 						<width>960</width>
@@ -56,7 +56,7 @@
 				</itemlayout>
 
 				<focusedlayout width="1000" height="65">
-	
+
 					<control type="image"> <!--focus bg-->
 						<left>0</left>
 						<top>0</top>
@@ -64,7 +64,7 @@
 						<height>60</height>
 						<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 					</control>
-	
+
 					<control type="label"> <!--label-->
 						<left>20</left>
 						<width>960</width>

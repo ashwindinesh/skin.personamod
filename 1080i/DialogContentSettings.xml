@@ -6,13 +6,13 @@
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>
-		
+
 		<include>DialogBG</include>
-		
+
 		<control type="group">
 			<include>FadeandZoom</include>
 			<visible>!Window.IsActive(ShutdownMenu) + !Window.IsActive(okdialog) + !Window.IsActive(addonsettings)</visible>
-			
+
 			<control type="group">
 				<top>-80</top>
 
@@ -62,20 +62,20 @@
 					<ondown>5</ondown>
 					<scrolltime>0</scrolltime>
 					<pagecontrol>60</pagecontrol>
-					
+
 					<itemlayout width="1000" height="65">
-		
+
 						<control type="label"> <!--label-->
 							<left>20</left>
 							<width>960</width>
 							<label>$INFO[ListItem.Label]</label>
 							<font>Button</font>
 						</control>
-			
+
 					</itemlayout>
-		
+
 					<focusedlayout width="1000" height="65">
-		
+
 						<control type="image"> <!--focus bg-->
 							<left>0</left>
 							<top>0</top>
@@ -84,21 +84,21 @@
 							<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							<visible>Control.HasFocus(4)</visible>
 						</control>
-		
+
 						<control type="label"> <!--label-->
 							<left>20</left>
 							<width>960</width>
 							<label>$INFO[ListItem.Label]</label>
 							<font>Button</font>
 						</control>
-			
+
 					</focusedlayout>
 
 				</control>
-				
+
 				<control type="group"> <!--scrollbar stuff-->
 					<left>430</left>
-			
+
 					<control type="image"> <!--scrollbar arrow up-->
 						<top>475</top>
 						<width>7</width>
@@ -112,7 +112,7 @@
 						<height>160</height>
 						<showonepage>false</showonepage>
 					</control>
-				
+
 					<control type="image"> <!--scrollbar arrow down-->
 						<top>658</top>
 						<width>7</width>
@@ -120,7 +120,7 @@
 						<texture colordiffuse="PrimaryM" flipy="true">controls/scrollarrow.png</texture>
 						<visible>Control.IsVisible(60)</visible>
 					</control>
-					
+
 				</control>
 
 				<control type="label"> <!--Header 3-->
@@ -155,10 +155,10 @@
 					<radioposx>940</radioposx>
 					<textwidth>895</textwidth>
 				</control>
-				
+
 				<control type="group"> <!--scrollbar stuff-->
 					<left>430</left>
-			
+
 					<control type="image"> <!--scrollbar arrow up-->
 						<top>755</top>
 						<width>7</width>
@@ -172,7 +172,7 @@
 						<height>160</height>
 						<showonepage>false</showonepage>
 					</control>
-				
+
 					<control type="image"> <!--scrollbar arrow down-->
 						<top>938</top>
 						<width>7</width>
@@ -180,12 +180,12 @@
 						<texture colordiffuse="PrimaryM" flipy="true">controls/scrollarrow.png</texture>
 						<visible>Control.IsVisible(61)</visible>
 					</control>
-					
+
 				</control>
-				
+
 				<control type="group"> <!--bottom buttons-->
 					<top>180</top>
-				
+
 					<control type="grouplist" id="9000">
 						<left>460</left>
 						<top>800</top>
@@ -212,13 +212,13 @@
 							<include>OptionButton</include>
 							<label>222</label>
 						</control>
-					
+
 					</control>
-					
+
 				</control>
-				
+
 			</control>
-			
+
 		</control>
 
 	</controls>

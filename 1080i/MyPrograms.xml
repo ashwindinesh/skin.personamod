@@ -20,17 +20,17 @@
 		<include>View_502_Poster_Advanced_Launcher</include>
 		<include>View_504_Landscape_Advanced_Launcher</include>
 		<include>View_503_Slideshow_Advanced_Launcher</include>
-		
+
 		<control type="group">
 			<include>DialogBG</include>
 			<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
 			<include>BGFade</include>
 		</control>
-		
+
 		<control type="group">
 			<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus + !Window.IsActive(ShutdownMenu) + !Window.IsActive(virtualkeyboard) + !Window.IsActive(mediafilter) + !Window.IsActive(filebrowser)</visible>
 			<include>FadeandZoom2</include>
-		
+
 			<control type="label">
 				<left>710</left>
 				<top>240</top>
@@ -38,7 +38,7 @@
 				<label>14018</label>
 				<font>MenuTitle</font>
 			</control>
-			
+
 			<control type="grouplist" id="9000">
 				<left>710</left>
 				<top>315</top>
@@ -52,32 +52,32 @@
 				<orientation>vertical</orientation>
 				<scrolltime>0</scrolltime>
 				<pagecontrol>61</pagecontrol>
-				
+
 				<control type="button" id="2"> <!--view-->
 				</control>
-				
+
 				<control type="button" id="3"> <!--sort by-->
 					<label>103</label>
 				</control>
-				
+
 				<control type="togglebutton" id="4"> <!--ascending/descending-->
 					<label>584</label>
 					<altlabel>585</altlabel>
 					<usealttexture>Container.SortDirection(Descending)</usealttexture>
 				</control>
-				
+
 				<control type="edit" id="19"> <!--filter basic-->
 					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
 					<label>587</label>
 				</control>
-				
+
 				<control type="radiobutton" id="20"> <!--filter advanced-->
 					<visible>Container.CanFilterAdvanced</visible>
 					<label>587</label>
 					<onclick>right</onclick>
 					<onclick>Filter</onclick>
 				</control>
-			
+
 				<control type="radiobutton" id="301"> <!--show game plot-->
 					<label>31043</label>
 					<onclick>Skin.ToggleSetting(ListGamePlot)</onclick>
@@ -130,51 +130,51 @@
 					<visible>SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher)</visible>
 					<enable>Skin.HasSetting(games.fanart)</enable>
 				</control>
-				
+
 				<control type="label" id="320"> <!--home widget options-->
 					<label>Home widget options</label>
 					<font>ButtonBoldUpper</font>
 				</control>
-				
+
 				<control type="button" id="321"> <!--set widget 1 path-->
 					<label>$LOCALIZE[31141]</label>
 					<label2>$INFO[Skin.String(Games.Widget.1.Path)]</label2>
 					<onclick>Skin.SetString(Games.Widget.1.Path,$INFO[Container.FolderPath])</onclick>
 				</control>
-				
+
 				<control type="button" id="322"> <!--set widget 1 label-->
 					<label>$LOCALIZE[31142]</label>
 					<label2>$INFO[Skin.String(Games.Widget.1.Label)]</label2>
 					<onclick>Skin.SetString(Games.Widget.1.Label)</onclick>
 				</control>
-				
+
 				<control type="button" id="323"> <!--set widget 1 shape-->
 					<label>$LOCALIZE[31143]</label>
 					<label2>$VAR[GamesWidgetShape]</label2>
 					<onclick condition="Skin.HasSetting(games.widget.shape.dvd)">Skin.ToggleSetting(games.widget.shape.dvd)</onclick> <!--turn dvd off-->
 					<onclick condition="Skin.HasSetting(games.widget.shape.dvd)">Skin.ToggleSetting(games.widget.shape.square)</onclick> <!--turn square on-->
-					
+
 					<onclick condition="Skin.HasSetting(games.widget.shape.square)">Skin.ToggleSetting(games.widget.shape.square)</onclick> <!--turn square off-->
 					<onclick condition="Skin.HasSetting(games.widget.shape.square)">Skin.ToggleSetting(games.widget.shape.rectangle)</onclick> <!--turn rectangle on-->
-					
+
 					<onclick condition="Skin.HasSetting(games.widget.shape.rectangle)">Skin.ToggleSetting(games.widget.shape.rectangle)</onclick> <!--turn rectangle off-->
 					<onclick condition="Skin.HasSetting(games.widget.shape.rectangle)">Skin.ToggleSetting(games.widget.shape.dvd)</onclick> <!--turn dvd on-->
 				</control>
-				
+
 				<control type="label" id="350"> <!--Global skin options-->
 					<label>Global Skin options</label>
 					<font>ButtonBoldUpper</font>
 				</control>
-				
+
 				<control type="button" id="351"> <!--change colour-->
 					<label>$LOCALIZE[31074]</label>
 					<onclick>ActivateWindow(700)</onclick>
 				</control>
 
 			</control>
-			
+
 			<include>MenuScrollbar</include>
-			
+
 		</control>
 
 	</controls>

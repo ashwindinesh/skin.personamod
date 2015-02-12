@@ -10,7 +10,7 @@
 		<control type="group">
 			<include>FadeandZoom</include>
 			<visible>!Window.IsActive(ShutdownMenu) + !Window.IsActive(selectdialog) + !Window.IsActive(filebrowser) + !Window.IsActive(textviewer)  + !Window.IsActive(addonsettings) + !Window.IsActuve(progressdialog) + !Window.IsActive(yesnodialog) + !Window.IsActive(okdialog)</visible>
-		
+
 			<control type="label"> <!--title-->
 				<left>75</left>
 				<top>50</top>
@@ -19,7 +19,7 @@
 				<font>Breadcrumb</font>
 				<aligny>bottom</aligny>
 			</control>
-			
+
 			<control type="group"> <!--main content-->
 				<left>25</left>
 				<top>60</top>
@@ -40,11 +40,11 @@
 					<texture>$INFO[ListItem.Thumb]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
-				
+
 				<control type="group"> <!--information-->
 					<left>170</left>
 					<top>75</top>
-					
+
 					<control type="grouplist" id="9000">
 						<left>435</left>
 						<top>65</top>
@@ -57,12 +57,12 @@
 						<onleft>9000</onleft>
 						<orientation>horizontal</orientation>
 						<pagecontrol>60</pagecontrol>
-						<scrolltime>0</scrolltime>		
+						<scrolltime>0</scrolltime>
 
 						<control type="button" id ="6"> <!--uninstall-->
 							<include>OptionButton</include>
 							<label>24022</label>
-						</control>			
+						</control>
 
 						<control type="button" id ="7"> <!--disable/enable-->
 							<include>OptionButton</include>
@@ -85,8 +85,8 @@
 						</control>
 
 					</control>
-					
-					<control type="grouplist"> <!--info-->		
+
+					<control type="grouplist"> <!--info-->
 						<left>435</left>
 						<top>135</top>
 						<width>1500</width>
@@ -130,13 +130,13 @@
 							<textcolor>red</textcolor>
 							<visible>!IsEmpty(ListItem.Property(Addon.broken)]</visible>
 						</control>
-					
+
 						<control type="image"> <!--gap extender-->
 							<width>2</width>
 							<height>15</height>
 							<texture>backgrounds/trans.png</texture>
 						</control>
-							
+
 						<control type="textbox" id="400"> <!--plot-->
 							<width>1210</width>
 							<height>440</height>
@@ -144,13 +144,13 @@
 							<label>$INFO[ListItem.Property(Addon.Description)]</label>
 							<autoscroll delay="20000" time="5000" repeat="30000"/>
 						</control>
-						
+
 					</control>
-					
+
 				</control>
-				
+
 			</control>
-			
+
 		</control>
 
 	</controls>

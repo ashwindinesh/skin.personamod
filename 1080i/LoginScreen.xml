@@ -9,7 +9,7 @@
 
 		<include>GlobalClock</include>
 		<include>Breadcrumb</include>
-		
+
 		<control type="image"> <!--view options bg-->
 			<include>FullscreenDimensions</include>
 			<texture>backgrounds/white.png</texture>
@@ -48,7 +48,7 @@
 			<scrolltime>0</scrolltime>
 
 			<itemlayout width="650" height="160">
-			
+
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -78,7 +78,7 @@
 			</itemlayout>
 
 			<focusedlayout width="650" height="160">
-			
+
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -86,7 +86,7 @@
 					<height>150</height>
 					<texture colordiffuse="Login">backgrounds/white.png</texture>
 				</control>
-			
+
 				<control type="image">
 					<left>0</left>
 					<top>0</top>

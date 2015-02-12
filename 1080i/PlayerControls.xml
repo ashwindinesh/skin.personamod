@@ -9,7 +9,7 @@
 
 		<control type="group">
 			<top>1000</top>
-			
+
 			<control type="group">
 				<left>25</left>
 				<bottom>30</bottom>
@@ -78,101 +78,101 @@
 					</control>
 
 				</control>
-	  
+
 				<control type="grouplist"> <!--button bg-->
 					<centerleft>50%</centerleft>
 					<orientation>horizontal</orientation>
 					<itemgap>5</itemgap>
 					<width>760</width>
 					<defaultcontrol always="true">602</defaultcontrol>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/shuffle.png</texture>
 						<visible>!Playlist.IsRandom</visible>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">osd/shuffle.png</texture>
 						<visible>Playlist.IsRandom</visible>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/previous.png</texture>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/rewind.png</texture>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/pause.png</texture>
 						<visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding</visible>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/play.png</texture>
 						<visible>Player.Paused | Player.Forwarding | Player.Rewinding</visible>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/stop.png</texture>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/ff.png</texture>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/next.png</texture>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/repeat.png</texture>
 						<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">osd/repeat.png</texture>
 						<visible>Playlist.IsRepeat</visible>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture colordiffuse="$INFO[Skin.String(MainColour)]">osd/repeatone.png</texture>
 						<visible>Playlist.IsRepeatOne</visible>
 					</control>
-					
+
 					<control type="image">
 						<width>80</width>
 						<height>70</height>
 						<texture>osd/fullscreen.png</texture>
 					</control>
-					
+
 				</control>
-			
+
 				<control type="image">
 					<left>50</left>
 					<width>70</width>
@@ -180,7 +180,7 @@
 					<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 					<visible>IsEmpty(MusicPlayer.Cover) + Player.HasAudio</visible>
 				</control>
-			
+
 				<control type="image"> <!--music fallback-->
 					<left>50</left>
 					<width>70</width>
@@ -188,7 +188,7 @@
 					<texture>symbols/music.png</texture>
 					<visible>IsEmpty(MusicPlayer.Cover) + Player.HasAudio</visible>
 				</control>
-			
+
 				<control type="image"> <!--thumb-->
 					<left>50</left>
 					<width>70</width>
@@ -196,7 +196,7 @@
 					<aspectratio>scale</aspectratio>
 					<texture>$VAR[PlayerControlThumb]</texture>
 				</control>
-				
+
 				<control type="grouplist"> <!--video labels-->
 					<left>130</left>
 					<centertop>50%</centertop>
@@ -237,9 +237,9 @@
 						<textcolor>PrimaryT</textcolor>
 						<align>left</align>
 					</control>
-					
+
 				</control>
-				
+
 				<control type="grouplist"> <!--labels-->
 					<left>130</left>
 					<centertop>50%</centertop>
@@ -280,9 +280,9 @@
 						<textcolor>PrimaryT</textcolor>
 						<align>left</align>
 					</control>
-					
+
 				</control>
-				
+
 			</control>
 
 		</control>

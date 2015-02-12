@@ -11,19 +11,19 @@
 		<include>GlobalClock</include>
 		<include>GlobalItems</include>
 		<include>Breadcrumb</include>
-				
+
 		<include>View_50_List_Addons</include>
-		
+
 		<control type="group">
 			<include>DialogBG</include>
 			<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
 			<include>BGFade</include>
 		</control>
-		
+
 		<control type="group">
 			<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus + !Window.IsActive(ShutdownMenu) + !Window.IsActive(virtualkeyboard) + !Window.IsActive(mediafilter) + !Window.IsActive(filebrowser)</visible>
 			<include>FadeandZoom</include>
-		
+
 			<control type="label">
 				<centerleft>50%</centerleft>
 				<top>240</top>
@@ -45,28 +45,28 @@
 				<orientation>vertical</orientation>
 				<scrolltime>0</scrolltime>
 				<pagecontrol>61</pagecontrol>
-				
+
 				<control type="button" id="2"> <!--view-->
 				</control>
-				
+
 				<control type="button" id="3"> <!--sort by-->
 					<label>103</label>
 				</control>
-				
+
 				<control type="togglebutton" id="4"> <!--ascending/descending-->
 					<label>584</label>
 					<altlabel>585</altlabel>
 					<usealttexture>Container.SortDirection(Descending)</usealttexture>
 				</control>
-				
+
 				<control type="radiobutton" id="5"> <!--auto updates-->
 					<label>24063</label>
 				</control>
-				
+
 				<control type="radiobutton" id="6"> <!--toggle notifications-->
 					<label>25000</label>
 				</control>
-				
+
 				<control type="radiobutton" id="7"> <!--toggle foreign addons-->
 					<label>25001</label>
 				</control>
@@ -83,16 +83,16 @@
 					<onclick>Skin.SetImage(addon.custom.bg)</onclick>
 					<enable>Skin.HasSetting(addon.custom.bg)</enable>
 				</control>
-				
+
 				<control type="button" id="351"> <!--change colour-->
 					<label>$LOCALIZE[31074]</label>
 					<onclick>ActivateWindow(700)</onclick>
 				</control>
-		
+
 			</control>
-			
+
 			<include>MenuScrollbar</include>
-			
+
 		</control>
 
 	</controls>

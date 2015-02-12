@@ -7,13 +7,13 @@
 
 	<controls>
 
-		<include>GlobalBackground</include>	
-		
+		<include>GlobalBackground</include>
+
 		<control type="label">
 			<label>$LOCALIZE[31074]</label>
 			<include>BreadcrumbLabelLeft</include>
 		</control>
-		
+
 		<control type="group"> <!--content-->
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
@@ -39,7 +39,7 @@
 						<height>150</height>
 						<texture>$INFO[ListItem.Thumb]</texture>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-10</left>
 						<top>-9</top>
@@ -60,7 +60,7 @@
 						<bordertexture colordiffuse="PrimaryT">backgrounds/white.png</bordertexture>
 						<bordersize>7</bordersize>
 					</control>
-				
+
 					<control type="image"> <!--watched icon-->
 						<left>-10</left>
 						<top>-9</top>
@@ -506,7 +506,7 @@
 				</content>
 
 			</control>
-		
+
 		</control>
 
 	</controls>

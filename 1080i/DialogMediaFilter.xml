@@ -3,15 +3,15 @@
 
 	<defaultcontrol always="true">5</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	
+
 	<controls>
-		
+
 		<include>DialogBG</include>
-			
+
 		<control type="group">
 			<include>FadeandZoom</include>
 			<visible>!Window.IsActive(ShutdownMenu)</visible>
-		
+
 			<control type="label" id="2"> <!--Header-->
 				<centerleft>50%</centerleft>
 				<top>240</top>
@@ -37,24 +37,24 @@
 
 			<control type="button" id="7"> <!--button-->
 			</control>
-	
+
 			<control type="radiobutton" id="8"> <!--radiobutton-->
 				<width>1000</width>
 				<radioposx>940</radioposx>
 				<textwidth>895</textwidth>
 			</control>
-	
+
 			<control type="spincontrolex" id="9"> <!--spin control ex-->
 				<width>1000</width>
 				<textwidth>895</textwidth>
 			</control>
-	
+
 			<control type="sliderex" id="10"> <!--slider-->
 			</control>
-	
+
 			<control type="edit" id="12"> <!--edit button-->
 			</control>
-		
+
 			<control type="image"> <!--scrollbar arrow up-->
 				<left>430</left>
 				<top>315</top>
@@ -70,7 +70,7 @@
 				<height>420</height>
 				<showonepage>false</showonepage>
 			</control>
-		
+
 			<control type="image"> <!--scrollbar arrow down-->
 				<left>430</left>
 				<top>758</top>
@@ -91,21 +91,21 @@
 				<onup>5</onup>
 				<ondown>5</ondown>
 				<scrolltime>0</scrolltime>
-		
+
 				<control type="button" id="28"> <!--ok-->
 					<include>OptionButton</include>
 					<label>186</label>
 				</control>
-		
+
 				<control type="button" id="27"> <!--clear-->
 					<include>OptionButton</include>
 					<label>192</label>
 				</control>
-		
+
 			</control>
-	
+
 		</control>
-		
+
 	</controls>
-	
+
 </window>

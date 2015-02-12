@@ -23,8 +23,8 @@
 				<onleft>9001</onleft>
 				<onright>9001</onright>
 				<orientation>horizontal</orientation>
-				<itemgap>0</itemgap>	
-				<scrolltime>0</scrolltime>	
+				<itemgap>0</itemgap>
+				<scrolltime>0</scrolltime>
 
 				<control type="button" id="95"> <!--general-->
 					<label>20037</label>
@@ -76,11 +76,11 @@
 					<texturefocus>-</texturefocus>
 				</control>
 			</control>
-		
+
 			<control type="group"> <!--left/right arrows focused-->
 				<visible>!ControlGroup(5).HasFocus</visible>
 				<animation effect="fade" start="100" end="30" time="200" condition="ControlGroup(5).HasFocus">Conditional</animation>
-				
+
 				<control type="image" id="901"> <!--left arrow-->
 					<left>700</left>
 					<top>254</top>
@@ -89,7 +89,7 @@
 					<texture colordiffuse="$INFO[Skin.String(MainColour)]">symbols/previous-32.png</texture>
 					<animation effect="zoom" start="90" end="110" center="auto" time="400" pulse="true" condition="!ControlGroup(5).HasFocus">Conditional</animation>
 				</control>
-					
+
 				<control type="image" id="901"> <!--left arrow-->
 					<right>700</right>
 					<top>254</top>
@@ -98,7 +98,7 @@
 					<texture colordiffuse="$INFO[Skin.String(MainColour)]" flipx="true">symbols/previous-32.png</texture>
 					<animation effect="zoom" start="90" end="110" center="auto" time="400" pulse="true" condition="!ControlGroup(5).HasFocus">Conditional</animation>
 				</control>
-				
+
 			</control>
 
 			<control type="grouplist" id="5">

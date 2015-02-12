@@ -43,7 +43,7 @@
 		<aligny>center</aligny>
 		<texture>-</texture>
 	</default>
-	
+
 	<default type="button">
 		<description>Default Button</description>
 		<width>500</width>
@@ -62,7 +62,7 @@
 		<pulseonselect>false</pulseonselect>
 		<scrollsuffix>    •    </scrollsuffix>
 	</default>
-	
+
 	<default type="edit">
 		<description>Default Button</description>
 		<width>500</width>

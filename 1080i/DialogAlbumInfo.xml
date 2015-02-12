@@ -10,7 +10,7 @@
 		<control type="group">
 			<include>FadeandZoom</include>
 			<visible>!Window.IsActive(ShutdownMenu) + !Window.IsActive(selectdialog) + !Window.IsActive(filebrowser) + !Window.IsActuve(progressdialog) + !Window.IsActive(yesnodialog)</visible>
-		
+
 			<control type="label"> <!--title-->
 				<left>75</left>
 				<top>50</top>
@@ -29,7 +29,7 @@
 				<scroll>true</scroll>
 				<visible>Container.Content(Albums)</visible>
 			</control>
-						
+
 			<control type="grouplist"> <!--rating-->
 				<right>75</right>
 				<top>67</top>
@@ -39,14 +39,14 @@
 				<orientation>horizontal</orientation>
 				<align>right</align>
 				<visible>!Container.Content(Artists)</visible>
-					
+
 				<control type="image"> <!--star-->
 					<width>48</width>
 					<height>48</height>
 					<texture colordiffuse="$INFO[Skin.String(MainColour)]">symbols/infostar.png</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
-	
+
 				<control type="label"> <!--label-->
 					<width min="29" max="200">auto</width>
 					<height>48</height>
@@ -55,9 +55,9 @@
 					<textcolor>PrimaryT</textcolor>
 					<align>right</align>
 				</control>
-			
+
 			</control>
-			
+
 			<control type="group"> <!--main content-->
 				<left>25</left>
 				<top>60</top>
@@ -70,11 +70,11 @@
 					<texture>$VAR[VidInfoImage]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
-				
+
 				<control type="group"> <!--information-->
 					<left>170</left>
 					<top>75</top>
-					
+
 					<control type="grouplist" id="9000">
 						<left>435</left>
 						<top>65</top>
@@ -86,17 +86,17 @@
 						<onright>9000</onright>
 						<onleft>9000</onleft>
 						<orientation>horizontal</orientation>
-						<scrolltime>0</scrolltime>		
+						<scrolltime>0</scrolltime>
 
 						<control type="button" id ="5"> <!--tracks-->
 							<include>OptionButton</include>
 							<label>206</label>
-						</control>		
+						</control>
 
 						<control type="button" id ="6"> <!--refresh-->
 							<include>OptionButton</include>
 							<label>184</label>
-						</control>	
+						</control>
 
 						<control type="button" id ="10"> <!--get thumb-->
 							<include>OptionButton</include>
@@ -109,8 +109,8 @@
 						</control>
 
 					</control>
-					
-					<control type="grouplist"> <!--info-->		
+
+					<control type="grouplist"> <!--info-->
 						<left>435</left>
 						<top>135</top>
 						<width>1500</width>
@@ -205,27 +205,27 @@
 							<visible>Container.Content(Albums)</visible>
 							<visible>IsEmpty(ListItem.Property(Album_Type))</visible>
 						</control>
-					
+
 						<control type="image"> <!--gap extender-->
 							<width>2</width>
 							<height>25</height>
 							<texture>backgrounds/trans.png</texture>
 						</control>
-							
+
 						<control type="textbox" id="4"> <!--artist/album info-->
 							<width>1210</width>
 							<height>500</height>
 							<align>left</align>
 							<autoscroll delay="20000" time="5000" repeat="30000"/>
 						</control>
-					
-						<control type="grouplist"> <!--info-->		
+
+						<control type="grouplist"> <!--info-->
 							<width>1500</width>
 							<height>612</height>
 							<itemgap>5</itemgap>
 							<orientation>horizontal</orientation>
 							<pagecontrol>60</pagecontrol>
-							<scrolltime>0</scrolltime>	
+							<scrolltime>0</scrolltime>
 
 							<control type="panel" id="50"> <!--cast-->
 								<width>1195</width>
@@ -239,13 +239,13 @@
 								<pagecontrol>61</pagecontrol>
 
 								<itemlayout height="199" width="199">
-									
+
 									<control type="image"> <!--background-->
 										<width>189</width>
 										<height>189</height>
 										<texture colordiffuse="SecondaryM">backgrounds/white.png</texture>
 									</control>
-								
+
 									<control type="image"> <!--fallback-->
 										<left>25</left>
 										<top>25</top>
@@ -254,7 +254,7 @@
 										<texture colordiffuse="PrimaryM">symbols/music_record-256.png</texture>
 										<aspectratio>keep</aspectratio>
 									</control>
-								
+
 									<control type="image"> <!--thumb-->
 										<width>189</width>
 										<height>189</height>
@@ -265,13 +265,13 @@
 								</itemlayout>
 
 								<focusedlayout height="204" width="204">
-									
+
 									<control type="image"> <!--background-->
 										<width>189</width>
 										<height>189</height>
 										<texture colordiffuse="SecondaryM">backgrounds/white.png</texture>
 									</control>
-								
+
 									<control type="image"> <!--fallback-->
 										<left>25</left>
 										<top>25</top>
@@ -280,14 +280,14 @@
 										<texture colordiffuse="PrimaryM">symbols/music_record-256.png</texture>
 										<aspectratio>keep</aspectratio>
 									</control>
-								
+
 									<control type="image"> <!--thumb-->
 										<width>189</width>
 										<height>189</height>
 										<texture>$INFO[ListItem.Thumb]</texture>
 										<aspectratio>scale</aspectratio>
 									</control>
-									
+
 									<control type="image"> <!--text bg-->
 										<top>97</top>
 										<width>189</width>
@@ -305,7 +305,7 @@
 										<textcolor>white</textcolor>
 										<autoscroll delay="2000" time="1500" repeat="2000"/>
 									</control>
-									
+
 									<control type="image"> <!--text border-->
 										<top>97</top>
 										<width>189</width>
@@ -316,9 +316,9 @@
 								</focusedlayout>
 
 							</control>
-							
+
 							<control type="group"> <!--scrollbar stuff-->
-					
+
 								<control type="image"> <!--scrollbar arrow up-->
 									<width>7</width>
 									<height>7</height>
@@ -334,7 +334,7 @@
 									<showonepage>false</showonepage>
 									<visible>Control.IsVisible(50)</visible>
 								</control>
-						
+
 								<control type="image"> <!--scrollbar arrow down-->
 									<top>381</top>
 									<width>7</width>
@@ -342,18 +342,18 @@
 									<texture colordiffuse="PrimaryM" flipy="true">controls/scrollarrow.png</texture>
 									<visible>Control.IsVisible(61)</visible>
 								</control>
-							
+
 							</control>
-							
+
 						</control>
-					
+
 					</control>
-					
-					
+
+
 				</control>
-				
-			</control>	
-			
+
+			</control>
+
 		</control>
 
 	</controls>

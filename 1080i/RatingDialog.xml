@@ -3,10 +3,10 @@
 <window>
 
     <controls>
-	
+
 		<control type="group">
 			<top>200</top>
-	
+
 			<control type="group">
 
 				<control type="label" id="10011"> <!--DIALOG TITLE-->
@@ -33,7 +33,7 @@
 					<align>center</align>
 					<label></label>
 				</control>
-				
+
 			</control>
 
 			<!--SIMPLE -->
@@ -74,7 +74,7 @@
 				<centerleft>50%</centerleft>
 				<top>325</top>
 				<width>490</width>
-			
+
 				<control type="button" id="11030">
 					<description>1 Button</description>
 					<left>0</left>
@@ -308,9 +308,9 @@
 					<texture colordiffuse="PrimaryM">symbols/star-48.png</texture>
 					<visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)|Control.HasFocus(11037)|Control.HasFocus(11038)</visible>
 				</control>
-				
+
 			</control>
-			
+
 		</control>
 
     </controls>

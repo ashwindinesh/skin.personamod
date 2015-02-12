@@ -14,17 +14,17 @@
 		<include>Breadcrumb</include>
 
 		<include>View_50_List_Addons</include>
-		
+
 		<control type="group">
 			<include>DialogBG</include>
 			<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
 			<include>BGFade</include>
 		</control>
-		
+
 		<control type="group">
 			<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus + !Window.IsActive(ShutdownMenu) + !Window.IsActive(virtualkeyboard) + !Window.IsActive(mediafilter) + !Window.IsActive(filebrowser)</visible>
 			<include>FadeandZoom2</include>
-		
+
 			<control type="label">
 				<left>760</left>
 				<top>240</top>
@@ -32,7 +32,7 @@
 				<label>14018</label>
 				<font>MenuTitle</font>
 			</control>
-			
+
 			<control type="grouplist" id="9000">
 				<left>760</left>
 				<top>315</top>
@@ -85,14 +85,14 @@
 					<onclick>Skin.SetImage(picture.custom.bg)</onclick>
 					<enable>Skin.HasSetting(picture.custom.bg)</enable>
 				</control>
-				
+
 				<control type="button" id="351"> <!--change colour-->
 					<label>$LOCALIZE[31074]</label>
 					<onclick>ActivateWindow(700)</onclick>
 				</control>
 
 			</control>
-		
+
 			<control type="image"> <!--scrollbar arrow up-->
 				<left>730</left>
 				<top>315</top>
@@ -108,7 +108,7 @@
 				<height>420</height>
 				<showonepage>false</showonepage>
 			</control>
-		
+
 			<control type="image"> <!--scrollbar arrow down-->
 				<left>730</left>
 				<top>758</top>
@@ -117,7 +117,7 @@
 				<texture colordiffuse="PrimaryM" flipy="true">controls/scrollarrow.png</texture>
 				<visible>Control.IsVisible(61)</visible>
 			</control>
-			
+
 		</control>
 
 	</controls>

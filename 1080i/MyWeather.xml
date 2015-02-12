@@ -11,7 +11,7 @@
 		<include>GlobalClock</include>
 		<include>GlobalItems</include>
 		<include>Breadcrumb</include>
-	  
+
 		<control type="label"> <!--updated time-->
 			<left>75</left>
 			<top>105</top>
@@ -23,11 +23,11 @@
 			<include>HiddenByMenu</include>
 			<label>$LOCALIZE[31103] $INFO[Window(Weather).Property(Updated)]</label>
 		</control>
-		
+
 		<control type="group">
 			<include>HiddenByMenu</include>
 			<include>ViewAnimation</include>
-		
+
 			<control type="button" id="9001">
 				<onleft>9000</onleft>
 				<onright>9002</onright>
@@ -49,7 +49,7 @@
 				<posy>210</posy>
 				<animation effect="slide" start="0,0" end="-1240,0" time="500" condition="Control.HasFocus(9003)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-2475,0" time="500" condition="Control.HasFocus(9004)">Conditional</animation>
-				
+
 				<control type="image"> <!--background-->
 					<posx>55</posx>
 					<posy>75</posy>
@@ -57,7 +57,7 @@
 					<height>632</height>
 					<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 				</control>
-					
+
 				<control type="image"> <!--strip no focus-->
 					<posx>55</posx>
 					<posy>365</posy>
@@ -66,7 +66,7 @@
 					<texture colordiffuse="SecondaryMT">backgrounds/white.png</texture>
 					<visible>!Control.HasFocus(9001)</visible>
 				</control>
-					
+
 				<control type="image"> <!--strip focus-->
 					<posx>55</posx>
 					<posy>365</posy>
@@ -75,7 +75,7 @@
 					<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 					<visible>Control.HasFocus(9001)</visible>
 				</control>
-						
+
 				<control type="image"> <!--icon-->
 					<posx>115</posx>
 					<posy>115</posy>
@@ -93,7 +93,7 @@
 					<aligny>center</aligny>
 					<font>MusicTime</font>
 				</control>
-				
+
 				<control type="group"> <!--info-->
 					<posx>5</posx>
 					<posy>10</posy>
@@ -113,9 +113,9 @@
 						<height>65</height>
 						<label>$LOCALIZE[402] $INFO[Window(Weather).Property(Current.FeelsLike),,°]</label>
 					</control>
-					
+
 				</control>
-				
+
 				<control type="group">
 					<posx>75</posx>
 					<posy>410</posy>
@@ -127,14 +127,14 @@
 						<itemgap>10</itemgap>
 						<orientation>horizontal</orientation>
 						<align>left</align>
-					
+
 						<control type="label"> <!--sunrise label-->
 							<height>40</height>
 							<width max="1800">auto</width>
 							<label>$LOCALIZE[33027]:</label>
 							<font>ButtonSmallUpper</font>
 						</control>
-					
+
 						<control type="label"> <!--sunrise-->
 							<width max="1800">auto</width>
 							<height>40</height>
@@ -142,7 +142,7 @@
 							<font>ButtonSmallUpper</font>
 						</control>
 
-					</control>	
+					</control>
 
 					<control type="grouplist">
 						<posx>0</posx>
@@ -151,14 +151,14 @@
 						<itemgap>10</itemgap>
 						<orientation>horizontal</orientation>
 						<align>left</align>
-					
+
 						<control type="label"> <!--sunset label-->
 							<height>40</height>
 							<width max="1800">auto</width>
 							<label>$LOCALIZE[33028]:</label>
 							<font>ButtonSmallUpper</font>
 						</control>
-					
+
 						<control type="label"> <!--sunset-->
 							<width max="1800">auto</width>
 							<height>40</height>
@@ -166,7 +166,7 @@
 							<font>ButtonSmallUpper</font>
 						</control>
 
-					</control>	
+					</control>
 
 					<control type="grouplist">
 						<posx>0</posx>
@@ -175,14 +175,14 @@
 						<itemgap>10</itemgap>
 						<orientation>horizontal</orientation>
 						<align>left</align>
-					
+
 						<control type="label"> <!--wind label-->
 							<height>40</height>
 							<width max="1800">auto</width>
 							<label>$LOCALIZE[404]:</label>
 							<font>ButtonSmallUpper</font>
 						</control>
-					
+
 						<control type="label"> <!--wind-->
 							<width max="1800">auto</width>
 							<height>40</height>
@@ -190,7 +190,7 @@
 							<font>ButtonSmallUpper</font>
 						</control>
 
-					</control>	
+					</control>
 
 					<control type="grouplist">
 						<posx>0</posx>
@@ -199,14 +199,14 @@
 						<itemgap>10</itemgap>
 						<orientation>horizontal</orientation>
 						<align>left</align>
-					
+
 						<control type="label"> <!--humidity label-->
 							<height>40</height>
 							<width max="1800">auto</width>
 							<label>$LOCALIZE[406]:</label>
 							<font>ButtonSmallUpper</font>
 						</control>
-					
+
 						<control type="label"> <!--humidity-->
 							<width max="1800">auto</width>
 							<height>40</height>
@@ -223,14 +223,14 @@
 						<itemgap>10</itemgap>
 						<orientation>horizontal</orientation>
 						<align>left</align>
-					
+
 						<control type="label"> <!--UV Index label-->
 							<height>40</height>
 							<width max="1800">auto</width>
 							<label>$LOCALIZE[403]:</label>
 							<font>ButtonSmallUpper</font>
 						</control>
-					
+
 						<control type="label"> <!--UV Index-->
 							<width max="1800">auto</width>
 							<height>40</height>
@@ -247,14 +247,14 @@
 						<itemgap>10</itemgap>
 						<orientation>horizontal</orientation>
 						<align>left</align>
-					
+
 						<control type="label"> <!--dew point label-->
 							<height>40</height>
 							<width max="1800">auto</width>
 							<label>$LOCALIZE[405]:</label>
 							<font>ButtonSmallUpper</font>
 						</control>
-					
+
 						<control type="label"> <!--UV Index-->
 							<width max="1800">auto</width>
 							<height>40</height>
@@ -263,7 +263,7 @@
 						</control>
 
 					</control>
-					
+
 				</control>
 
 			</control>
@@ -283,7 +283,7 @@
 				<posy>210</posy>
 				<animation effect="slide" start="0,0" end="-1240,0" time="500" condition="Control.HasFocus(9003)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-2475,0" time="500" condition="Control.HasFocus(9004)">Conditional</animation>
-				
+
 				<control type="panel" id="9002">
 					<posx>0</posx>
 					<posy>75</posy>
@@ -296,9 +296,9 @@
 					<orientation>vertical</orientation>
 					<viewtype label="535">icon</viewtype>
 					<scrolltime tween="quadratic" easing="out">450</scrolltime>
-					
+
 					<itemlayout width="650" height="128">
-					
+
 						<control type="image"> <!--tile bg-->
 							<posx>0</posx>
 							<posy>0</posy>
@@ -306,21 +306,21 @@
 							<height>120</height>
 							<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 						</control>
-					
+
 						<control type="label"> <!--time-->
 							<posx>20</posx>
 							<posy>8</posy>
 							<width>200</width>
 							<label>$INFO[ListItem.Property(Time)]</label>
 						</control>
-					
+
 						<control type="label"> <!--date-->
 							<posx>20</posx>
 							<posy>45</posy>
 							<width>200</width>
 							<label>$INFO[ListItem.Property(Date)]</label>
 						</control>
-				
+
 						<control type="image"> <!--weather icon-->
 							<posx>150</posx>
 							<posy>20</posy>
@@ -328,7 +328,7 @@
 							<height>80</height>
 							<texture background="true" colordiffuse="PrimaryT">$INFO[ListItem.Thumb,weather/,.png]</texture>
 						</control>
-					
+
 						<control type="label"> <!--condition-->
 							<posx>260</posx>
 							<posy>0</posy>
@@ -338,7 +338,7 @@
 							<wrapmultiline>true</wrapmultiline>
 							<scroll>false</scroll>
 						</control>
-					
+
 						<control type="label"> <!--temp-->
 							<posx>625</posx>
 							<posy>0</posy>
@@ -348,11 +348,11 @@
 							<align>right</align>
 							<font>MusicNowPlaying</font>
 						</control>
-						
+
 					</itemlayout>
-					
+
 					<focusedlayout width="650" height="128">
-					
+
 						<control type="image"> <!--tile bg-->
 							<posx>0</posx>
 							<posy>0</posy>
@@ -360,21 +360,21 @@
 							<height>120</height>
 							<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						</control>
-					
+
 						<control type="label"> <!--time-->
 							<posx>20</posx>
 							<posy>8</posy>
 							<width>200</width>
 							<label>$INFO[ListItem.Property(Time)]</label>
 						</control>
-					
+
 						<control type="label"> <!--date-->
 							<posx>20</posx>
 							<posy>45</posy>
 							<width>200</width>
 							<label>$INFO[ListItem.Property(Date)]</label>
 						</control>
-				
+
 						<control type="image"> <!--weather icon-->
 							<posx>150</posx>
 							<posy>20</posy>
@@ -382,7 +382,7 @@
 							<height>80</height>
 							<texture background="true" colordiffuse="PrimaryT">$INFO[ListItem.Thumb,weather/,.png]</texture>
 						</control>
-					
+
 						<control type="label"> <!--condition-->
 							<posx>260</posx>
 							<posy>0</posy>
@@ -391,7 +391,7 @@
 							<label>$INFO[ListItem.Property(Condition)]</label>
 							<wrapmultiline>true</wrapmultiline>
 						</control>
-					
+
 						<control type="label"> <!--temp-->
 							<posx>625</posx>
 							<posy>0</posy>
@@ -401,11 +401,11 @@
 							<align>right</align>
 							<font>MusicNowPlaying</font>
 						</control>
-						
+
 					</focusedlayout>
-					
+
 					<content>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.1.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.1.ShortDate)]</property>
@@ -414,7 +414,7 @@
 							<thumb>$INFO[Window.Property(Hourly.1.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.2.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.2.ShortDate)]</property>
@@ -423,7 +423,7 @@
 							<thumb>$INFO[Window.Property(Hourly.2.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.3.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.3.ShortDate)]</property>
@@ -432,7 +432,7 @@
 							<thumb>$INFO[Window.Property(Hourly.3.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.4.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.4.ShortDate)]</property>
@@ -441,7 +441,7 @@
 							<thumb>$INFO[Window.Property(Hourly.4.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.5.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.5.ShortDate)]</property>
@@ -450,7 +450,7 @@
 							<thumb>$INFO[Window.Property(Hourly.5.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.6.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.6.ShortDate)]</property>
@@ -459,7 +459,7 @@
 							<thumb>$INFO[Window.Property(Hourly.6.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.7.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.7.ShortDate)]</property>
@@ -468,7 +468,7 @@
 							<thumb>$INFO[Window.Property(Hourly.7.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.8.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.8.ShortDate)]</property>
@@ -477,7 +477,7 @@
 							<thumb>$INFO[Window.Property(Hourly.8.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.9.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.9.ShortDate)]</property>
@@ -486,7 +486,7 @@
 							<thumb>$INFO[Window.Property(Hourly.9.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.10.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.10.ShortDate)]</property>
@@ -495,7 +495,7 @@
 							<thumb>$INFO[Window.Property(Hourly.10.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.11.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.11.ShortDate)]</property>
@@ -504,7 +504,7 @@
 							<thumb>$INFO[Window.Property(Hourly.11.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.12.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.12.ShortDate)]</property>
@@ -513,7 +513,7 @@
 							<thumb>$INFO[Window.Property(Hourly.12.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.13.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.13.ShortDate)]</property>
@@ -522,7 +522,7 @@
 							<thumb>$INFO[Window.Property(Hourly.13.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.14.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.14.ShortDate)]</property>
@@ -531,7 +531,7 @@
 							<thumb>$INFO[Window.Property(Hourly.14.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.15.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.15.ShortDate)]</property>
@@ -540,7 +540,7 @@
 							<thumb>$INFO[Window.Property(Hourly.15.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.16.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.16.ShortDate)]</property>
@@ -549,7 +549,7 @@
 							<thumb>$INFO[Window.Property(Hourly.16.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.17.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.17.ShortDate)]</property>
@@ -558,7 +558,7 @@
 							<thumb>$INFO[Window.Property(Hourly.17.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.18.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.18.ShortDate)]</property>
@@ -567,7 +567,7 @@
 							<thumb>$INFO[Window.Property(Hourly.18.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.19.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.19.ShortDate)]</property>
@@ -576,7 +576,7 @@
 							<thumb>$INFO[Window.Property(Hourly.19.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Time">$INFO[Window.Property(Hourly.20.Time)]</property>
 							<property name="Date">$INFO[Window.Property(Hourly.20.ShortDate)]</property>
@@ -585,13 +585,13 @@
 							<thumb>$INFO[Window.Property(Hourly.20.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-						
+
 					</content>
-					
-				</control>				
+
+				</control>
 
 			</control>
-			
+
 			<control type="label"> <!--36 hour forecast label-->
 				<posx>1315</posx>
 				<posy>230</posy>
@@ -607,7 +607,7 @@
 				<posy>210</posy>
 				<animation effect="slide" start="0,0" end="-1240,0" time="500" condition="Control.HasFocus(9003)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-2475,0" time="500" condition="Control.HasFocus(9004)">Conditional</animation>
-				
+
 				<control type="panel" id="9003">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -622,9 +622,9 @@
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<preloaditems>2</preloaditems>
 					<pagecontrol>60</pagecontrol>
-				
+
 					<itemlayout width="408" height="750">
-						
+
 						<control type="image"> <!--background-->
 							<posx>0</posx>
 							<posy>75</posy>
@@ -632,15 +632,15 @@
 							<height>632</height>
 							<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 						</control>
-						
+
 						<control type="image"> <!--weather icon-->
 							<posx>100</posx>
 							<posy>120</posy>
 							<width>200</width>
 							<height>200</height>
 							<texture background="true" colordiffuse="PrimaryT">$INFO[ListItem.Thumb,weather/,.png]</texture>
-						</control>	
-					
+						</control>
+
 						<control type="label"> <!--temp-->
 							<posx>200</posx>
 							<posy>310</posy>
@@ -649,8 +649,8 @@
 							<label>$INFO[ListItem.Property(Temp)]</label>
 							<align>center</align>
 							<font>MusicNowPlaying</font>
-						</control>						
-				
+						</control>
+
 						<control type="image"> <!--dark strip-->
 							<posx>0</posx>
 							<posy>440</posy>
@@ -658,14 +658,14 @@
 							<height>65</height>
 							<texture colordiffuse="SecondaryMT">backgrounds/white.png</texture>
 						</control>
-					
+
 						<control type="label"> <!--day-->
 							<posx>20</posx>
 							<posy>440</posy>
 							<width>360</width>
 							<label>$INFO[ListItem.Property(Heading)]</label>
 						</control>
-				
+
 						<control type="textbox"> <!--forecast-->
 							<posx>20</posx>
 							<posy>515</posy>
@@ -674,11 +674,11 @@
 							<label>$INFO[ListItem.Property(Forecast)]</label>
 							<aligny>top</aligny>
 						</control>
-					
+
 					</itemlayout>
 
 					<focusedlayout width="408" height="750">
-						
+
 						<control type="image"> <!--background-->
 							<posx>0</posx>
 							<posy>75</posy>
@@ -686,15 +686,15 @@
 							<height>632</height>
 							<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 						</control>
-						
+
 						<control type="image"> <!--weather icon-->
 							<posx>100</posx>
 							<posy>120</posy>
 							<width>200</width>
 							<height>200</height>
 							<texture background="true" colordiffuse="PrimaryT">$INFO[ListItem.Thumb,weather/,.png]</texture>
-						</control>	
-					
+						</control>
+
 						<control type="label"> <!--temp-->
 							<posx>200</posx>
 							<posy>310</posy>
@@ -703,8 +703,8 @@
 							<label>$INFO[ListItem.Property(Temp)]</label>
 							<align>center</align>
 							<font>MusicNowPlaying</font>
-						</control>						
-				
+						</control>
+
 						<control type="image"> <!--dark strip-->
 							<posx>0</posx>
 							<posy>440</posy>
@@ -712,14 +712,14 @@
 							<height>65</height>
 							<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
 						</control>
-					
+
 						<control type="label"> <!--day-->
 							<posx>20</posx>
 							<posy>440</posy>
 							<width>360</width>
 							<label>$INFO[ListItem.Property(Heading)]</label>
 						</control>
-				
+
 						<control type="textbox"> <!--forecast-->
 							<posx>20</posx>
 							<posy>515</posy>
@@ -730,9 +730,9 @@
 						</control>
 
 					</focusedlayout>
-							
+
 					<content>
-							
+
 						<item>
 							<property name="Forecast">$INFO[Window.Property(36Hour.1.Forecast)]</property>
 							<property name="Heading">$INFO[Window.Property(36Hour.1.Heading)]</property>
@@ -742,7 +742,7 @@
 							<thumb>$INFO[Window.Property(36Hour.1.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-								
+
 						<item>
 							<property name="Forecast">$INFO[Window.Property(36Hour.2.Forecast)]</property>
 							<property name="Heading">$INFO[Window.Property(36Hour.2.Heading)]</property>
@@ -751,7 +751,7 @@
 							<thumb>$INFO[Window.Property(36Hour.2.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-								
+
 						<item>
 							<property name="Forecast">$INFO[Window.Property(36Hour.3.Forecast)]</property>
 							<property name="Heading">$INFO[Window.Property(36Hour.3.Heading)]</property>
@@ -760,13 +760,13 @@
 							<thumb>$INFO[Window.Property(36Hour.3.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-								
+
 					</content>
-				
+
 				</control>
-			
+
 			</control>
-			
+
 			<control type="label"> <!--10 day forecast label-->
 				<posx>2551</posx>
 				<posy>230</posy>
@@ -797,39 +797,39 @@
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<preloaditems>2</preloaditems>
 					<pagecontrol>60</pagecontrol>
-				
+
 					<itemlayout width="320" height="320">
-							
+
 						<control type="image"> <!--background-->
 							<posx>0</posx>
 							<posy>75</posy>
 							<width>313</width>
 							<height>313</height>
 							<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
-						</control>	
-					
+						</control>
+
 						<control type="label"> <!--day-->
 							<posx>20</posx>
 							<posy>75</posy>
 							<width>360</width>
 							<label>$INFO[ListItem.Property(Day)]</label>
-						</control>	
-					
+						</control>
+
 						<control type="label"> <!--date-->
 							<posx>20</posx>
 							<posy>105</posy>
 							<width>360</width>
 							<label>$INFO[ListItem.Property(Date)]</label>
 						</control>
-						
+
 						<control type="image"> <!--weather icon-->
 							<posx>91.5</posx>
 							<posy>165</posy>
 							<width>130</width>
 							<height>130</height>
 							<texture background="true" colordiffuse="PrimaryT">$INFO[ListItem.Thumb,weather/,.png]</texture>
-						</control>	
-					
+						</control>
+
 						<control type="label"> <!--temp-->
 							<posx>158</posx>
 							<posy>265</posy>
@@ -837,8 +837,8 @@
 							<height>120</height>
 							<label>$INFO[ListItem.Property(HighTemp)] / $INFO[ListItem.Property(LowTemp)]</label>
 							<align>center</align>
-						</control>	
-					
+						</control>
+
 						<control type="label"> <!--outlook-->
 							<posx>158</posx>
 							<posy>297</posy>
@@ -848,41 +848,41 @@
 							<align>center</align>
 							<scroll>false</scroll>
 						</control>
-					
+
 					</itemlayout>
 
 					<focusedlayout width="320" height="320">
-							
+
 						<control type="image"> <!--background-->
 							<posx>0</posx>
 							<posy>75</posy>
 							<width>313</width>
 							<height>313</height>
 							<texture colordiffuse="$INFO[Skin.String(MainColour)]">backgrounds/white.png</texture>
-						</control>	
-					
+						</control>
+
 						<control type="label"> <!--day-->
 							<posx>20</posx>
 							<posy>75</posy>
 							<width>360</width>
 							<label>$INFO[ListItem.Property(Day)]</label>
-						</control>	
-					
+						</control>
+
 						<control type="label"> <!--date-->
 							<posx>20</posx>
 							<posy>105</posy>
 							<width>360</width>
 							<label>$INFO[ListItem.Property(Date)]</label>
 						</control>
-						
+
 						<control type="image"> <!--weather icon-->
 							<posx>91.5</posx>
 							<posy>165</posy>
 							<width>130</width>
 							<height>130</height>
 							<texture background="true" colordiffuse="PrimaryT">$INFO[ListItem.Thumb,weather/,.png]</texture>
-						</control>	
-					
+						</control>
+
 						<control type="label"> <!--temp-->
 							<posx>158</posx>
 							<posy>265</posy>
@@ -890,8 +890,8 @@
 							<height>120</height>
 							<label>$INFO[ListItem.Property(HighTemp)] / $INFO[ListItem.Property(LowTemp)]</label>
 							<align>center</align>
-						</control>	
-					
+						</control>
+
 						<control type="label"> <!--outlook-->
 							<posx>158</posx>
 							<posy>297</posy>
@@ -902,9 +902,9 @@
 						</control>
 
 					</focusedlayout>
-							
+
 					<content>
-							
+
 						<item>
 							<property name="Day">$INFO[Window.Property(Daily.1.LongDay)]</property>
 							<property name="Date">$INFO[Window.Property(Daily.1.ShortDate)]</property>
@@ -915,7 +915,7 @@
 							<thumb>$INFO[Window.Property(Daily.1.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Day">$INFO[Window.Property(Daily.2.LongDay)]</property>
 							<property name="Date">$INFO[Window.Property(Daily.2.ShortDate)]</property>
@@ -926,7 +926,7 @@
 							<thumb>$INFO[Window.Property(Daily.2.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Day">$INFO[Window.Property(Daily.3.LongDay)]</property>
 							<property name="Date">$INFO[Window.Property(Daily.3.ShortDate)]</property>
@@ -937,7 +937,7 @@
 							<thumb>$INFO[Window.Property(Daily.3.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Day">$INFO[Window.Property(Daily.4.LongDay)]</property>
 							<property name="Date">$INFO[Window.Property(Daily.4.ShortDate)]</property>
@@ -948,7 +948,7 @@
 							<thumb>$INFO[Window.Property(Daily.4.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Day">$INFO[Window.Property(Daily.5.LongDay)]</property>
 							<property name="Date">$INFO[Window.Property(Daily.5.ShortDate)]</property>
@@ -959,7 +959,7 @@
 							<thumb>$INFO[Window.Property(Daily.5.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Day">$INFO[Window.Property(Daily.6.LongDay)]</property>
 							<property name="Date">$INFO[Window.Property(Daily.6.ShortDate)]</property>
@@ -970,7 +970,7 @@
 							<thumb>$INFO[Window.Property(Daily.6.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Day">$INFO[Window.Property(Daily.7.LongDay)]</property>
 							<property name="Date">$INFO[Window.Property(Daily.7.ShortDate)]</property>
@@ -981,7 +981,7 @@
 							<thumb>$INFO[Window.Property(Daily.7.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Day">$INFO[Window.Property(Daily.8.LongDay)]</property>
 							<property name="Date">$INFO[Window.Property(Daily.8.ShortDate)]</property>
@@ -992,7 +992,7 @@
 							<thumb>$INFO[Window.Property(Daily.8.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Day">$INFO[Window.Property(Daily.9.LongDay)]</property>
 							<property name="Date">$INFO[Window.Property(Daily.9.ShortDate)]</property>
@@ -1003,7 +1003,7 @@
 							<thumb>$INFO[Window.Property(Daily.9.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-							
+
 						<item>
 							<property name="Day">$INFO[Window.Property(Daily.10.LongDay)]</property>
 							<property name="Date">$INFO[Window.Property(Daily.10.ShortDate)]</property>
@@ -1014,19 +1014,19 @@
 							<thumb>$INFO[Window.Property(Daily.10.FanartCode)]</thumb>
 							<onclick>-</onclick>
 						</item>
-								
+
 					</content>
-				
+
 				</control>
-			
-			</control>	
+
+			</control>
 
 		</control>
-		
+
 		<control type="group"> <!--options-->
 			<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus + !Window.IsActive(ShutdownMenu) + !Window.IsActive(virtualkeyboard) + !Window.IsActive(mediafilter) + !Window.IsActive(filebrowser)</visible>
 			<include>FadeandZoom2</include>
-		
+
 			<control type="label">
 				<left>760</left>
 				<top>240</top>
@@ -1034,7 +1034,7 @@
 				<label>14018</label>
 				<font>MenuTitle</font>
 			</control>
-				
+
 			<control type="grouplist" id="9000"> <!--view options menu-->
 				<left>760</left>
 				<top>315</top>
@@ -1085,7 +1085,7 @@
 				<label>$INFO[Control.GetLabel(3)]</label>
 				<font>ButtonUpper</font>
 			</control>
-				
+
 		</control>
 
 	</controls>

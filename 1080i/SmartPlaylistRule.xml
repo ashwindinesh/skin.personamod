@@ -6,7 +6,7 @@
 	<allowoverlay>no</allowoverlay>
 
 	<controls>
-		
+
 		<include>DialogBG</include>
 
 		<control type="group">
@@ -20,7 +20,7 @@
 				<font>MenuTitle</font>
 				<label>21421</label>
 			</control>
-			
+
 			<control type="group">
 				<top>135</top>
 
@@ -31,7 +31,7 @@
 					<font>ButtonBoldUpper</font>
 					<label>21422</label>
 				</control>
-				
+
 				<control type="group">
 					<top>80</top>
 
@@ -70,10 +70,10 @@
 						<width>900</width>
 						<label>$INFO[Control.GetLabel(16)]</label>
 					</control>
-					
+
 					<control type="group">
 						<centerleft>50%</centerleft>
-						<width>1000</width>	
+						<width>1000</width>
 
 						<control type="button" id="17"> <!--value button-->
 							<top>288</top>
@@ -96,7 +96,7 @@
 							<onright>17</onright>
 							<ondown>9000</ondown>
 						</control>
-					
+
 					</control>
 
 					<control type="grouplist" id="9000">
@@ -122,9 +122,9 @@
 						</control>
 
 					</control>
-					
+
 				</control>
-				
+
 			</control>
 
 		</control>

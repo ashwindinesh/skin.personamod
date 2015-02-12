@@ -69,7 +69,7 @@
 				<width>1000</width>
 				<textwidth>895</textwidth>
 			</control>
-				
+
 			<control type="grouplist" id="9000">
 				<left>460</left>
 				<top>730</top>
@@ -91,7 +91,7 @@
 					<include>OptionButton</include>
 					<label>222</label>
 				</control>
-			
+
 			</control>
 
 		</control>

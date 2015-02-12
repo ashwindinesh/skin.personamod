@@ -7,15 +7,15 @@
 	<zorder>5</zorder>
 
 	<controls>
-		
+
 		<control type="group">
 			<include>DialogBG</include>
 			<visible>!Window.IsVisible(contextmenu)</visible>
 		</control>
-		
+
 		<control type="group">
 			<include>FadeandZoom</include>
-		
+
 			<control type="label"> <!--header-->
 				<centerleft>50%</centerleft>
 				<top>240</top>
@@ -90,17 +90,17 @@
 					<label>21417</label>
 					<onclick>ActivateWindow(Settings)</onclick>
 				</control>
-      
+
 				<control type="button" id="13"> <!--Eject Disc-->
 					<label>13391</label>
 					<onclick>EjectTray()</onclick>
 				</control>
-      
+
 				<control type="button" id="14"> <!--Addons-->
 					<label>31046</label>
 					<onclick>ActivateWindow(AddonBrowser)</onclick>
 				</control>
-      
+
 				<control type="button" id="15"> <!--Global Search-->
 					<description>Global Search</description>
 					<label>31047</label>
@@ -108,9 +108,9 @@
 				</control>
 
 			</control>
-			
+
 			<include>MenuScrollbar</include>
-			
+
 		</control>
 
 	</controls>

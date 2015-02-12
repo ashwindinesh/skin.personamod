@@ -4,7 +4,7 @@
 
 	<defaultcontrol always="true">3</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	
+
 	<onload condition="![Skin.HasSetting(global.background)| Skin.HasSetting(global.slideshow)]">Skin.ToggleSetting(global.background)</onload>
 	<onload condition="IsEmpty(Skin.String(global.slideshow)">Skin.SetString(global.slideshow,special://skin/backgrounds/slideshow/)</onload>
 	<onload condition="IsEmpty(Skin.String(background)">Skin.SetString(background,special://skin/backgrounds/default/Simple.png)</onload>
@@ -31,11 +31,11 @@
 	<onload condition="![Skin.HasSetting(games.widget.shape.dvd) | Skin.HasSetting(games.widget.shape.square) | Skin.HasSetting(games.widget.shape.rectangle)]">Skin.ToggleSetting(games.widget.shape.dvd)</onload>
 
 	<controls>
-	
+
 		<include>GlobalBackground</include>
 		<include>GlobalClock</include>
 		<include>Breadcrumb</include>
-		
+
 		<control type="group"> <!--content-->
 			<include>ViewAnimation</include>
 			<include>HiddenByMenu</include>
@@ -50,8 +50,8 @@
 				<onup>5</onup>
 				<ondown>SetFocus(5,0)</ondown>
 				<orientation>horizontal</orientation>
-				<itemgap>0</itemgap>	
-				<scrolltime>0</scrolltime>		
+				<itemgap>0</itemgap>
+				<scrolltime>0</scrolltime>
 			</control>
 
 			<control type="grouplist" id="5"> <!--options-->
@@ -68,11 +68,11 @@
 				<scrolltime>0</scrolltime>
 				<pagecontrol>61</pagecontrol>
 			</control>
-		
+
 			<control type="group"> <!--left/right arrows focused-->
 				<visible>!ControlGroup(5).HasFocus</visible>
 				<animation effect="fade" start="100" end="30" time="200" condition="ControlGroup(5).HasFocus">Conditional</animation>
-				
+
 				<control type="image" id="901"> <!--left arrow-->
 					<left>700</left>
 					<top>254</top>
@@ -81,7 +81,7 @@
 					<texture colordiffuse="$INFO[Skin.String(MainColour)]">symbols/previous-32.png</texture>
 					<animation effect="zoom" start="90" end="110" center="auto" time="400" pulse="true" condition="!ControlGroup(5).HasFocus">Conditional</animation>
 				</control>
-					
+
 				<control type="image" id="901"> <!--left arrow-->
 					<right>700</right>
 					<top>254</top>
@@ -90,13 +90,13 @@
 					<texture colordiffuse="$INFO[Skin.String(MainColour)]" flipx="true">symbols/previous-32.png</texture>
 					<animation effect="zoom" start="90" end="110" center="auto" time="400" pulse="true" condition="!ControlGroup(5).HasFocus">Conditional</animation>
 				</control>
-				
+
 			</control>
-		
+
 			<control type="group"> <!--left/right arrows unfocused-->
 				<visible>ControlGroup(5).HasFocus</visible>
 				<animation effect="fade" start="100" end="30" time="0" condition="true">Conditional</animation>
-				
+
 				<control type="image" id="901"> <!--left arrow-->
 					<left>700</left>
 					<top>254</top>
@@ -104,7 +104,7 @@
 					<height>28</height>
 					<texture colordiffuse="PrimaryT">symbols/previous-32.png</texture>
 				</control>
-					
+
 				<control type="image" id="901"> <!--left arrow-->
 					<right>700</right>
 					<top>254</top>
@@ -112,9 +112,9 @@
 					<height>28</height>
 					<texture colordiffuse="PrimaryT" flipx="true">symbols/previous-32.png</texture>
 				</control>
-				
+
 			</control>
-		
+
 			<control type="image"> <!--scrollbar arrow up-->
 				<left>430</left>
 				<top>315</top>
@@ -130,7 +130,7 @@
 				<height>420</height>
 				<showonepage>false</showonepage>
 			</control>
-		
+
 			<control type="image"> <!--scrollbar arrow down-->
 				<left>430</left>
 				<top>758</top>
@@ -139,7 +139,7 @@
 				<texture colordiffuse="PrimaryM" flipy="true">controls/scrollarrow.png</texture>
 				<visible>Control.IsVisible(61)</visible>
 			</control>
-			
+
 		</control>
 
 		<control type="button" id="7"> <!--button-->

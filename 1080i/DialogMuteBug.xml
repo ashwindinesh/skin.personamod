@@ -11,7 +11,7 @@
 		<control type="group">
 			<visible>!Window.IsVisible(fullscreenvideo)</visible>
 			<animation effect="fade" start="100" end="5" time="250" condition="ControlGroup(9000).HasFocus">Conditional</animation>
-			
+
 			<control type="image" id="901"> <!--mute symbol-->
 				<right>75</right>
 				<bottom>45</bottom>
@@ -33,7 +33,7 @@
 				<texture colordiffuse="Black95">backgrounds/white.png</texture>
 				<visible>![Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsVisible(fullscreeninfo) | Window.IsVisible(videoosd) | Window.IsVisible(seekbar) | Window.IsVisible(volumebar) | Window.IsVisible(infodialog)]</visible>
 			</control>
-			
+
 			<control type="image" id="901"> <!--mute symbol-->
 				<right>75</right>
 				<top>74</top>

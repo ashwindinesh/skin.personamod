@@ -3,17 +3,17 @@
 <window>
 
 	<defaultcontrol>-</defaultcontrol>
-	
+
 	<controls>
-	
+
 		<control type="list" id="100">
 			<visible>false</visible>
 		</control>
-		
+
 		<control type="group">
 			<include>FadeandZoom</include>
 			<visible>!Window.IsActive(ShutdownMenu) + !Window.IsActive(selectdialog) + !Window.IsActive(filebrowser) + !Window.IsActive(progressdialog) + !Window.IsActive(yesnodialog)</visible>
-		
+
 			<control type="label"> <!--title-->
 				<left>75</left>
 				<top>50</top>
@@ -62,7 +62,7 @@
 				<scroll>true</scroll>
 				<visible>Control.IsVisible(140)</visible>
 			</control>
-						
+
 			<control type="grouplist"> <!--rating-->
 				<right>75</right>
 				<top>67</top>
@@ -72,14 +72,14 @@
 				<orientation>horizontal</orientation>
 				<align>right</align>
 				<visible>Control.IsVisible(110) | Control.IsVisible(120) | Control.IsVisible(140)</visible>
-					
+
 				<control type="image"> <!--star-->
 					<width>48</width>
 					<height>48</height>
 					<texture colordiffuse="$INFO[Skin.String(MainColour)]">symbols/infostar.png</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
-	
+
 				<control type="label"> <!--label-->
 					<width min="29" max="200">auto</width>
 					<height>48</height>
@@ -88,10 +88,10 @@
 					<textcolor>PrimaryT</textcolor>
 					<align>right</align>
 				</control>
-			
+
 			</control>
-			
-			<control type="group"> <!--main content-->		
+
+			<control type="group"> <!--main content-->
 				<left>25</left>
 				<top>60</top>
 				<animation effect="slide" start="0,0" end="0,-20" time="0" condition="Window.IsVisible(musicoverlay) | Window.IsVisible(videooverlay)">Conditional</animation>
@@ -104,11 +104,11 @@
 					<texture>$INFO[Container(100).ListItem.Thumb]</texture>
 					<aspectratio aligny="top" align="left">keep</aspectratio>
 				</control>
-				
+
 				<control type="group"> <!--information-->
 					<left>170</left>
 					<top>75</top>
-			
+
 					<control type="grouplist" id="190">
 						<left>435</left>
 						<top>65</top>
@@ -121,26 +121,26 @@
 						<onleft>190</onleft>
 						<orientation>horizontal</orientation>
 						<pagecontrol>60</pagecontrol>
-						<scrolltime>0</scrolltime>	
-					
+						<scrolltime>0</scrolltime>
+
 						<control type="button" id="191">
 							<include>OptionButton</include>
 							<label>$LOCALIZE[186]</label>
 						</control>
-					
+
 						<control type="button" id="192">
 							<include>OptionButton</include>
 							<label>-</label>
 						</control>
-					
+
 						<control type="button" id="193">
 							<include>OptionButton</include>
 							<label>-</label>
 						</control>
-					
+
 					</control>
-					
-					<control type="grouplist"> <!--info-->		
+
+					<control type="grouplist"> <!--info-->
 						<left>435</left>
 						<top>135</top>
 						<width>1500</width>
@@ -149,7 +149,7 @@
 						<ondown>9000</ondown>
 						<itemgap>0</itemgap>
 						<orientation>vertical</orientation>
-						
+
 						<control type="grouplist">
 							<width>1500</width>
 							<height>1500</height>
@@ -207,9 +207,9 @@
 								<include>InfoLabel</include>
 								<visible>!IsEmpty(Container(100).ListItem.Property(Studio))</visible>
 							</control>
-							
+
 						</control>
-						
+
 						<control type="grouplist">
 							<width>1500</width>
 							<height>1500</height>
@@ -306,16 +306,16 @@
 								<visible>Control.IsVisible(170)</visible>
 								<visible>IsEmpty(Container(100).ListItem.Property(Album_Type))</visible>
 							</control>
-							
+
 						</control>
-					
+
 						<control type="image"> <!--gap extender-->
 							<width>2</width>
 							<height>10</height>
 							<texture>backgrounds/trans.png</texture>
 							<visible>![IsEmpty(Container(100).ListItem.Property(VideoResolution)) + IsEmpty(Container(100).ListItem.Property(VideoCodec)) + IsEmpty(Container(100).ListItem.Property(AudioChannels)) + IsEmpty(Container(100).ListItem.Property(AudioCodec)) + IsEmpty(Container(100).ListItem.Property(VideoAspect))]</visible>
 						</control>
-						
+
 						<control type="grouplist"> <!--flags-->
 							<width min="90" max="900">auto</width>
 							<height>45</height>
@@ -324,39 +324,39 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<visible>![IsEmpty(Container(100).ListItem.Property(VideoResolution)) + IsEmpty(Container(100).ListItem.Property(VideoCodec)) + IsEmpty(Container(100).ListItem.Property(AudioChannels)) + IsEmpty(Container(100).ListItem.Property(AudioCodec)) + IsEmpty(Container(100).ListItem.Property(VideoAspect))]</visible>
-							
+
 							<control type="button">
 								<visible>!IsEmpty(Container(100).ListItem.Property(VideoResolution))</visible>
 								<label>$INFO[Container(100).ListItem.Property(VideoResolution),,p]</label>
 								<include>Flag</include>
 							</control>
-							
+
 							<control type="button">
 								<visible>!IsEmpty(Container(100).ListItem.Property(VideoCodec))</visible>
 								<label>$INFO[Container(100).ListItem.Property(VideoCodec)]</label>
 								<include>Flag</include>
 							</control>
-							
+
 							<control type="button">
 								<visible>!IsEmpty(Container(100).ListItem.Property(AudioChannels))</visible>
 								<label>$VAR[AudioChannels]</label>
 								<include>Flag</include>
 							</control>
-							
+
 							<control type="button">
 								<visible>!IsEmpty(Container(100).ListItem.Property(AudioCodec))</visible>
 								<label>$VAR[AudioCodecGS]</label>
 								<include>Flag</include>
 							</control>
-							
+
 							<control type="button">
 								<visible>!IsEmpty(Container(100).ListItem.Property(VideoAspect))</visible>
 								<label>$INFO[Container(100).ListItem.Property(VideoAspect)]</label>
 								<include>Flag</include>
 							</control>
-							
+
 						</control>
-					
+
 						<control type="image"> <!--gap extender-->
 							<width>2</width>
 							<height>10</height>
@@ -371,13 +371,13 @@
 							<scroll>true</scroll>
 							<font>Button</font>
 						</control>
-					
+
 						<control type="image"> <!--gap extender-->
 							<width>2</width>
 							<height>19</height>
 							<texture>backgrounds/trans.png</texture>
 						</control>
-							
+
 						<control type="textbox"> <!--plot-->
 							<width>1210</width>
 							<height>290</height>
@@ -386,7 +386,7 @@
 							<label>$INFO[Container(100).ListItem.Property(Plot)]</label>
 							<visible>Control.IsVisible(110) | Control.IsVisible(120) | Control.IsVisible(140)</visible>
 						</control>
-							
+
 						<control type="textbox"> <!--artist description-->
 							<width>1210</width>
 							<height>430</height>
@@ -395,7 +395,7 @@
 							<label>$INFO[Container(100).ListItem.Property(Artist_Description)]</label>
 							<visible>Control.IsVisible(160)</visible>
 						</control>
-							
+
 						<control type="textbox"> <!--album description-->
 							<width>1210</width>
 							<height>465</height>
@@ -404,17 +404,17 @@
 							<label>$INFO[Container(100).ListItem.Property(Album_Description)]</label>
 							<visible>Control.IsVisible(170)</visible>
 						</control>
-						
+
 					</control>
-					
+
 				</control>
-			
+
 			</control>
-			
+
 			<control type="group"> <!--information-->
 				<posx>250</posx>
 				<posy>87</posy>
-				
+
 				<control type="group">
 					<posy>-5</posy>
 					<visible>Control.IsVisible(110)</visible>
@@ -463,13 +463,13 @@
 						<scroll>true</scroll>
 						<textcolor>grey</textcolor>
 					</control>
-				
+
 				</control>
-				
+
 				<control type="group">
 					<posy>-25</posy>
 					<visible>Control.IsVisible(120) | Control.IsVisible(130)</visible>
-				
+
 					<control type="image"> <!--star-->
 						<posx>435</posx>
 						<posy>152</posy>
@@ -514,13 +514,13 @@
 						<scroll>true</scroll>
 						<textcolor>grey</textcolor>
 					</control>
-				
+
 				</control>
-				
+
 				<control type="group">
 					<posy>20</posy>
 					<visible>Control.IsVisible(140)</visible>
-				
+
 					<control type="image"> <!--star-->
 						<posx>435</posx>
 						<posy>152</posy>
@@ -565,9 +565,9 @@
 						<scroll>true</scroll>
 						<textcolor>grey</textcolor>
 					</control>
-				
+
 				</control>
-				
+
 				<control type="group">
 					<posy>-40</posy>
 					<visible>Control.IsVisible(160)</visible>
@@ -649,13 +649,13 @@
 						<textcolor>grey</textcolor>
 						<visible>IsEmpty(Container(100).ListItem.Property(Artist_Died)) + IsEmpty(Container(100).ListItem.Property(Artist_Died))</visible>
 					</control>
-				
+
 				</control>
-				
+
 				<control type="group">
 					<posy>10</posy>
 					<visible>Control.IsVisible(170)</visible>
-				
+
 					<control type="image"> <!--star-->
 						<posx>435</posx>
 						<posy>152</posy>
@@ -700,13 +700,13 @@
 						<scroll>true</scroll>
 						<textcolor>grey</textcolor>
 					</control>
-				
+
 				</control>
-				
+
 				<control type="group">
 					<posy>10</posy>
 					<visible>Control.IsVisible(180)</visible>
-				
+
 					<control type="image"> <!--star-->
 						<posx>435</posx>
 						<posy>152</posy>
@@ -760,49 +760,49 @@
 						<scroll>true</scroll>
 						<textcolor>grey</textcolor>
 					</control>
-				
+
 				</control>
-					
 
 
-			
+
+
 				<control type="group" id="101">
 					<posy>2000</posy>
-			
-					<control type="list" id="110">					
+
+					<control type="list" id="110">
 					</control>
-				
+
 					<control type="list" id="120">
 					</control>
-				
+
 					<control type="list" id="130">
 					</control>
-				
+
 					<control type="list" id="140">
 					</control>
-				
+
 					<control type="list" id="150">
 					</control>
-				
+
 					<control type="list" id="160">
 					</control>
-				
+
 					<control type="list" id="170">
 					</control>
-				
+
 					<control type="list" id="180">
 					</control>
-				
+
 				</control>
-			
+
 				<control type="spincontrol" id="195">
 					<visible>false</visible>
 				</control>
-			
+
 			</control>
-			
+
 		</control>
-		
+
 	</controls>
-	
+
 </window>

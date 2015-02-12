@@ -6,13 +6,13 @@
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>
-		
+
 		<include>DialogBG</include>
-		
+
 		<control type="group">
 			<include>FadeandZoom</include>
 			<visible>!Window.IsActive(ShutdownMenu) + !Window.IsActive(filebrowser) + !Window.IsActive(virtualkeyboard)</visible>
-			
+
 			<control type="group">
 
 				<control type="label" id="0"> <!--Header-->
@@ -33,20 +33,20 @@
 					<onright>9000</onright>
 					<ondown>9000</ondown>
 					<pagecontrol>60</pagecontrol>
-					
+
 					<itemlayout width="1000" height="65">
-		
+
 						<control type="label"> <!--label-->
 							<left>20</left>
 							<width>960</width>
 							<label>$INFO[ListItem.Label]</label>
 							<font>Button</font>
 						</control>
-			
+
 					</itemlayout>
-		
+
 					<focusedlayout width="1000" height="65">
-		
+
 						<control type="image"> <!--focus bg-->
 							<left>0</left>
 							<top>0</top>
@@ -55,21 +55,21 @@
 							<texture colordiffuse="TertiaryM">backgrounds/white.png</texture>
 							<visible>Control.HasFocus(10)</visible>
 						</control>
-		
+
 						<control type="label"> <!--label-->
 							<left>20</left>
 							<width>960</width>
 							<label>$INFO[ListItem.Label]</label>
 							<font>Button</font>
 						</control>
-			
+
 					</focusedlayout>
 
 				</control>
-				
+
 				<control type="group"> <!--scrollbar stuff-->
 					<left>430</left>
-			
+
 					<control type="image"> <!--scrollbar arrow up-->
 						<top>315</top>
 						<width>7</width>
@@ -83,7 +83,7 @@
 						<height>140</height>
 						<showonepage>false</showonepage>
 					</control>
-				
+
 					<control type="image"> <!--scrollbar arrow down-->
 						<top>498</top>
 						<width>7</width>
@@ -91,9 +91,9 @@
 						<texture colordiffuse="PrimaryM" flipy="true">controls/scrollarrow.png</texture>
 						<visible>Control.IsVisible(60)</visible>
 					</control>
-					
+
 				</control>
-				
+
 				<control type="group"> <!--bottom buttons-->
 					<top>-270</top>
 
@@ -125,9 +125,9 @@
 						</control>
 
 					</control>
-					
+
 				</control>
-			
+
 				<control type="group">
 					<top>10</top>
 
@@ -150,9 +150,9 @@
 						<font>Button</font>
 						<width>1000</width>
 					</control>
-				
+
 					<control type="group"> <!--bottom buttons-->
-				
+
 						<control type="grouplist" id="9001">
 							<left>460</left>
 							<top>770</top>
@@ -174,15 +174,15 @@
 								<include>OptionButton</include>
 								<label>222</label>
 							</control>
-					
+
 						</control>
-					
+
 					</control>
-				
+
 				</control>
-			
+
 			</control>
-			
+
 		</control>
 
 	</controls>

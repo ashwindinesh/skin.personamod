@@ -3,7 +3,7 @@
 <window id="703" type="dialog">
 
 	<defaultcontrol always="true">9000</defaultcontrol>
-	
+
     <onload>SetProperty(Title,$INFO[ListItem.Title],703)</onload>
     <onload>SetProperty(Year,$INFO[ListItem.Year],703)</onload>
     <onload>SetProperty(Studio,$INFO[ListItem.Studio],703)</onload>
@@ -11,7 +11,7 @@
     <onload>SetProperty(Console,$INFO[ListItem.Writer],703)</onload>
     <onload>SetProperty(Plot,$ESCINFO[ListItem.Plot],703)</onload>
     <onload>SetProperty(Fanart,$INFO[ListItem.Property(fanart_image)],703)</onload>
-	
+
     <onunload>ClearProperty(Title,703)</onunload>
     <onunload>ClearProperty(Year,703)</onunload>
     <onunload>ClearProperty(Studio,703)</onunload>
@@ -20,7 +20,7 @@
     <onunload>ClearProperty(Plot,703)</onunload>
     <onunload>ClearProperty(Fanart,703)</onunload>
     <onunload>ClearProperty(ChooseArt,703)</onunload>
-	
+
     <allowoverlay>no</allowoverlay>
 
 	<controls>
@@ -28,7 +28,7 @@
 		<control type="group">
 			<include>FadeandZoom</include>
 			<visible>!Window.IsActive(ShutdownMenu) + !Window.IsActive(selectdialog) + !Window.IsActive(filebrowser) + !Window.IsActive(textviewer)  + !Window.IsActive(addonsettings) + !Window.IsActuve(progressdialog) + !Window.IsActive(yesnodialog) + !Window.IsActive(okdialog) + !Window.IsActive(virtualkeyboard)</visible>
-		
+
 			<control type="label"> <!--title-->
 				<left>75</left>
 				<top>50</top>
@@ -37,7 +37,7 @@
 				<font>Breadcrumb</font>
 				<aligny>bottom</aligny>
 			</control>
-			
+
 			<control type="group"> <!--main content-->
 				<left>25</left>
 				<top>60</top>
@@ -50,11 +50,11 @@
 					<texture>$INFO[ListItem.Thumb]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
-				
+
 				<control type="group"> <!--information-->
 					<left>170</left>
 					<top>75</top>
-					
+
 					<control type="grouplist" id="9000">
 						<left>435</left>
 						<top>65</top>
@@ -67,13 +67,13 @@
 						<onleft>9000</onleft>
 						<orientation>horizontal</orientation>
 						<pagecontrol>60</pagecontrol>
-						<scrolltime>0</scrolltime>		
+						<scrolltime>0</scrolltime>
 
 						<control type="button" id ="6"> <!--play-->
 							<include>OptionButton</include>
 							<label>208</label>
                             <onclick>RunPlugin($INFO[ListItem.FileNameAndPath])</onclick>
-						</control>			
+						</control>
 
 						<control type="button" id ="7"> <!--get info-->
 							<include>OptionButton</include>
@@ -100,8 +100,8 @@
 						</control>
 
 					</control>
-					
-					<control type="grouplist"> <!--info-->		
+
+					<control type="grouplist"> <!--info-->
 						<left>435</left>
 						<top>135</top>
 						<width>1500</width>
@@ -128,13 +128,13 @@
 							<label>[COLOR=$INFO[Skin.String(MainColour)]]$LOCALIZE[31132][/COLOR] $INFO[Window.Property(Console)]</label>
 							<include>InfoLabel</include>
 						</control>
-					
+
 						<control type="image"> <!--gap extender-->
 							<width>2</width>
 							<height>15</height>
 							<texture>backgrounds/trans.png</texture>
 						</control>
-							
+
 						<control type="textbox" id="400"> <!--plot-->
 							<width>1210</width>
 							<height>440</height>
@@ -142,13 +142,13 @@
 							<label>$INFO[Window.Property(Plot)]</label>
 							<autoscroll delay="20000" time="5000" repeat="30000"/>
 						</control>
-						
+
 					</control>
-					
+
 				</control>
-				
+
 			</control>
-			
+
 		</control>
 
 	</controls>
