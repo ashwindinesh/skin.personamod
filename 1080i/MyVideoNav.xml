@@ -4,7 +4,7 @@
 
 	<defaultcontrol always="false">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<views>50,51,52,53,54,58,59</views>
+	<views>59,51,52,53,54,58,50</views>
 
 	<controls>
 
