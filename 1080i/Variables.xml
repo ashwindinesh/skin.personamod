@@ -470,8 +470,9 @@
 		<value condition="VideoPlayer.Content(Movies) + IsEmpty(VideoPlayer.Tagline)">$INFO[VideoPlayer.Genre]</value>
 		<value condition="VideoPlayer.Content(Episodes)">$INFO[VideoPlayer.TVShowTitle] ($INFO[VideoPlayer.Season]$INFO[VideoPlayer.Episode,x])</value>
 		<value condition="VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album, • ]</value>
-		<value condition="Player.IsInternetStream">$INFO[Player.FolderPath]</value>
-		<value>$INFO[Player.FolderPath]</value>
+		<value condition="!IsEmpty(VideoPlayer.Tagline)">$INFO[VideoPlayer.Tagline]</value>
+		<!-- <value condition="Player.IsInternetStream">$INFO[Player.FolderPath]</value> -->
+		<!-- <value>$INFO[Player.FolderPath]</value> -->
 	</variable>
 
 	<variable name="NowPlayingLine3">
