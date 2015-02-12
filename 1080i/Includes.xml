@@ -299,9 +299,9 @@
 				<include>FullscreenDimensions</include>
 				<fadetime>250</fadetime>
 				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-				<visible>Container.Content(movies) + Skin.HasSetting(movie.fanart)</visible>
+				<visible>Container.Content(movies)</visible>
 			</control>
-				
+
 			<control type="multiimage"> <!--movie extra fanart-->
 				<include>FullscreenDimensions</include>
 				<timeperimage>5000</timeperimage>
@@ -315,7 +315,7 @@
 				<include>FullscreenDimensions</include>
 				<fadetime>250</fadetime>
 				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-				<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + Skin.HasSetting(tv.fanart)</visible>
+				<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 			</control>
 
 			<control type="image"> <!--music fanart-->
